@@ -14,6 +14,7 @@
 
 """This script is used to synthesize generated parts of this library."""
 
+from synthtool import _tracked_paths
 import synthtool as s
 import synthtool.log as log
 import synthtool.shell as shell
@@ -32,6 +33,8 @@ shell.run("npm install".split(), cwd=repository)
 
 log.debug("Generating all libraries.")
 shell.run("make generate".split(), cwd=repository)
+
+_tracked_paths.add(repository)
 
 # copy src, test, samples directories
 s.copy(repository / "src")
