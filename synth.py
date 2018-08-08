@@ -15,19 +15,25 @@
 """This script is used to synthesize generated parts of this library."""
 
 import synthtool as s
-import synthtool.gcp as gcp
+import synthtool.log as log
+import synthtool.shell as shell
+import synthtool.sources.git as git
 import logging
 
 logging.basicConfig(level=logging.DEBUG)
 
-repository = gcp.RepositoryGenerator("https://github.com/chingor13/google-api-nodejs-client.git")
+repository_url = "https://github.com/chingor13/google-api-nodejs-client.git"
 
-library = repository.repository_library([
-    "npm install",
-    "make generate"
-])
+log.debug("Cloning {repository_url}.")
+repository = git.clone(repository_url, depth=1)
+
+log.debug("Installing dependencies.")
+shell.run("npm install".split(), cwd=repository)
+
+log.debug("Generating all libraries.")
+shell.run("make generate".split(), cwd=repository)
 
 # copy src, test, samples directories
-s.copy(library / "src")
-s.copy(library / "test")
-s.copy(library / "samples")
+s.copy(repository / "src")
+s.copy(repository / "test")
+s.copy(repository / "samples")
