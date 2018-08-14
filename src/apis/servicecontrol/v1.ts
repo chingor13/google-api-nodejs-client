@@ -112,10 +112,9 @@ export namespace servicecontrol_v1 {
      * request, one or more of the following metrics will be included:  1. Per
      * quota group or per quota metric incremental usage will be specified using
      * the following delta metric :
-     * &quot;serviceruntime.googleapis.com/api/consumer/quota_used_count&quot;
-     * 2. The quota limit reached condition will be specified using the
-     * following boolean metric :
-     * &quot;serviceruntime.googleapis.com/quota/exceeded&quot;
+     * &quot;serviceruntime.googleapis.com/api/consumer/quota_used_count&quot;  2.
+     * The quota limit reached condition will be specified using the following
+     * boolean metric : &quot;serviceruntime.googleapis.com/quota/exceeded&quot;
      */
     quotaMetrics?: Schema$MetricValueSet[];
     /**
@@ -597,6 +596,11 @@ export namespace servicecontrol_v1 {
      */
     name?: string;
     /**
+     * Optional. Information about an operation associated with the log entry,
+     * if applicable.
+     */
+    operation?: Schema$LogEntryOperation;
+    /**
      * The log entry payload, represented as a protocol buffer that is expressed
      * as a JSON object. The only accepted type currently is AuditLog.
      */
@@ -620,6 +624,34 @@ export namespace servicecontrol_v1 {
      * defaults to operation start time.
      */
     timestamp?: string;
+  }
+  /**
+   * Additional information about a potentially long-running operation with
+   * which a log entry is associated.
+   */
+  export interface Schema$LogEntryOperation {
+    /**
+     * Optional. Set this to True if this is the first log entry in the
+     * operation.
+     */
+    first?: boolean;
+    /**
+     * Optional. An arbitrary operation identifier. Log entries with the same
+     * identifier are assumed to be part of the same operation.
+     */
+    id?: string;
+    /**
+     * Optional. Set this to True if this is the last log entry in the
+     * operation.
+     */
+    last?: boolean;
+    /**
+     * Optional. An arbitrary producer identifier. The combination of `id` and
+     * `producer` must be globally unique.  Examples for `producer`:
+     * `&quot;MyDivision.MyBigCompany.com&quot;`,
+     * `&quot;github.com/MyProject/MyApplication&quot;`.
+     */
+    producer?: string;
   }
   /**
    * Represents a single metric value.
@@ -804,6 +836,43 @@ export namespace servicecontrol_v1 {
     userLabels?: any;
   }
   /**
+   * This message defines attributes for a node that handles a network request.
+   * The node can be either a service or an application that sends, forwards, or
+   * receives the request. Service peers should fill in the `service`,
+   * `principal`, and `labels` as appropriate.
+   */
+  export interface Schema$Peer {
+    /**
+     * The IP address of the peer.
+     */
+    ip?: string;
+    /**
+     * The labels associated with the peer.
+     */
+    labels?: any;
+    /**
+     * The network port of the peer.
+     */
+    port?: string;
+    /**
+     * The identity of this peer. Similar to `Request.auth.principal`, but
+     * relative to the peer instead of the request. For example, the idenity
+     * associated with a load balancer that forwared the request.
+     */
+    principal?: string;
+    /**
+     * The CLDR country/region code associated with the above IP address. If the
+     * IP address is private, the `region_code` should reflect the physical
+     * location where this peer is running.
+     */
+    regionCode?: string;
+    /**
+     * The canonical service name of the peer.  NOTE: different systems may have
+     * different service naming schemes.
+     */
+    service?: string;
+  }
+  /**
    * Represents error information for QuotaOperation.
    */
   export interface Schema$QuotaError {
@@ -849,8 +918,8 @@ export namespace servicecontrol_v1 {
      * or more of the following metrics will be included:  1. For rate quota,
      * per quota group or per quota metric incremental usage will be specified
      * using the following delta metric:
-     * &quot;serviceruntime.googleapis.com/api/consumer/quota_used_count&quot;
-     * 2. For allocation quota, per quota metric total usage will be specified
+     * &quot;serviceruntime.googleapis.com/api/consumer/quota_used_count&quot;  2.
+     * For allocation quota, per quota metric total usage will be specified
      * using the following gauge metric:
      * &quot;serviceruntime.googleapis.com/allocation/consumer/quota_used_count&quot;
      * 3. For both rate quota and allocation quota, the quota limit reached
@@ -1151,6 +1220,14 @@ export namespace servicecontrol_v1 {
      */
     callerSuppliedUserAgent?: string;
     /**
+     * The destination of a network activity, such as accepting a TCP
+     * connection. In a multi hop network activity, the destination represents
+     * the receiver of the last hop. Only two fields are used in this message,
+     * Peer.port and Peer.ip. These fields are optionally populated by those
+     * services utilizing the IAM condition feature.
+     */
+    destinationAttributes?: Schema$Peer;
+    /**
      * Request attributes used in IAM condition evaluation. This field contains
      * request attributes like request time and access levels associated with
      * the request.  To get the whole view of the attributes used in IAM
@@ -1353,9 +1430,12 @@ export namespace servicecontrol_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.serviceName Name of the service as specified in the service configuration. For example, `"pubsub.googleapis.com"`.  See google.api.Service for the definition of a service name.
+     * @param {string} params.serviceName Name of the service as specified in
+     *     the service configuration. For example, `"pubsub.googleapis.com"`.
+     *     See google.api.Service for the definition of a service name.
      * @param {().AllocateQuotaRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -1434,9 +1514,13 @@ export namespace servicecontrol_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.serviceName The service name as specified in its service configuration. For example, `"pubsub.googleapis.com"`.  See [google.api.Service](https://cloud.google.com/service-management/reference/rpc/google.api#google.api.Service) for the definition of a service name.
+     * @param {string} params.serviceName The service name as specified in its
+     *     service configuration. For example, `"pubsub.googleapis.com"`.  See
+     *     [google.api.Service](https://cloud.google.com/service-management/reference/rpc/google.api#google.api.Service)
+     *     for the definition of a service name.
      * @param {().CheckRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -1505,9 +1589,12 @@ export namespace servicecontrol_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.serviceName Name of the service as specified in the service configuration. For example, `"pubsub.googleapis.com"`.  See google.api.Service for the definition of a service name.
+     * @param {string} params.serviceName Name of the service as specified in
+     *     the service configuration. For example, `"pubsub.googleapis.com"`.
+     *     See google.api.Service for the definition of a service name.
      * @param {().EndReconciliationRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -1584,9 +1671,12 @@ export namespace servicecontrol_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.serviceName Name of the service as specified in the service configuration. For example, `"pubsub.googleapis.com"`.  See google.api.Service for the definition of a service name.
+     * @param {string} params.serviceName Name of the service as specified in
+     *     the service configuration. For example, `"pubsub.googleapis.com"`.
+     *     See google.api.Service for the definition of a service name.
      * @param {().ReleaseQuotaRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -1665,9 +1755,13 @@ export namespace servicecontrol_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.serviceName The service name as specified in its service configuration. For example, `"pubsub.googleapis.com"`.  See [google.api.Service](https://cloud.google.com/service-management/reference/rpc/google.api#google.api.Service) for the definition of a service name.
+     * @param {string} params.serviceName The service name as specified in its
+     *     service configuration. For example, `"pubsub.googleapis.com"`.  See
+     *     [google.api.Service](https://cloud.google.com/service-management/reference/rpc/google.api#google.api.Service)
+     *     for the definition of a service name.
      * @param {().ReportRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -1752,9 +1846,12 @@ export namespace servicecontrol_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.serviceName Name of the service as specified in the service configuration. For example, `"pubsub.googleapis.com"`.  See google.api.Service for the definition of a service name.
+     * @param {string} params.serviceName Name of the service as specified in
+     *     the service configuration. For example, `"pubsub.googleapis.com"`.
+     *     See google.api.Service for the definition of a service name.
      * @param {().StartReconciliationRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */

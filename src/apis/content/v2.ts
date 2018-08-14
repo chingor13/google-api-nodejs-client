@@ -110,7 +110,7 @@ export namespace content_v2 {
     adwordsLinks?: Schema$AccountAdwordsLink[];
     /**
      * The GMB account which is linked or in the process of being linked with
-     * the Merchant Center accounnt.
+     * the Merchant Center account.
      */
     googleMyBusinessLink?: Schema$AccountGoogleMyBusinessLink;
     /**
@@ -265,7 +265,8 @@ export namespace content_v2 {
   }
   export interface Schema$AccountsCustomBatchRequestEntryLinkRequest {
     /**
-     * Action to perform for this link.
+     * Action to perform for this link. The &quot;request&quot; action is only
+     * available to select merchants.
      */
     action?: string;
     /**
@@ -317,7 +318,8 @@ export namespace content_v2 {
   }
   export interface Schema$AccountsLinkRequest {
     /**
-     * Action to perform for this link.
+     * Action to perform for this link. The &quot;request&quot; action is only
+     * available to select merchants.
      */
     action?: string;
     /**
@@ -1290,13 +1292,13 @@ export namespace content_v2 {
     /**
      * A list of inclusive order price upper bounds. The last price&#39;s value
      * can be &quot;infinity&quot;. For example [{&quot;value&quot;:
-     * &quot;10&quot;, &quot;currency&quot;: &quot;USD&quot;},
-     * {&quot;value&quot;: &quot;500&quot;, &quot;currency&quot;:
-     * &quot;USD&quot;}, {&quot;value&quot;: &quot;infinity&quot;,
-     * &quot;currency&quot;: &quot;USD&quot;}] represents the headers
-     * &quot;&lt;= $10&quot;, &quot; $500&quot;. All prices within a service
-     * must have the same currency. Must be non-empty. Can only be set if all
-     * other fields are not set.
+     * &quot;10&quot;, &quot;currency&quot;:
+     * &quot;USD&quot;}, {&quot;value&quot;: &quot;500&quot;,
+     * &quot;currency&quot;: &quot;USD&quot;}, {&quot;value&quot;:
+     * &quot;infinity&quot;, &quot;currency&quot;: &quot;USD&quot;}] represents
+     * the headers &quot;&lt;= $10&quot;, &quot; $500&quot;. All prices within a
+     * service must have the same currency. Must be non-empty. Can only be set
+     * if all other fields are not set.
      */
     prices?: Schema$Price[];
     /**
@@ -1432,7 +1434,7 @@ export namespace content_v2 {
      */
     salePriceEffectiveDate?: string;
     /**
-     * The quantity of the product that is reserved for sell-on-google ads.
+     * The quantity of the product that is available for selling on Google.
      * Supported only for online products.
      */
     sellOnGoogleQuantity?: number;
@@ -1555,7 +1557,7 @@ export namespace content_v2 {
      */
     salePriceEffectiveDate?: string;
     /**
-     * The quantity of the product that is reserved for sell-on-google ads.
+     * The quantity of the product that is available for selling on Google.
      * Supported only for online products.
      */
     sellOnGoogleQuantity?: number;
@@ -1998,8 +2000,9 @@ export namespace content_v2 {
      */
     recipientName?: string;
     /**
-     * Top-level administrative subdivision of the country (e.g.
-     * &quot;CA&quot;).
+     * Top-level administrative subdivision of the country. For example, a state
+     * like California (&quot;CA&quot;) or a province like Quebec
+     * (&quot;QC&quot;).
      */
     region?: string;
     /**
@@ -2601,9 +2604,7 @@ export namespace content_v2 {
   }
   export interface Schema$OrdersCancelLineItemRequest {
     /**
-     * Amount to refund for the cancelation. Optional. If not set, Google will
-     * calculate the default based on the price and tax of the items involved.
-     * The amount must not be larger than the net amount left on the order.
+     * Deprecated. Please use amountPretax and amountTax instead.
      */
     amount?: Schema$Price;
     /**
@@ -2680,6 +2681,13 @@ export namespace content_v2 {
     kind?: string;
   }
   export interface Schema$OrdersCreateTestOrderRequest {
+    /**
+     * The  CLDR territory code of the country of the test order to create.
+     * Affects the currency and addresses of orders created via template_name,
+     * or the addresses of orders created via test_order.  Acceptable values
+     * are:   - &quot;US&quot;  - &quot;FR&quot;  Defaults to US.
+     */
+    country?: string;
     /**
      * The test order template to use. Specify as an alternative to testOrder as
      * a shortcut for retrieving a template and then creating an order using
@@ -2798,9 +2806,7 @@ export namespace content_v2 {
   }
   export interface Schema$OrdersCustomBatchRequestEntryCancelLineItem {
     /**
-     * Amount to refund for the cancelation. Optional. If not set, Google will
-     * calculate the default based on the price and tax of the items involved.
-     * The amount must not be larger than the net amount left on the order.
+     * Deprecated. Please use amountPretax and amountTax instead.
      */
     amount?: Schema$Price;
     /**
@@ -2870,7 +2876,7 @@ export namespace content_v2 {
   }
   export interface Schema$OrdersCustomBatchRequestEntryRefund {
     /**
-     * The amount that is refunded.
+     * Deprecated. Please use amountPretax and amountTax instead.
      */
     amount?: Schema$Price;
     /**
@@ -3100,8 +3106,9 @@ export namespace content_v2 {
      */
     errors?: Schema$Errors;
     /**
-     * The status of the execution. Only defined if the method is not get or
-     * getByMerchantOrderId and if the request was successful.
+     * The status of the execution. Only defined if   - the request was
+     * successful; and  - the method is not get, getByMerchantOrderId, or one of
+     * the test methods.
      */
     executionStatus?: string;
     /**
@@ -3251,7 +3258,7 @@ export namespace content_v2 {
   }
   export interface Schema$OrdersRefundRequest {
     /**
-     * The amount that is refunded.
+     * Deprecated. Please use amountPretax and amountTax instead.
      */
     amount?: Schema$Price;
     /**
@@ -3838,7 +3845,8 @@ export namespace content_v2 {
      */
     price?: Schema$Price;
     /**
-     * The relative change of the available quantity. Negative for items sold.
+     * The relative change of the available quantity. Negative for items
+     * returned.
      */
     quantity?: string;
     /**
@@ -3877,7 +3885,8 @@ export namespace content_v2 {
      */
     price?: Schema$Price;
     /**
-     * The relative change of the available quantity. Negative for items sold.
+     * The relative change of the available quantity. Negative for items
+     * returned.
      */
     quantity?: string;
     /**
@@ -3921,7 +3930,8 @@ export namespace content_v2 {
      */
     price?: Schema$Price;
     /**
-     * The relative change of the available quantity. Negative for items sold.
+     * The relative change of the available quantity. Negative for items
+     * returned.
      */
     quantity?: string;
     /**
@@ -4039,7 +4049,7 @@ export namespace content_v2 {
      */
     ageGroup?: string;
     /**
-     * Specifies the intended aspects for the product.
+     * Deprecated. Do not use.
      */
     aspects?: Schema$ProductAspect[];
     /**
@@ -4272,7 +4282,8 @@ export namespace content_v2 {
      */
     salePriceEffectiveDate?: string;
     /**
-     * The quantity of the product that is reserved for sell-on-google ads.
+     * The quantity of the product that is available for selling on Google.
+     * Supported only for online products.
      */
     sellOnGoogleQuantity?: string;
     /**
@@ -4312,6 +4323,10 @@ export namespace content_v2 {
      * The cut of the item. Recommended for apparel items.
      */
     sizeType?: string;
+    /**
+     * The source of the offer, i.e., how the offer was created.
+     */
+    source?: string;
     /**
      * The CLDR territory code for the item.
      */
@@ -5346,7 +5361,8 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object=} params Parameters for request
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -5414,10 +5430,18 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.accountId The ID of the account whose website is claimed.
-     * @param {string} params.merchantId The ID of the managing account. If this parameter is not the same as accountId, then this account must be a multi-client account and accountId must be the ID of a sub-account of this account.
-     * @param {boolean=} params.overwrite Only available to selected merchants. When set to True, this flag removes any existing claim on the requested website by another account and replaces it with a claim from this account.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.accountId The ID of the account whose website is
+     *     claimed.
+     * @param {string} params.merchantId The ID of the managing account. If this
+     *     parameter is not the same as accountId, then this account must be a
+     *     multi-client account and accountId must be the ID of a sub-account of
+     *     this account.
+     * @param {boolean=} params.overwrite Only available to selected merchants.
+     *     When set to True, this flag removes any existing claim on the
+     *     requested website by another account and replaces it with a claim
+     *     from this account.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -5496,7 +5520,8 @@ export namespace content_v2 {
      * @param {object} params Parameters for request
      * @param {boolean=} params.dryRun Flag to run the request in dry-run mode.
      * @param {().AccountsCustomBatchRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -5570,9 +5595,13 @@ export namespace content_v2 {
      * @param {object} params Parameters for request
      * @param {string} params.accountId The ID of the account.
      * @param {boolean=} params.dryRun Flag to run the request in dry-run mode.
-     * @param {boolean=} params.force Flag to delete sub-accounts with products. The default value is false.
-     * @param {string} params.merchantId The ID of the managing account. This must be a multi-client account, and accountId must be the ID of a sub-account of this account.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {boolean=} params.force Flag to delete sub-accounts with products.
+     *     The default value is false.
+     * @param {string} params.merchantId The ID of the managing account. This
+     *     must be a multi-client account, and accountId must be the ID of a
+     *     sub-account of this account.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -5635,8 +5664,12 @@ export namespace content_v2 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.accountId The ID of the account.
-     * @param {string} params.merchantId The ID of the managing account. If this parameter is not the same as accountId, then this account must be a multi-client account and accountId must be the ID of a sub-account of this account.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.merchantId The ID of the managing account. If this
+     *     parameter is not the same as accountId, then this account must be a
+     *     multi-client account and accountId must be the ID of a sub-account of
+     *     this account.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -5697,9 +5730,11 @@ export namespace content_v2 {
      *
      * @param {object} params Parameters for request
      * @param {boolean=} params.dryRun Flag to run the request in dry-run mode.
-     * @param {string} params.merchantId The ID of the managing account. This must be a multi-client account.
+     * @param {string} params.merchantId The ID of the managing account. This
+     *     must be a multi-client account.
      * @param {().Account} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -5763,10 +5798,15 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.accountId The ID of the account that should be linked.
-     * @param {string} params.merchantId The ID of the managing account. If this parameter is not the same as accountId, then this account must be a multi-client account and accountId must be the ID of a sub-account of this account.
+     * @param {string} params.accountId The ID of the account that should be
+     *     linked.
+     * @param {string} params.merchantId The ID of the managing account. If this
+     *     parameter is not the same as accountId, then this account must be a
+     *     multi-client account and accountId must be the ID of a sub-account of
+     *     this account.
      * @param {().AccountsLinkRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -5832,10 +5872,14 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {integer=} params.maxResults The maximum number of accounts to return in the response, used for paging.
-     * @param {string} params.merchantId The ID of the managing account. This must be a multi-client account.
-     * @param {string=} params.pageToken The token returned by the previous request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {integer=} params.maxResults The maximum number of accounts to
+     *     return in the response, used for paging.
+     * @param {string} params.merchantId The ID of the managing account. This
+     *     must be a multi-client account.
+     * @param {string=} params.pageToken The token returned by the previous
+     *     request.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -5903,9 +5947,13 @@ export namespace content_v2 {
      * @param {object} params Parameters for request
      * @param {string} params.accountId The ID of the account.
      * @param {boolean=} params.dryRun Flag to run the request in dry-run mode.
-     * @param {string} params.merchantId The ID of the managing account. If this parameter is not the same as accountId, then this account must be a multi-client account and accountId must be the ID of a sub-account of this account.
+     * @param {string} params.merchantId The ID of the managing account. If this
+     *     parameter is not the same as accountId, then this account must be a
+     *     multi-client account and accountId must be the ID of a sub-account of
+     *     this account.
      * @param {().Account} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -5970,9 +6018,13 @@ export namespace content_v2 {
      * @param {object} params Parameters for request
      * @param {string} params.accountId The ID of the account.
      * @param {boolean=} params.dryRun Flag to run the request in dry-run mode.
-     * @param {string} params.merchantId The ID of the managing account. If this parameter is not the same as accountId, then this account must be a multi-client account and accountId must be the ID of a sub-account of this account.
+     * @param {string} params.merchantId The ID of the managing account. If this
+     *     parameter is not the same as accountId, then this account must be a
+     *     multi-client account and accountId must be the ID of a sub-account of
+     *     this account.
      * @param {().Account} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -6248,8 +6300,10 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {().AccountstatusesCustomBatchRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {().AccountstatusesCustomBatchRequest} params.resource Request
+     *     body data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -6329,9 +6383,15 @@ export namespace content_v2 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.accountId The ID of the account.
-     * @param {string=} params.destinations If set, only issues for the specified destinations are returned, otherwise only issues for the Shopping destination.
-     * @param {string} params.merchantId The ID of the managing account. If this parameter is not the same as accountId, then this account must be a multi-client account and accountId must be the ID of a sub-account of this account.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.destinations If set, only issues for the
+     *     specified destinations are returned, otherwise only issues for the
+     *     Shopping destination.
+     * @param {string} params.merchantId The ID of the managing account. If this
+     *     parameter is not the same as accountId, then this account must be a
+     *     multi-client account and accountId must be the ID of a sub-account of
+     *     this account.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -6395,11 +6455,17 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.destinations If set, only issues for the specified destinations are returned, otherwise only issues for the Shopping destination.
-     * @param {integer=} params.maxResults The maximum number of account statuses to return in the response, used for paging.
-     * @param {string} params.merchantId The ID of the managing account. This must be a multi-client account.
-     * @param {string=} params.pageToken The token returned by the previous request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.destinations If set, only issues for the
+     *     specified destinations are returned, otherwise only issues for the
+     *     Shopping destination.
+     * @param {integer=} params.maxResults The maximum number of account
+     *     statuses to return in the response, used for paging.
+     * @param {string} params.merchantId The ID of the managing account. This
+     *     must be a multi-client account.
+     * @param {string=} params.pageToken The token returned by the previous
+     *     request.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -6545,8 +6611,10 @@ export namespace content_v2 {
      *
      * @param {object} params Parameters for request
      * @param {boolean=} params.dryRun Flag to run the request in dry-run mode.
-     * @param {().AccounttaxCustomBatchRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {().AccounttaxCustomBatchRequest} params.resource Request body
+     *     data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -6620,9 +6688,14 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.accountId The ID of the account for which to get/update account tax settings.
-     * @param {string} params.merchantId The ID of the managing account. If this parameter is not the same as accountId, then this account must be a multi-client account and accountId must be the ID of a sub-account of this account.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.accountId The ID of the account for which to
+     *     get/update account tax settings.
+     * @param {string} params.merchantId The ID of the managing account. If this
+     *     parameter is not the same as accountId, then this account must be a
+     *     multi-client account and accountId must be the ID of a sub-account of
+     *     this account.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -6684,10 +6757,14 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {integer=} params.maxResults The maximum number of tax settings to return in the response, used for paging.
-     * @param {string} params.merchantId The ID of the managing account. This must be a multi-client account.
-     * @param {string=} params.pageToken The token returned by the previous request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {integer=} params.maxResults The maximum number of tax settings to
+     *     return in the response, used for paging.
+     * @param {string} params.merchantId The ID of the managing account. This
+     *     must be a multi-client account.
+     * @param {string=} params.pageToken The token returned by the previous
+     *     request.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -6753,11 +6830,16 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.accountId The ID of the account for which to get/update account tax settings.
+     * @param {string} params.accountId The ID of the account for which to
+     *     get/update account tax settings.
      * @param {boolean=} params.dryRun Flag to run the request in dry-run mode.
-     * @param {string} params.merchantId The ID of the managing account. If this parameter is not the same as accountId, then this account must be a multi-client account and accountId must be the ID of a sub-account of this account.
+     * @param {string} params.merchantId The ID of the managing account. If this
+     *     parameter is not the same as accountId, then this account must be a
+     *     multi-client account and accountId must be the ID of a sub-account of
+     *     this account.
      * @param {().AccountTax} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -6821,11 +6903,16 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.accountId The ID of the account for which to get/update account tax settings.
+     * @param {string} params.accountId The ID of the account for which to
+     *     get/update account tax settings.
      * @param {boolean=} params.dryRun Flag to run the request in dry-run mode.
-     * @param {string} params.merchantId The ID of the managing account. If this parameter is not the same as accountId, then this account must be a multi-client account and accountId must be the ID of a sub-account of this account.
+     * @param {string} params.merchantId The ID of the managing account. If this
+     *     parameter is not the same as accountId, then this account must be a
+     *     multi-client account and accountId must be the ID of a sub-account of
+     *     this account.
      * @param {().AccountTax} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -7010,7 +7097,8 @@ export namespace content_v2 {
      * @param {object} params Parameters for request
      * @param {boolean=} params.dryRun Flag to run the request in dry-run mode.
      * @param {().DatafeedsCustomBatchRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -7086,8 +7174,10 @@ export namespace content_v2 {
      * @param {object} params Parameters for request
      * @param {string} params.datafeedId The ID of the datafeed.
      * @param {boolean=} params.dryRun Flag to run the request in dry-run mode.
-     * @param {string} params.merchantId The ID of the account that manages the datafeed. This account cannot be a multi-client account.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.merchantId The ID of the account that manages the
+     *     datafeed. This account cannot be a multi-client account.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -7151,8 +7241,10 @@ export namespace content_v2 {
      * @param {object} params Parameters for request
      * @param {string} params.datafeedId The ID of the datafeed to be fetched.
      * @param {boolean=} params.dryRun Flag to run the request in dry-run mode.
-     * @param {string} params.merchantId The ID of the account that manages the datafeed. This account cannot be a multi-client account.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.merchantId The ID of the account that manages the
+     *     datafeed. This account cannot be a multi-client account.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -7224,8 +7316,10 @@ export namespace content_v2 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.datafeedId The ID of the datafeed.
-     * @param {string} params.merchantId The ID of the account that manages the datafeed. This account cannot be a multi-client account.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.merchantId The ID of the account that manages the
+     *     datafeed. This account cannot be a multi-client account.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -7287,9 +7381,11 @@ export namespace content_v2 {
      *
      * @param {object} params Parameters for request
      * @param {boolean=} params.dryRun Flag to run the request in dry-run mode.
-     * @param {string} params.merchantId The ID of the account that manages the datafeed. This account cannot be a multi-client account.
+     * @param {string} params.merchantId The ID of the account that manages the
+     *     datafeed. This account cannot be a multi-client account.
      * @param {().Datafeed} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -7353,10 +7449,14 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {integer=} params.maxResults The maximum number of products to return in the response, used for paging.
-     * @param {string} params.merchantId The ID of the account that manages the datafeeds. This account cannot be a multi-client account.
-     * @param {string=} params.pageToken The token returned by the previous request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {integer=} params.maxResults The maximum number of products to
+     *     return in the response, used for paging.
+     * @param {string} params.merchantId The ID of the account that manages the
+     *     datafeeds. This account cannot be a multi-client account.
+     * @param {string=} params.pageToken The token returned by the previous
+     *     request.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -7424,9 +7524,11 @@ export namespace content_v2 {
      * @param {object} params Parameters for request
      * @param {string} params.datafeedId The ID of the datafeed.
      * @param {boolean=} params.dryRun Flag to run the request in dry-run mode.
-     * @param {string} params.merchantId The ID of the account that manages the datafeed. This account cannot be a multi-client account.
+     * @param {string} params.merchantId The ID of the account that manages the
+     *     datafeed. This account cannot be a multi-client account.
      * @param {().Datafeed} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -7491,9 +7593,11 @@ export namespace content_v2 {
      * @param {object} params Parameters for request
      * @param {string} params.datafeedId The ID of the datafeed.
      * @param {boolean=} params.dryRun Flag to run the request in dry-run mode.
-     * @param {string} params.merchantId The ID of the account that manages the datafeed. This account cannot be a multi-client account.
+     * @param {string} params.merchantId The ID of the account that manages the
+     *     datafeed. This account cannot be a multi-client account.
      * @param {().Datafeed} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -7733,8 +7837,10 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {().DatafeedstatusesCustomBatchRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {().DatafeedstatusesCustomBatchRequest} params.resource Request
+     *     body data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -7813,11 +7919,21 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.country The country for which to get the datafeed status. If this parameter is provided then language must also be provided. Note that this parameter is required for feeds targeting multiple countries and languages, since a feed may have a different status for each target.
+     * @param {string=} params.country The country for which to get the datafeed
+     *     status. If this parameter is provided then language must also be
+     *     provided. Note that this parameter is required for feeds targeting
+     *     multiple countries and languages, since a feed may have a different
+     *     status for each target.
      * @param {string} params.datafeedId The ID of the datafeed.
-     * @param {string=} params.language The language for which to get the datafeed status. If this parameter is provided then country must also be provided. Note that this parameter is required for feeds targeting multiple countries and languages, since a feed may have a different status for each target.
-     * @param {string} params.merchantId The ID of the account that manages the datafeed. This account cannot be a multi-client account.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.language The language for which to get the
+     *     datafeed status. If this parameter is provided then country must also
+     *     be provided. Note that this parameter is required for feeds targeting
+     *     multiple countries and languages, since a feed may have a different
+     *     status for each target.
+     * @param {string} params.merchantId The ID of the account that manages the
+     *     datafeed. This account cannot be a multi-client account.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -7881,10 +7997,14 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {integer=} params.maxResults The maximum number of products to return in the response, used for paging.
-     * @param {string} params.merchantId The ID of the account that manages the datafeeds. This account cannot be a multi-client account.
-     * @param {string=} params.pageToken The token returned by the previous request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {integer=} params.maxResults The maximum number of products to
+     *     return in the response, used for paging.
+     * @param {string} params.merchantId The ID of the account that manages the
+     *     datafeeds. This account cannot be a multi-client account.
+     * @param {string=} params.pageToken The token returned by the previous
+     *     request.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -8038,7 +8158,8 @@ export namespace content_v2 {
      * @param {object} params Parameters for request
      * @param {boolean=} params.dryRun Flag to run the request in dry-run mode.
      * @param {().InventoryCustomBatchRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -8114,11 +8235,16 @@ export namespace content_v2 {
      *
      * @param {object} params Parameters for request
      * @param {boolean=} params.dryRun Flag to run the request in dry-run mode.
-     * @param {string} params.merchantId The ID of the account that contains the product. This account cannot be a multi-client account.
-     * @param {string} params.productId The REST id of the product for which to update price and availability.
-     * @param {string} params.storeCode The code of the store for which to update price and availability. Use online to update price and availability of an online product.
+     * @param {string} params.merchantId The ID of the account that contains the
+     *     product. This account cannot be a multi-client account.
+     * @param {string} params.productId The REST id of the product for which to
+     *     update price and availability.
+     * @param {string} params.storeCode The code of the store for which to
+     *     update price and availability. Use online to update price and
+     *     availability of an online product.
      * @param {().InventorySetRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -8244,8 +8370,10 @@ export namespace content_v2 {
      *
      * @param {object} params Parameters for request
      * @param {boolean=} params.dryRun Flag to run the request in dry-run mode.
-     * @param {().LiasettingsCustomBatchRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {().LiasettingsCustomBatchRequest} params.resource Request body
+     *     data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -8319,9 +8447,14 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.accountId The ID of the account for which to get or update LIA settings.
-     * @param {string} params.merchantId The ID of the managing account. If this parameter is not the same as accountId, then this account must be a multi-client account and accountId must be the ID of a sub-account of this account.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.accountId The ID of the account for which to get
+     *     or update LIA settings.
+     * @param {string} params.merchantId The ID of the managing account. If this
+     *     parameter is not the same as accountId, then this account must be a
+     *     multi-client account and accountId must be the ID of a sub-account of
+     *     this account.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -8383,9 +8516,14 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.accountId The ID of the account for which to retrieve accessible Google My Business accounts.
-     * @param {string} params.merchantId The ID of the managing account. If this parameter is not the same as accountId, then this account must be a multi-client account and accountId must be the ID of a sub-account of this account.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.accountId The ID of the account for which to
+     *     retrieve accessible Google My Business accounts.
+     * @param {string} params.merchantId The ID of the managing account. If this
+     *     parameter is not the same as accountId, then this account must be a
+     *     multi-client account and accountId must be the ID of a sub-account of
+     *     this account.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -8464,10 +8602,14 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {integer=} params.maxResults The maximum number of LIA settings to return in the response, used for paging.
-     * @param {string} params.merchantId The ID of the managing account. This must be a multi-client account.
-     * @param {string=} params.pageToken The token returned by the previous request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {integer=} params.maxResults The maximum number of LIA settings to
+     *     return in the response, used for paging.
+     * @param {string} params.merchantId The ID of the managing account. This
+     *     must be a multi-client account.
+     * @param {string=} params.pageToken The token returned by the previous
+     *     request.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -8533,7 +8675,8 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object=} params Parameters for request
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -8608,11 +8751,16 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.accountId The ID of the account for which to get or update LIA settings.
+     * @param {string} params.accountId The ID of the account for which to get
+     *     or update LIA settings.
      * @param {boolean=} params.dryRun Flag to run the request in dry-run mode.
-     * @param {string} params.merchantId The ID of the managing account. If this parameter is not the same as accountId, then this account must be a multi-client account and accountId must be the ID of a sub-account of this account.
+     * @param {string} params.merchantId The ID of the managing account. If this
+     *     parameter is not the same as accountId, then this account must be a
+     *     multi-client account and accountId must be the ID of a sub-account of
+     *     this account.
      * @param {().LiaSettings} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -8678,10 +8826,16 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.accountId The ID of the account for which GMB access is requested.
-     * @param {string=} params.gmbEmail The email of the Google My Business account.
-     * @param {string} params.merchantId The ID of the managing account. If this parameter is not the same as accountId, then this account must be a multi-client account and accountId must be the ID of a sub-account of this account.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.accountId The ID of the account for which GMB
+     *     access is requested.
+     * @param {string=} params.gmbEmail The email of the Google My Business
+     *     account.
+     * @param {string} params.merchantId The ID of the managing account. If this
+     *     parameter is not the same as accountId, then this account must be a
+     *     multi-client account and accountId must be the ID of a sub-account of
+     *     this account.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -8761,10 +8915,16 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.accountId The ID of the account that manages the order. This cannot be a multi-client account.
-     * @param {string} params.country The country for which inventory validation is requested.
-     * @param {string} params.merchantId The ID of the managing account. If this parameter is not the same as accountId, then this account must be a multi-client account and accountId must be the ID of a sub-account of this account.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.accountId The ID of the account that manages the
+     *     order. This cannot be a multi-client account.
+     * @param {string} params.country The country for which inventory validation
+     *     is requested.
+     * @param {string} params.merchantId The ID of the managing account. If this
+     *     parameter is not the same as accountId, then this account must be a
+     *     multi-client account and accountId must be the ID of a sub-account of
+     *     this account.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -8844,13 +9004,22 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.accountId The ID of the account that manages the order. This cannot be a multi-client account.
-     * @param {string=} params.contactEmail The email of the inventory verification contact.
-     * @param {string=} params.contactName The name of the inventory verification contact.
-     * @param {string=} params.country The country for which inventory verification is requested.
-     * @param {string=} params.language The language for which inventory verification is requested.
-     * @param {string} params.merchantId The ID of the managing account. If this parameter is not the same as accountId, then this account must be a multi-client account and accountId must be the ID of a sub-account of this account.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.accountId The ID of the account that manages the
+     *     order. This cannot be a multi-client account.
+     * @param {string=} params.contactEmail The email of the inventory
+     *     verification contact.
+     * @param {string=} params.contactName The name of the inventory
+     *     verification contact.
+     * @param {string=} params.country The country for which inventory
+     *     verification is requested.
+     * @param {string=} params.language The language for which inventory
+     *     verification is requested.
+     * @param {string} params.merchantId The ID of the managing account. If this
+     *     parameter is not the same as accountId, then this account must be a
+     *     multi-client account and accountId must be the ID of a sub-account of
+     *     this account.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -8933,12 +9102,19 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.accountId The ID of the account for which to retrieve accessible Google My Business accounts.
-     * @param {string=} params.country The country for which the POS data provider is selected.
-     * @param {string} params.merchantId The ID of the managing account. If this parameter is not the same as accountId, then this account must be a multi-client account and accountId must be the ID of a sub-account of this account.
+     * @param {string} params.accountId The ID of the account for which to
+     *     retrieve accessible Google My Business accounts.
+     * @param {string=} params.country The country for which the POS data
+     *     provider is selected.
+     * @param {string} params.merchantId The ID of the managing account. If this
+     *     parameter is not the same as accountId, then this account must be a
+     *     multi-client account and accountId must be the ID of a sub-account of
+     *     this account.
      * @param {string=} params.posDataProviderId The ID of POS data provider.
-     * @param {string=} params.posExternalAccountId The account ID by which this merchant is known to the POS data provider.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.posExternalAccountId The account ID by which this
+     *     merchant is known to the POS data provider.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -9018,11 +9194,16 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.accountId The ID of the account for which to get or update LIA settings.
+     * @param {string} params.accountId The ID of the account for which to get
+     *     or update LIA settings.
      * @param {boolean=} params.dryRun Flag to run the request in dry-run mode.
-     * @param {string} params.merchantId The ID of the managing account. If this parameter is not the same as accountId, then this account must be a multi-client account and accountId must be the ID of a sub-account of this account.
+     * @param {string} params.merchantId The ID of the managing account. If this
+     *     parameter is not the same as accountId, then this account must be a
+     *     multi-client account and accountId must be the ID of a sub-account of
+     *     this account.
      * @param {().LiaSettings} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -9340,10 +9521,13 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.merchantId The ID of the account that manages the order. This cannot be a multi-client account.
+     * @param {string} params.merchantId The ID of the account that manages the
+     *     order. This cannot be a multi-client account.
      * @param {string} params.orderId The ID of the order.
-     * @param {().OrderinvoicesCreateChargeInvoiceRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {().OrderinvoicesCreateChargeInvoiceRequest} params.resource
+     *     Request body data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -9420,10 +9604,13 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.merchantId The ID of the account that manages the order. This cannot be a multi-client account.
+     * @param {string} params.merchantId The ID of the account that manages the
+     *     order. This cannot be a multi-client account.
      * @param {string} params.orderId The ID of the order.
-     * @param {().OrderinvoicesCreateRefundInvoiceRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {().OrderinvoicesCreateRefundInvoiceRequest} params.resource
+     *     Request body data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -9556,10 +9743,14 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.merchantId The ID of the account that manages the order. This cannot be a multi-client account.
-     * @param {string} params.orderId The ID of the order for for which payment authorization is happening.
-     * @param {().OrderpaymentsNotifyAuthApprovedRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.merchantId The ID of the account that manages the
+     *     order. This cannot be a multi-client account.
+     * @param {string} params.orderId The ID of the order for for which payment
+     *     authorization is happening.
+     * @param {().OrderpaymentsNotifyAuthApprovedRequest} params.resource
+     *     Request body data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -9635,10 +9826,14 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.merchantId The ID of the account that manages the order. This cannot be a multi-client account.
-     * @param {string} params.orderId The ID of the order for which payment authorization was declined.
-     * @param {().OrderpaymentsNotifyAuthDeclinedRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.merchantId The ID of the account that manages the
+     *     order. This cannot be a multi-client account.
+     * @param {string} params.orderId The ID of the order for which payment
+     *     authorization was declined.
+     * @param {().OrderpaymentsNotifyAuthDeclinedRequest} params.resource
+     *     Request body data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -9714,10 +9909,14 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.merchantId The ID of the account that manages the order. This cannot be a multi-client account.
-     * @param {string} params.orderId The ID of the order for which charge is happening.
-     * @param {().OrderpaymentsNotifyChargeRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.merchantId The ID of the account that manages the
+     *     order. This cannot be a multi-client account.
+     * @param {string} params.orderId The ID of the order for which charge is
+     *     happening.
+     * @param {().OrderpaymentsNotifyChargeRequest} params.resource Request body
+     *     data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -9797,10 +9996,14 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.merchantId The ID of the account that manages the order. This cannot be a multi-client account.
-     * @param {string} params.orderId The ID of the order for which charge is happening.
-     * @param {().OrderpaymentsNotifyRefundRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.merchantId The ID of the account that manages the
+     *     order. This cannot be a multi-client account.
+     * @param {string} params.orderId The ID of the order for which charge is
+     *     happening.
+     * @param {().OrderpaymentsNotifyRefundRequest} params.resource Request body
+     *     data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -9978,10 +10181,12 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.merchantId The ID of the account that manages the order. This cannot be a multi-client account.
+     * @param {string} params.merchantId The ID of the account that manages the
+     *     order. This cannot be a multi-client account.
      * @param {string} params.orderId The ID of the order.
      * @param {().OrdersAcknowledgeRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -10052,9 +10257,11 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.merchantId The ID of the account that manages the order. This cannot be a multi-client account.
+     * @param {string} params.merchantId The ID of the account that manages the
+     *     order. This cannot be a multi-client account.
      * @param {string} params.orderId The ID of the test order to modify.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -10129,10 +10336,12 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.merchantId The ID of the account that manages the order. This cannot be a multi-client account.
+     * @param {string} params.merchantId The ID of the account that manages the
+     *     order. This cannot be a multi-client account.
      * @param {string} params.orderId The ID of the order to cancel.
      * @param {().OrdersCancelRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -10198,10 +10407,12 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.merchantId The ID of the account that manages the order. This cannot be a multi-client account.
+     * @param {string} params.merchantId The ID of the account that manages the
+     *     order. This cannot be a multi-client account.
      * @param {string} params.orderId The ID of the order.
      * @param {().OrdersCancelLineItemRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -10276,9 +10487,12 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.merchantId The ID of the account that should manage the order. This cannot be a multi-client account.
-     * @param {().OrdersCreateTestOrderRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.merchantId The ID of the account that should
+     *     manage the order. This cannot be a multi-client account.
+     * @param {().OrdersCreateTestOrderRequest} params.resource Request body
+     *     data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -10353,7 +10567,8 @@ export namespace content_v2 {
      *
      * @param {object} params Parameters for request
      * @param {().OrdersCustomBatchRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -10422,9 +10637,11 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.merchantId The ID of the account that manages the order. This cannot be a multi-client account.
+     * @param {string} params.merchantId The ID of the account that manages the
+     *     order. This cannot be a multi-client account.
      * @param {string} params.orderId The ID of the order.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -10484,9 +10701,12 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.merchantId The ID of the account that manages the order. This cannot be a multi-client account.
-     * @param {string} params.merchantOrderId The merchant order id to be looked for.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.merchantId The ID of the account that manages the
+     *     order. This cannot be a multi-client account.
+     * @param {string} params.merchantOrderId The merchant order id to be looked
+     *     for.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -10567,9 +10787,13 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.merchantId The ID of the account that should manage the order. This cannot be a multi-client account.
+     * @param {string=} params.country The country of the template to retrieve.
+     *     Defaults to US.
+     * @param {string} params.merchantId The ID of the account that should
+     *     manage the order. This cannot be a multi-client account.
      * @param {string} params.templateName The name of the template to retrieve.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -10649,10 +10873,13 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.merchantId The ID of the account that manages the order. This cannot be a multi-client account.
+     * @param {string} params.merchantId The ID of the account that manages the
+     *     order. This cannot be a multi-client account.
      * @param {string} params.orderId The ID of the order.
-     * @param {().OrdersInStoreRefundLineItemRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {().OrdersInStoreRefundLineItemRequest} params.resource Request
+     *     body data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -10732,15 +10959,40 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {boolean=} params.acknowledged Obtains orders that match the acknowledgement status. When set to true, obtains orders that have been acknowledged. When false, obtains orders that have not been acknowledged. We recommend using this filter set to false, in conjunction with the acknowledge call, such that only un-acknowledged orders are returned.
-     * @param {integer=} params.maxResults The maximum number of orders to return in the response, used for paging. The default value is 25 orders per page, and the maximum allowed value is 250 orders per page. Known issue: All List calls will return all Orders without limit regardless of the value of this field.
-     * @param {string} params.merchantId The ID of the account that manages the order. This cannot be a multi-client account.
-     * @param {string=} params.orderBy The ordering of the returned list. The only supported value are placedDate desc and placedDate asc for now, which returns orders sorted by placement date. "placedDate desc" stands for listing orders by placement date, from oldest to most recent. "placedDate asc" stands for listing orders by placement date, from most recent to oldest. In future releases we'll support other sorting criteria.
-     * @param {string=} params.pageToken The token returned by the previous request.
-     * @param {string=} params.placedDateEnd Obtains orders placed before this date (exclusively), in ISO 8601 format.
-     * @param {string=} params.placedDateStart Obtains orders placed after this date (inclusively), in ISO 8601 format.
-     * @param {string=} params.statuses Obtains orders that match any of the specified statuses. Multiple values can be specified with comma separation. Additionally, please note that active is a shortcut for pendingShipment and partiallyShipped, and completed is a shortcut for shipped , partiallyDelivered, delivered, partiallyReturned, returned, and canceled.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {boolean=} params.acknowledged Obtains orders that match the
+     *     acknowledgement status. When set to true, obtains orders that have
+     *     been acknowledged. When false, obtains orders that have not been
+     *     acknowledged. We recommend using this filter set to false, in
+     *     conjunction with the acknowledge call, such that only un-acknowledged
+     *     orders are returned.
+     * @param {integer=} params.maxResults The maximum number of orders to
+     *     return in the response, used for paging. The default value is 25
+     *     orders per page, and the maximum allowed value is 250 orders per
+     *     page. Known issue: All List calls will return all Orders without
+     *     limit regardless of the value of this field.
+     * @param {string} params.merchantId The ID of the account that manages the
+     *     order. This cannot be a multi-client account.
+     * @param {string=} params.orderBy The ordering of the returned list. The
+     *     only supported value are placedDate desc and placedDate asc for now,
+     *     which returns orders sorted by placement date. "placedDate desc"
+     *     stands for listing orders by placement date, from oldest to most
+     *     recent. "placedDate asc" stands for listing orders by placement date,
+     *     from most recent to oldest. In future releases we'll support other
+     *     sorting criteria.
+     * @param {string=} params.pageToken The token returned by the previous
+     *     request.
+     * @param {string=} params.placedDateEnd Obtains orders placed before this
+     *     date (exclusively), in ISO 8601 format.
+     * @param {string=} params.placedDateStart Obtains orders placed after this
+     *     date (inclusively), in ISO 8601 format.
+     * @param {string=} params.statuses Obtains orders that match any of the
+     *     specified statuses. Multiple values can be specified with comma
+     *     separation. Additionally, please note that active is a shortcut for
+     *     pendingShipment and partiallyShipped, and completed is a shortcut for
+     *     shipped , partiallyDelivered, delivered, partiallyReturned, returned,
+     *     and canceled.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -10804,10 +11056,12 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.merchantId The ID of the account that manages the order. This cannot be a multi-client account.
+     * @param {string} params.merchantId The ID of the account that manages the
+     *     order. This cannot be a multi-client account.
      * @param {string} params.orderId The ID of the order to refund.
      * @param {().OrdersRefundRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -10873,10 +11127,13 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.merchantId The ID of the account that manages the order. This cannot be a multi-client account.
+     * @param {string} params.merchantId The ID of the account that manages the
+     *     order. This cannot be a multi-client account.
      * @param {string} params.orderId The ID of the order.
-     * @param {().OrdersRejectReturnLineItemRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {().OrdersRejectReturnLineItemRequest} params.resource Request
+     *     body data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -10956,10 +11213,12 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.merchantId The ID of the account that manages the order. This cannot be a multi-client account.
+     * @param {string} params.merchantId The ID of the account that manages the
+     *     order. This cannot be a multi-client account.
      * @param {string} params.orderId The ID of the order.
      * @param {().OrdersReturnLineItemRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -11035,10 +11294,13 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.merchantId The ID of the account that manages the order. This cannot be a multi-client account.
+     * @param {string} params.merchantId The ID of the account that manages the
+     *     order. This cannot be a multi-client account.
      * @param {string} params.orderId The ID of the order.
-     * @param {().OrdersReturnRefundLineItemRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {().OrdersReturnRefundLineItemRequest} params.resource Request
+     *     body data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -11118,10 +11380,13 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.merchantId The ID of the account that manages the order. This cannot be a multi-client account.
+     * @param {string} params.merchantId The ID of the account that manages the
+     *     order. This cannot be a multi-client account.
      * @param {string} params.orderId The ID of the order.
-     * @param {().OrdersSetLineItemMetadataRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {().OrdersSetLineItemMetadataRequest} params.resource Request body
+     *     data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -11201,10 +11466,12 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.merchantId The ID of the account that manages the order. This cannot be a multi-client account.
+     * @param {string} params.merchantId The ID of the account that manages the
+     *     order. This cannot be a multi-client account.
      * @param {string} params.orderId The ID of the order.
      * @param {().OrdersShipLineItemsRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -11277,10 +11544,13 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.merchantId The ID of the account that manages the order. This cannot be a multi-client account.
+     * @param {string} params.merchantId The ID of the account that manages the
+     *     order. This cannot be a multi-client account.
      * @param {string} params.orderId The ID of the order.
-     * @param {().OrdersUpdateLineItemShippingDetailsRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {().OrdersUpdateLineItemShippingDetailsRequest} params.resource
+     *     Request body data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -11358,10 +11628,13 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.merchantId The ID of the account that manages the order. This cannot be a multi-client account.
+     * @param {string} params.merchantId The ID of the account that manages the
+     *     order. This cannot be a multi-client account.
      * @param {string} params.orderId The ID of the order.
-     * @param {().OrdersUpdateMerchantOrderIdRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {().OrdersUpdateMerchantOrderIdRequest} params.resource Request
+     *     body data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -11441,10 +11714,12 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.merchantId The ID of the account that manages the order. This cannot be a multi-client account.
+     * @param {string} params.merchantId The ID of the account that manages the
+     *     order. This cannot be a multi-client account.
      * @param {string} params.orderId The ID of the order.
      * @param {().OrdersUpdateShipmentRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -11658,6 +11933,10 @@ export namespace content_v2 {
      */
     auth?: string|OAuth2Client|JWT|Compute|UserRefreshClient;
 
+    /**
+     * The country of the template to retrieve. Defaults to US.
+     */
+    country?: string;
     /**
      * The ID of the account that should manage the order. This cannot be a
      * multi-client account.
@@ -11957,7 +12236,8 @@ export namespace content_v2 {
      * @param {object} params Parameters for request
      * @param {boolean=} params.dryRun Flag to run the request in dry-run mode.
      * @param {().PosCustomBatchRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -12025,10 +12305,13 @@ export namespace content_v2 {
      *
      * @param {object} params Parameters for request
      * @param {boolean=} params.dryRun Flag to run the request in dry-run mode.
-     * @param {string} params.merchantId The ID of the POS or inventory data provider.
-     * @param {string} params.storeCode A store code that is unique per merchant.
+     * @param {string} params.merchantId The ID of the POS or inventory data
+     *     provider.
+     * @param {string} params.storeCode A store code that is unique per
+     *     merchant.
      * @param {string} params.targetMerchantId The ID of the target merchant.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -12092,10 +12375,13 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.merchantId The ID of the POS or inventory data provider.
-     * @param {string} params.storeCode A store code that is unique per merchant.
+     * @param {string} params.merchantId The ID of the POS or inventory data
+     *     provider.
+     * @param {string} params.storeCode A store code that is unique per
+     *     merchant.
      * @param {string} params.targetMerchantId The ID of the target merchant.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -12158,10 +12444,12 @@ export namespace content_v2 {
      *
      * @param {object} params Parameters for request
      * @param {boolean=} params.dryRun Flag to run the request in dry-run mode.
-     * @param {string} params.merchantId The ID of the POS or inventory data provider.
+     * @param {string} params.merchantId The ID of the POS or inventory data
+     *     provider.
      * @param {string} params.targetMerchantId The ID of the target merchant.
      * @param {().PosStore} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -12226,10 +12514,12 @@ export namespace content_v2 {
      *
      * @param {object} params Parameters for request
      * @param {boolean=} params.dryRun Flag to run the request in dry-run mode.
-     * @param {string} params.merchantId The ID of the POS or inventory data provider.
+     * @param {string} params.merchantId The ID of the POS or inventory data
+     *     provider.
      * @param {string} params.targetMerchantId The ID of the target merchant.
      * @param {().PosInventoryRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -12296,9 +12586,11 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.merchantId The ID of the POS or inventory data provider.
+     * @param {string} params.merchantId The ID of the POS or inventory data
+     *     provider.
      * @param {string} params.targetMerchantId The ID of the target merchant.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -12364,10 +12656,12 @@ export namespace content_v2 {
      *
      * @param {object} params Parameters for request
      * @param {boolean=} params.dryRun Flag to run the request in dry-run mode.
-     * @param {string} params.merchantId The ID of the POS or inventory data provider.
+     * @param {string} params.merchantId The ID of the POS or inventory data
+     *     provider.
      * @param {string} params.targetMerchantId The ID of the target merchant.
      * @param {().PosSaleRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -12594,7 +12888,8 @@ export namespace content_v2 {
      * @param {object} params Parameters for request
      * @param {boolean=} params.dryRun Flag to run the request in dry-run mode.
      * @param {().ProductsCustomBatchRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -12667,9 +12962,11 @@ export namespace content_v2 {
      *
      * @param {object} params Parameters for request
      * @param {boolean=} params.dryRun Flag to run the request in dry-run mode.
-     * @param {string} params.merchantId The ID of the account that contains the product. This account cannot be a multi-client account.
+     * @param {string} params.merchantId The ID of the account that contains the
+     *     product. This account cannot be a multi-client account.
      * @param {string} params.productId The REST id of the product.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -12731,9 +13028,11 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.merchantId The ID of the account that contains the product. This account cannot be a multi-client account.
+     * @param {string} params.merchantId The ID of the account that contains the
+     *     product. This account cannot be a multi-client account.
      * @param {string} params.productId The REST id of the product.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -12796,9 +13095,11 @@ export namespace content_v2 {
      *
      * @param {object} params Parameters for request
      * @param {boolean=} params.dryRun Flag to run the request in dry-run mode.
-     * @param {string} params.merchantId The ID of the account that contains the product. This account cannot be a multi-client account.
+     * @param {string} params.merchantId The ID of the account that contains the
+     *     product. This account cannot be a multi-client account.
      * @param {().Product} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -12861,11 +13162,17 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {boolean=} params.includeInvalidInsertedItems Flag to include the invalid inserted items in the result of the list request. By default the invalid items are not shown (the default value is false).
-     * @param {integer=} params.maxResults The maximum number of products to return in the response, used for paging.
-     * @param {string} params.merchantId The ID of the account that contains the products. This account cannot be a multi-client account.
-     * @param {string=} params.pageToken The token returned by the previous request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {boolean=} params.includeInvalidInsertedItems Flag to include the
+     *     invalid inserted items in the result of the list request. By default
+     *     the invalid items are not shown (the default value is false).
+     * @param {integer=} params.maxResults The maximum number of products to
+     *     return in the response, used for paging.
+     * @param {string} params.merchantId The ID of the account that contains the
+     *     products. This account cannot be a multi-client account.
+     * @param {string=} params.pageToken The token returned by the previous
+     *     request.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -13044,9 +13351,12 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {boolean=} params.includeAttributes Flag to include full product data in the results of this request. The default value is false.
-     * @param {().ProductstatusesCustomBatchRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {boolean=} params.includeAttributes Flag to include full product
+     *     data in the results of this request. The default value is false.
+     * @param {().ProductstatusesCustomBatchRequest} params.resource Request
+     *     body data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -13124,11 +13434,16 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.destinations If set, only issues for the specified destinations are returned, otherwise only issues for the Shopping destination.
-     * @param {boolean=} params.includeAttributes Flag to include full product data in the result of this get request. The default value is false.
-     * @param {string} params.merchantId The ID of the account that contains the product. This account cannot be a multi-client account.
+     * @param {string=} params.destinations If set, only issues for the
+     *     specified destinations are returned, otherwise only issues for the
+     *     Shopping destination.
+     * @param {boolean=} params.includeAttributes Flag to include full product
+     *     data in the result of this get request. The default value is false.
+     * @param {string} params.merchantId The ID of the account that contains the
+     *     product. This account cannot be a multi-client account.
      * @param {string} params.productId The REST id of the product.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -13191,13 +13506,22 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.destinations If set, only issues for the specified destinations are returned, otherwise only issues for the Shopping destination.
-     * @param {boolean=} params.includeAttributes Flag to include full product data in the results of the list request. The default value is false.
-     * @param {boolean=} params.includeInvalidInsertedItems Flag to include the invalid inserted items in the result of the list request. By default the invalid items are not shown (the default value is false).
-     * @param {integer=} params.maxResults The maximum number of product statuses to return in the response, used for paging.
-     * @param {string} params.merchantId The ID of the account that contains the products. This account cannot be a multi-client account.
-     * @param {string=} params.pageToken The token returned by the previous request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.destinations If set, only issues for the
+     *     specified destinations are returned, otherwise only issues for the
+     *     Shopping destination.
+     * @param {boolean=} params.includeAttributes Flag to include full product
+     *     data in the results of the list request. The default value is false.
+     * @param {boolean=} params.includeInvalidInsertedItems Flag to include the
+     *     invalid inserted items in the result of the list request. By default
+     *     the invalid items are not shown (the default value is false).
+     * @param {integer=} params.maxResults The maximum number of product
+     *     statuses to return in the response, used for paging.
+     * @param {string} params.merchantId The ID of the account that contains the
+     *     products. This account cannot be a multi-client account.
+     * @param {string=} params.pageToken The token returned by the previous
+     *     request.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -13364,8 +13688,10 @@ export namespace content_v2 {
      *
      * @param {object} params Parameters for request
      * @param {boolean=} params.dryRun Flag to run the request in dry-run mode.
-     * @param {().ShippingsettingsCustomBatchRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {().ShippingsettingsCustomBatchRequest} params.resource Request
+     *     body data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -13443,9 +13769,14 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.accountId The ID of the account for which to get/update shipping settings.
-     * @param {string} params.merchantId The ID of the managing account. If this parameter is not the same as accountId, then this account must be a multi-client account and accountId must be the ID of a sub-account of this account.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.accountId The ID of the account for which to
+     *     get/update shipping settings.
+     * @param {string} params.merchantId The ID of the managing account. If this
+     *     parameter is not the same as accountId, then this account must be a
+     *     multi-client account and accountId must be the ID of a sub-account of
+     *     this account.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -13508,8 +13839,10 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.merchantId The ID of the account for which to retrieve the supported carriers.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.merchantId The ID of the account for which to
+     *     retrieve the supported carriers.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -13586,8 +13919,10 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.merchantId The ID of the account for which to retrieve the supported holidays.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.merchantId The ID of the account for which to
+     *     retrieve the supported holidays.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -13665,10 +14000,14 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {integer=} params.maxResults The maximum number of shipping settings to return in the response, used for paging.
-     * @param {string} params.merchantId The ID of the managing account. This must be a multi-client account.
-     * @param {string=} params.pageToken The token returned by the previous request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {integer=} params.maxResults The maximum number of shipping
+     *     settings to return in the response, used for paging.
+     * @param {string} params.merchantId The ID of the managing account. This
+     *     must be a multi-client account.
+     * @param {string=} params.pageToken The token returned by the previous
+     *     request.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -13742,11 +14081,16 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.accountId The ID of the account for which to get/update shipping settings.
+     * @param {string} params.accountId The ID of the account for which to
+     *     get/update shipping settings.
      * @param {boolean=} params.dryRun Flag to run the request in dry-run mode.
-     * @param {string} params.merchantId The ID of the managing account. If this parameter is not the same as accountId, then this account must be a multi-client account and accountId must be the ID of a sub-account of this account.
+     * @param {string} params.merchantId The ID of the managing account. If this
+     *     parameter is not the same as accountId, then this account must be a
+     *     multi-client account and accountId must be the ID of a sub-account of
+     *     this account.
      * @param {().ShippingSettings} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -13813,11 +14157,16 @@ export namespace content_v2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.accountId The ID of the account for which to get/update shipping settings.
+     * @param {string} params.accountId The ID of the account for which to
+     *     get/update shipping settings.
      * @param {boolean=} params.dryRun Flag to run the request in dry-run mode.
-     * @param {string} params.merchantId The ID of the managing account. If this parameter is not the same as accountId, then this account must be a multi-client account and accountId must be the ID of a sub-account of this account.
+     * @param {string} params.merchantId The ID of the managing account. If this
+     *     parameter is not the same as accountId, then this account must be a
+     *     multi-client account and accountId must be the ID of a sub-account of
+     *     this account.
      * @param {().ShippingSettings} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */

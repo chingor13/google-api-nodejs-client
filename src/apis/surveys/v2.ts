@@ -426,7 +426,8 @@ export namespace surveys_v2 {
      * @param {object} params Parameters for request
      * @param {string} params.surveyUrlId External URL ID for the survey.
      * @param {().ResultsGetRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -518,7 +519,8 @@ export namespace surveys_v2 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.surveyUrlId External URL ID for the survey.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -584,7 +586,8 @@ export namespace surveys_v2 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.surveyUrlId External URL ID for the survey.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -645,7 +648,8 @@ export namespace surveys_v2 {
      *
      * @param {object} params Parameters for request
      * @param {().Survey} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -711,7 +715,8 @@ export namespace surveys_v2 {
      * @param {integer=} params.maxResults
      * @param {integer=} params.startIndex
      * @param {string=} params.token
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -777,7 +782,8 @@ export namespace surveys_v2 {
      * @param {object} params Parameters for request
      * @param {string} params.resourceId
      * @param {().SurveysStartRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -843,7 +849,8 @@ export namespace surveys_v2 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.resourceId
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -910,7 +917,8 @@ export namespace surveys_v2 {
      * @param {object} params Parameters for request
      * @param {string} params.surveyUrlId External URL ID for the survey.
      * @param {().Survey} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */

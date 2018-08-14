@@ -1151,7 +1151,8 @@ export namespace spectrum_v1explorer {
      *
      * @param {object} params Parameters for request
      * @param {().PawsGetSpectrumRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -1220,7 +1221,8 @@ export namespace spectrum_v1explorer {
      *
      * @param {object} params Parameters for request
      * @param {().PawsGetSpectrumBatchRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -1296,7 +1298,8 @@ export namespace spectrum_v1explorer {
      *
      * @param {object} params Parameters for request
      * @param {().PawsInitRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -1363,8 +1366,10 @@ export namespace spectrum_v1explorer {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {().PawsNotifySpectrumUseRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {().PawsNotifySpectrumUseRequest} params.resource Request body
+     *     data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -1440,7 +1445,8 @@ export namespace spectrum_v1explorer {
      *
      * @param {object} params Parameters for request
      * @param {().PawsRegisterRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -1509,7 +1515,8 @@ export namespace spectrum_v1explorer {
      *
      * @param {object} params Parameters for request
      * @param {().PawsVerifyDeviceRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */

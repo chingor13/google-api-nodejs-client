@@ -9488,12 +9488,44 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -9629,10 +9661,12 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.acceleratorType Name of the accelerator type to return.
+     * @param {string} params.acceleratorType Name of the accelerator type to
+     *     return.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.zone The name of the zone for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -9766,13 +9800,45 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.zone The name of the zone for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -10052,12 +10118,44 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -10188,8 +10286,19 @@ export namespace compute_v1 {
      * @param {string} params.address Name of the address resource to delete.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -10317,7 +10426,8 @@ export namespace compute_v1 {
      * @param {string} params.address Name of the address resource to return.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -10442,9 +10552,20 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().Address} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -10579,13 +10700,45 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -10927,12 +11080,44 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -11062,9 +11247,20 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.autoscaler Name of the autoscaler to delete.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {string} params.zone Name of the zone for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -11195,7 +11391,8 @@ export namespace compute_v1 {
      * @param {string} params.autoscaler Name of the autoscaler to return.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.zone Name of the zone for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -11320,10 +11517,21 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {string} params.zone Name of the zone for this request.
      * @param {().Autoscaler} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -11460,13 +11668,45 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.zone Name of the zone for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -11597,10 +11837,21 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string=} params.autoscaler Name of the autoscaler to patch.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {string} params.zone Name of the zone for this request.
      * @param {().Autoscaler} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -11731,10 +11982,21 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string=} params.autoscaler Name of the autoscaler to update.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {string} params.zone Name of the zone for this request.
      * @param {().Autoscaler} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -12086,11 +12348,24 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.backendBucket Name of the BackendBucket resource to which the Signed URL Key should be added. The name should conform to RFC1035.
+     * @param {string} params.backendBucket Name of the BackendBucket resource
+     *     to which the Signed URL Key should be added. The name should conform
+     *     to RFC1035.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().SignedUrlKey} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -12215,10 +12490,22 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.backendBucket Name of the BackendBucket resource to delete.
+     * @param {string} params.backendBucket Name of the BackendBucket resource
+     *     to delete.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -12287,11 +12574,24 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.backendBucket Name of the BackendBucket resource to which the Signed URL Key should be added. The name should conform to RFC1035.
+     * @param {string} params.backendBucket Name of the BackendBucket resource
+     *     to which the Signed URL Key should be added. The name should conform
+     *     to RFC1035.
      * @param {string} params.keyName The name of the Signed URL Key to delete.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -12417,9 +12717,11 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.backendBucket Name of the BackendBucket resource to return.
+     * @param {string} params.backendBucket Name of the BackendBucket resource
+     *     to return.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -12542,9 +12844,20 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().BackendBucket} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -12678,12 +12991,44 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -12814,11 +13159,23 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.backendBucket Name of the BackendBucket resource to patch.
+     * @param {string} params.backendBucket Name of the BackendBucket resource
+     *     to patch.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().BackendBucket} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -12950,11 +13307,23 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.backendBucket Name of the BackendBucket resource to update.
+     * @param {string} params.backendBucket Name of the BackendBucket resource
+     *     to update.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().BackendBucket} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -13296,11 +13665,24 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.backendService Name of the BackendService resource to which the Signed URL Key should be added. The name should conform to RFC1035.
+     * @param {string} params.backendService Name of the BackendService resource
+     *     to which the Signed URL Key should be added. The name should conform
+     *     to RFC1035.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().SignedUrlKey} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -13436,12 +13818,44 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Name of the project scoping this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -13573,10 +13987,22 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.backendService Name of the BackendService resource to delete.
+     * @param {string} params.backendService Name of the BackendService resource
+     *     to delete.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -13645,11 +14071,24 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.backendService Name of the BackendService resource to which the Signed URL Key should be added. The name should conform to RFC1035.
+     * @param {string} params.backendService Name of the BackendService resource
+     *     to which the Signed URL Key should be added. The name should conform
+     *     to RFC1035.
      * @param {string} params.keyName The name of the Signed URL Key to delete.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -13775,9 +14214,11 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.backendService Name of the BackendService resource to return.
+     * @param {string} params.backendService Name of the BackendService resource
+     *     to return.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -13901,10 +14342,12 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.backendService Name of the BackendService resource to which the queried instance belongs.
+     * @param {string} params.backendService Name of the BackendService resource
+     *     to which the queried instance belongs.
      * @param {string} params.project
      * @param {().ResourceGroupReference} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -14037,9 +14480,20 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().BackendService} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -14173,12 +14627,44 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -14312,11 +14798,23 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.backendService Name of the BackendService resource to patch.
+     * @param {string} params.backendService Name of the BackendService resource
+     *     to patch.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().BackendService} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -14450,11 +14948,23 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.backendService Name of the BackendService resource to update.
+     * @param {string} params.backendService Name of the BackendService resource
+     *     to update.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().BackendService} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -14937,12 +15447,44 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -15075,10 +15617,21 @@ export namespace compute_v1 {
      * @param {string} params.disk Name of the persistent disk to snapshot.
      * @param {boolean=} params.guestFlush
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {string} params.zone The name of the zone for this request.
      * @param {().Snapshot} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -15210,9 +15763,20 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.disk Name of the persistent disk to delete.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {string} params.zone The name of the zone for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -15340,7 +15904,8 @@ export namespace compute_v1 {
      * @param {string} params.disk Name of the persistent disk to return.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.zone The name of the zone for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -15466,11 +16031,23 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {string=} params.sourceImage Optional. Source image to restore onto a disk.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.sourceImage Optional. Source image to restore
+     *     onto a disk.
      * @param {string} params.zone The name of the zone for this request.
      * @param {().Disk} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -15605,13 +16182,45 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.zone The name of the zone for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -15741,10 +16350,21 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.disk The name of the persistent disk.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {string} params.zone The name of the zone for this request.
      * @param {().DisksResizeRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -15875,11 +16495,22 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {string} params.resource_ Name of the resource for this request.
      * @param {string} params.zone The name of the zone for this request.
      * @param {().ZoneSetLabelsRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -16342,12 +16973,44 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -16479,7 +17142,8 @@ export namespace compute_v1 {
      * @param {string} params.diskType Name of the disk type to return.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.zone The name of the zone for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -16610,13 +17274,45 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.zone The name of the zone for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -16884,8 +17580,19 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.firewall Name of the firewall rule to delete.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -17009,7 +17716,8 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.firewall Name of the firewall rule to return.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -17130,9 +17838,20 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().Firewall} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -17263,12 +17982,44 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -17398,9 +18149,20 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.firewall Name of the firewall rule to patch.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().Firewall} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -17532,9 +18294,20 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.firewall Name of the firewall rule to update.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().Firewall} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -17873,12 +18646,44 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -18013,11 +18818,23 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.forwardingRule Name of the ForwardingRule resource to delete.
+     * @param {string} params.forwardingRule Name of the ForwardingRule resource
+     *     to delete.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region scoping this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -18145,10 +18962,12 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.forwardingRule Name of the ForwardingRule resource to return.
+     * @param {string} params.forwardingRule Name of the ForwardingRule resource
+     *     to return.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region scoping this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -18275,9 +19094,20 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region scoping this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().ForwardingRule} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -18415,13 +19245,45 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region scoping this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -18554,12 +19416,24 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.forwardingRule Name of the ForwardingRule resource in which target is to be set.
+     * @param {string} params.forwardingRule Name of the ForwardingRule resource
+     *     in which target is to be set.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region scoping this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().TargetReference} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -18932,8 +19806,19 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.address Name of the address resource to delete.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -19059,7 +19944,8 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.address Name of the address resource to return.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -19180,9 +20066,20 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().Address} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -19314,12 +20211,44 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -19582,10 +20511,22 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.forwardingRule Name of the ForwardingRule resource to delete.
+     * @param {string} params.forwardingRule Name of the ForwardingRule resource
+     *     to delete.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -19711,9 +20652,11 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.forwardingRule Name of the ForwardingRule resource to return.
+     * @param {string} params.forwardingRule Name of the ForwardingRule resource
+     *     to return.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -19836,9 +20779,20 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().ForwardingRule} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -19972,12 +20926,44 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -20104,11 +21090,23 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.forwardingRule Name of the ForwardingRule resource in which target is to be set.
+     * @param {string} params.forwardingRule Name of the ForwardingRule resource
+     *     in which target is to be set.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().TargetReference} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -20416,12 +21414,44 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -20543,9 +21573,11 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.operation Name of the Operations resource to delete.
+     * @param {string} params.operation Name of the Operations resource to
+     *     delete.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -20668,9 +21700,11 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.operation Name of the Operations resource to return.
+     * @param {string} params.operation Name of the Operations resource to
+     *     return.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -20801,12 +21835,44 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -21081,10 +22147,22 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.healthCheck Name of the HealthCheck resource to delete.
+     * @param {string} params.healthCheck Name of the HealthCheck resource to
+     *     delete.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -21209,9 +22287,11 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.healthCheck Name of the HealthCheck resource to return.
+     * @param {string} params.healthCheck Name of the HealthCheck resource to
+     *     return.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -21333,9 +22413,20 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().HealthCheck} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -21469,12 +22560,44 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -21604,11 +22727,23 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.healthCheck Name of the HealthCheck resource to patch.
+     * @param {string} params.healthCheck Name of the HealthCheck resource to
+     *     patch.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().HealthCheck} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -21738,11 +22873,23 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.healthCheck Name of the HealthCheck resource to update.
+     * @param {string} params.healthCheck Name of the HealthCheck resource to
+     *     update.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().HealthCheck} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -22073,10 +23220,22 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.httpHealthCheck Name of the HttpHealthCheck resource to delete.
+     * @param {string} params.httpHealthCheck Name of the HttpHealthCheck
+     *     resource to delete.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -22202,9 +23361,11 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.httpHealthCheck Name of the HttpHealthCheck resource to return.
+     * @param {string} params.httpHealthCheck Name of the HttpHealthCheck
+     *     resource to return.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -22327,9 +23488,20 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().HttpHealthCheck} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -22463,12 +23635,44 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -22600,11 +23804,23 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.httpHealthCheck Name of the HttpHealthCheck resource to patch.
+     * @param {string} params.httpHealthCheck Name of the HttpHealthCheck
+     *     resource to patch.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().HttpHealthCheck} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -22736,11 +23952,23 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.httpHealthCheck Name of the HttpHealthCheck resource to update.
+     * @param {string} params.httpHealthCheck Name of the HttpHealthCheck
+     *     resource to update.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().HttpHealthCheck} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -23071,10 +24299,22 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.httpsHealthCheck Name of the HttpsHealthCheck resource to delete.
+     * @param {string} params.httpsHealthCheck Name of the HttpsHealthCheck
+     *     resource to delete.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -23200,9 +24440,11 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.httpsHealthCheck Name of the HttpsHealthCheck resource to return.
+     * @param {string} params.httpsHealthCheck Name of the HttpsHealthCheck
+     *     resource to return.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -23325,9 +24567,20 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().HttpsHealthCheck} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -23461,12 +24714,44 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -23599,11 +24884,23 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.httpsHealthCheck Name of the HttpsHealthCheck resource to patch.
+     * @param {string} params.httpsHealthCheck Name of the HttpsHealthCheck
+     *     resource to patch.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().HttpsHealthCheck} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -23735,11 +25032,23 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.httpsHealthCheck Name of the HttpsHealthCheck resource to update.
+     * @param {string} params.httpsHealthCheck Name of the HttpsHealthCheck
+     *     resource to update.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().HttpsHealthCheck} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -24071,8 +25380,19 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.image Name of the image resource to delete.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -24200,9 +25520,20 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.image Image name.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().DeprecationStatus} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -24328,7 +25659,8 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.image Name of the image resource to return.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -24448,7 +25780,8 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.family Name of the image family to search for.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -24575,9 +25908,20 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {boolean=} params.forceCreate Force image creation if true.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().Image} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -24712,12 +26056,44 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -24845,7 +26221,8 @@ export namespace compute_v1 {
      * @param {string} params.project Project ID for this request.
      * @param {string} params.resource_ Name of the resource for this request.
      * @param {().GlobalSetLabelsRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -25198,12 +26575,26 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.instanceGroupManager The name of the managed instance group.
+     * @param {string} params.instanceGroupManager The name of the managed
+     *     instance group.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {string} params.zone The name of the zone where the managed instance group is located.
-     * @param {().InstanceGroupManagersAbandonInstancesRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {string} params.zone The name of the zone where the managed
+     *     instance group is located.
+     * @param {().InstanceGroupManagersAbandonInstancesRequest} params.resource
+     *     Request body data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -25340,12 +26731,44 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -25487,11 +26910,24 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.instanceGroupManager The name of the managed instance group to delete.
+     * @param {string} params.instanceGroupManager The name of the managed
+     *     instance group to delete.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {string} params.zone The name of the zone where the managed instance group is located.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {string} params.zone The name of the zone where the managed
+     *     instance group is located.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -25631,12 +27067,26 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.instanceGroupManager The name of the managed instance group.
+     * @param {string} params.instanceGroupManager The name of the managed
+     *     instance group.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {string} params.zone The name of the zone where the managed instance group is located.
-     * @param {().InstanceGroupManagersDeleteInstancesRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {string} params.zone The name of the zone where the managed
+     *     instance group is located.
+     * @param {().InstanceGroupManagersDeleteInstancesRequest} params.resource
+     *     Request body data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -25767,10 +27217,13 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.instanceGroupManager The name of the managed instance group.
+     * @param {string} params.instanceGroupManager The name of the managed
+     *     instance group.
      * @param {string} params.project Project ID for this request.
-     * @param {string} params.zone The name of the zone where the managed instance group is located.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.zone The name of the zone where the managed
+     *     instance group is located.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -25904,10 +27357,22 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {string} params.zone The name of the zone where you want to create the managed instance group.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {string} params.zone The name of the zone where you want to create
+     *     the managed instance group.
      * @param {().InstanceGroupManager} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -26045,13 +27510,46 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {string} params.zone The name of the zone where the managed instance group is located.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.zone The name of the zone where the managed
+     *     instance group is located.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -26183,14 +27681,48 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {string} params.instanceGroupManager The name of the managed instance group.
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.order_by Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {string} params.instanceGroupManager The name of the managed
+     *     instance group.
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.order_by Sorts list results by a certain order.
+     *     By default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {string} params.zone The name of the zone where the managed instance group is located.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.zone The name of the zone where the managed
+     *     instance group is located.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -26343,12 +27875,26 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.instanceGroupManager The name of the managed instance group.
+     * @param {string} params.instanceGroupManager The name of the managed
+     *     instance group.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {string} params.zone The name of the zone where the managed instance group is located.
-     * @param {().InstanceGroupManagersRecreateInstancesRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {string} params.zone The name of the zone where the managed
+     *     instance group is located.
+     * @param {().InstanceGroupManagersRecreateInstancesRequest} params.resource
+     *     Request body data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -26493,12 +28039,28 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.instanceGroupManager The name of the managed instance group.
+     * @param {string} params.instanceGroupManager The name of the managed
+     *     instance group.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {integer} params.size The number of running instances that the managed instance group should maintain at any given time. The group automatically adds or removes instances to maintain the number of instances specified by this parameter.
-     * @param {string} params.zone The name of the zone where the managed instance group is located.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {integer} params.size The number of running instances that the
+     *     managed instance group should maintain at any given time. The group
+     *     automatically adds or removes instances to maintain the number of
+     *     instances specified by this parameter.
+     * @param {string} params.zone The name of the zone where the managed
+     *     instance group is located.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -26630,12 +28192,26 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.instanceGroupManager The name of the managed instance group.
+     * @param {string} params.instanceGroupManager The name of the managed
+     *     instance group.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {string} params.zone The name of the zone where the managed instance group is located.
-     * @param {().InstanceGroupManagersSetInstanceTemplateRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {string} params.zone The name of the zone where the managed
+     *     instance group is located.
+     * @param {().InstanceGroupManagersSetInstanceTemplateRequest}
+     *     params.resource Request body data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -26772,12 +28348,26 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.instanceGroupManager The name of the managed instance group.
+     * @param {string} params.instanceGroupManager The name of the managed
+     *     instance group.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {string} params.zone The name of the zone where the managed instance group is located.
-     * @param {().InstanceGroupManagersSetTargetPoolsRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {string} params.zone The name of the zone where the managed
+     *     instance group is located.
+     * @param {().InstanceGroupManagersSetTargetPoolsRequest} params.resource
+     *     Request body data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -27407,12 +28997,26 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.instanceGroup The name of the instance group where you are adding instances.
+     * @param {string} params.instanceGroup The name of the instance group where
+     *     you are adding instances.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {string} params.zone The name of the zone where the instance group is located.
-     * @param {().InstanceGroupsAddInstancesRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {string} params.zone The name of the zone where the instance group
+     *     is located.
+     * @param {().InstanceGroupsAddInstancesRequest} params.resource Request
+     *     body data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -27547,12 +29151,44 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -27688,11 +29324,24 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.instanceGroup The name of the instance group to delete.
+     * @param {string} params.instanceGroup The name of the instance group to
+     *     delete.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {string} params.zone The name of the zone where the instance group is located.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {string} params.zone The name of the zone where the instance group
+     *     is located.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -27823,8 +29472,10 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.instanceGroup The name of the instance group.
      * @param {string} params.project Project ID for this request.
-     * @param {string} params.zone The name of the zone where the instance group is located.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.zone The name of the zone where the instance group
+     *     is located.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -27950,10 +29601,22 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {string} params.zone The name of the zone where you want to create the instance group.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {string} params.zone The name of the zone where you want to create
+     *     the instance group.
      * @param {().InstanceGroup} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -28091,13 +29754,46 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {string} params.zone The name of the zone where the instance group is located.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.zone The name of the zone where the instance group
+     *     is located.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -28241,15 +29937,50 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {string} params.instanceGroup The name of the instance group from which you want to generate a list of included instances.
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {string} params.instanceGroup The name of the instance group from
+     *     which you want to generate a list of included instances.
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {string} params.zone The name of the zone where the instance group is located.
-     * @param {().InstanceGroupsListInstancesRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.zone The name of the zone where the instance group
+     *     is located.
+     * @param {().InstanceGroupsListInstancesRequest} params.resource Request
+     *     body data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -28363,8 +30094,8 @@ export namespace compute_v1 {
      *     auth: authClient,
      *   };
      *
-     *   compute.instanceGroups.removeInstances(request, function(err, response)
-     * { if (err) { console.error(err); return;
+     *   compute.instanceGroups.removeInstances(request, function(err,
+     * response) { if (err) { console.error(err); return;
      *     }
      *
      *     // TODO: Change code below to process the `response` object:
@@ -28390,12 +30121,26 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.instanceGroup The name of the instance group where the specified instances will be removed.
+     * @param {string} params.instanceGroup The name of the instance group where
+     *     the specified instances will be removed.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {string} params.zone The name of the zone where the instance group is located.
-     * @param {().InstanceGroupsRemoveInstancesRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {string} params.zone The name of the zone where the instance group
+     *     is located.
+     * @param {().InstanceGroupsRemoveInstancesRequest} params.resource Request
+     *     body data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -28527,12 +30272,26 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.instanceGroup The name of the instance group where the named ports are updated.
+     * @param {string} params.instanceGroup The name of the instance group where
+     *     the named ports are updated.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {string} params.zone The name of the zone where the instance group is located.
-     * @param {().InstanceGroupsSetNamedPortsRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {string} params.zone The name of the zone where the instance group
+     *     is located.
+     * @param {().InstanceGroupsSetNamedPortsRequest} params.resource Request
+     *     body data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -29057,12 +30816,24 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.instance The instance name for this request.
-     * @param {string} params.networkInterface The name of the network interface to add to this instance.
+     * @param {string} params.networkInterface The name of the network interface
+     *     to add to this instance.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {string} params.zone The name of the zone for this request.
      * @param {().AccessConfig} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -29197,12 +30968,44 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -29337,13 +31140,26 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {boolean=} params.forceAttach Whether to force attach the disk even if it's currently attached to another instance. This is only available for regional disks.
+     * @param {boolean=} params.forceAttach Whether to force attach the disk
+     *     even if it's currently attached to another instance. This is only
+     *     available for regional disks.
      * @param {string} params.instance The instance name for this request.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {string} params.zone The name of the zone for this request.
      * @param {().AttachedDisk} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -29473,9 +31289,20 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.instance Name of the instance resource to delete.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {string} params.zone The name of the zone for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -29606,13 +31433,26 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.accessConfig The name of the access config to delete.
+     * @param {string} params.accessConfig The name of the access config to
+     *     delete.
      * @param {string} params.instance The instance name for this request.
-     * @param {string} params.networkInterface The name of the network interface.
+     * @param {string} params.networkInterface The name of the network
+     *     interface.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {string} params.zone The name of the zone for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -29746,9 +31586,20 @@ export namespace compute_v1 {
      * @param {string} params.deviceName Disk device name to detach.
      * @param {string} params.instance Instance name.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {string} params.zone The name of the zone for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -29879,7 +31730,8 @@ export namespace compute_v1 {
      * @param {string} params.instance Name of the instance resource to return.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.zone The name of the zone for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -29971,8 +31823,8 @@ export namespace compute_v1 {
      *     auth: authClient,
      *   };
      *
-     *   compute.instances.getSerialPortOutput(request, function(err, response)
-     * { if (err) { console.error(err); return;
+     *   compute.instances.getSerialPortOutput(request, function(err,
+     * response) { if (err) { console.error(err); return;
      *     }
      *
      *     // TODO: Change code below to process the `response` object:
@@ -29998,12 +31850,19 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.instance Name of the instance scoping this request.
-     * @param {integer=} params.port Specifies which COM or serial port to retrieve data from.
+     * @param {string} params.instance Name of the instance scoping this
+     *     request.
+     * @param {integer=} params.port Specifies which COM or serial port to
+     *     retrieve data from.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.start Returns output starting from a specific byte position. Use this to page through output when the output is too large to return in a single request. For the initial request, leave this field unspecified. For subsequent calls, this field should be set to the next value returned in the previous call.
+     * @param {string=} params.start Returns output starting from a specific
+     *     byte position. Use this to page through output when the output is too
+     *     large to return in a single request. For the initial request, leave
+     *     this field unspecified. For subsequent calls, this field should be
+     *     set to the next value returned in the previous call.
      * @param {string} params.zone The name of the zone for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -30134,11 +31993,28 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {string=} params.sourceInstanceTemplate Specifies instance template to create the instance.  This field is optional. It can be a full or partial URL. For example, the following are all valid URLs to an instance template:   - https://www.googleapis.com/compute/v1/projects/project/global/global/instanceTemplates/instanceTemplate  - projects/project/global/global/instanceTemplates/instanceTemplate  - global/instancesTemplates/instanceTemplate
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.sourceInstanceTemplate Specifies instance
+     *     template to create the instance.  This field is optional. It can be a
+     *     full or partial URL. For example, the following are all valid URLs to
+     *     an instance template:   -
+     *     https://www.googleapis.com/compute/v1/projects/project/global/global/instanceTemplates/instanceTemplate
+     *     - projects/project/global/global/instanceTemplates/instanceTemplate
+     *     - global/instancesTemplates/instanceTemplate
      * @param {string} params.zone The name of the zone for this request.
      * @param {().Instance} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -30273,13 +32149,45 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.zone The name of the zone for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -30345,14 +32253,48 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {string} params.instance Name of the target instance scoping this request, or '-' if the request should span over all instances in the container.
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {string} params.instance Name of the target instance scoping this
+     *     request, or '-' if the request should span over all instances in the
+     *     container.
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.zone The name of the zone for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -30482,11 +32424,23 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.instance Name of the instance scoping this request.
+     * @param {string} params.instance Name of the instance scoping this
+     *     request.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {string} params.zone The name of the zone for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -30609,12 +32563,24 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {boolean=} params.deletionProtection Whether the resource should be protected against deletion.
+     * @param {boolean=} params.deletionProtection Whether the resource should
+     *     be protected against deletion.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {string} params.resource_ Name of the resource for this request.
      * @param {string} params.zone The name of the zone for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -30748,13 +32714,25 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {boolean} params.autoDelete Whether to auto-delete the disk when the instance is deleted.
+     * @param {boolean} params.autoDelete Whether to auto-delete the disk when
+     *     the instance is deleted.
      * @param {string} params.deviceName The device name of the disk to modify.
      * @param {string} params.instance The instance name.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {string} params.zone The name of the zone for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -30887,12 +32865,24 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.instance Name of the instance scoping this request.
+     * @param {string} params.instance Name of the instance scoping this
+     *     request.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {string} params.zone The name of the zone for this request.
      * @param {().InstancesSetLabelsRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -30995,8 +32985,8 @@ export namespace compute_v1 {
      *     auth: authClient,
      *   };
      *
-     *   compute.instances.setMachineResources(request, function(err, response)
-     * { if (err) { console.error(err); return;
+     *   compute.instances.setMachineResources(request, function(err,
+     * response) { if (err) { console.error(err); return;
      *     }
      *
      *     // TODO: Change code below to process the `response` object:
@@ -31022,12 +33012,25 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.instance Name of the instance scoping this request.
+     * @param {string} params.instance Name of the instance scoping this
+     *     request.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {string} params.zone The name of the zone for this request.
-     * @param {().InstancesSetMachineResourcesRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {().InstancesSetMachineResourcesRequest} params.resource Request
+     *     body data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -31159,12 +33162,25 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.instance Name of the instance scoping this request.
+     * @param {string} params.instance Name of the instance scoping this
+     *     request.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {string} params.zone The name of the zone for this request.
-     * @param {().InstancesSetMachineTypeRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {().InstancesSetMachineTypeRequest} params.resource Request body
+     *     data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -31296,12 +33312,24 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.instance Name of the instance scoping this request.
+     * @param {string} params.instance Name of the instance scoping this
+     *     request.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {string} params.zone The name of the zone for this request.
      * @param {().Metadata} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -31434,12 +33462,25 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.instance Name of the instance scoping this request.
+     * @param {string} params.instance Name of the instance scoping this
+     *     request.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {string} params.zone The name of the zone for this request.
-     * @param {().InstancesSetMinCpuPlatformRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {().InstancesSetMinCpuPlatformRequest} params.resource Request
+     *     body data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -31572,10 +33613,21 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.instance Instance name.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {string} params.zone The name of the zone for this request.
      * @param {().Scheduling} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -31709,10 +33761,22 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.instance Name of the instance resource to start.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {string} params.zone The name of the zone for this request.
-     * @param {().InstancesSetServiceAccountRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {().InstancesSetServiceAccountRequest} params.resource Request
+     *     body data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -31844,12 +33908,24 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.instance Name of the instance scoping this request.
+     * @param {string} params.instance Name of the instance scoping this
+     *     request.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {string} params.zone The name of the zone for this request.
      * @param {().Tags} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -31979,9 +34055,20 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.instance Name of the instance resource to start.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {string} params.zone The name of the zone for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -32111,10 +34198,22 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.instance Name of the instance resource to start.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {string} params.zone The name of the zone for this request.
-     * @param {().InstancesStartWithEncryptionKeyRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {().InstancesStartWithEncryptionKeyRequest} params.resource
+     *     Request body data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -32249,9 +34348,20 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.instance Name of the instance resource to stop.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {string} params.zone The name of the zone for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -32321,12 +34431,24 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.instance The instance name for this request.
-     * @param {string} params.networkInterface The name of the network interface where the access config is attached.
+     * @param {string} params.networkInterface The name of the network interface
+     *     where the access config is attached.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {string} params.zone The name of the zone for this request.
      * @param {().AccessConfig} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -32396,12 +34518,24 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.instance The instance name for this request.
-     * @param {string} params.networkInterface The name of the network interface to update.
+     * @param {string} params.networkInterface The name of the network interface
+     *     to update.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {string} params.zone The name of the zone for this request.
      * @param {().NetworkInterface} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -33588,10 +35722,22 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.instanceTemplate The name of the instance template to delete.
+     * @param {string} params.instanceTemplate The name of the instance template
+     *     to delete.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -33717,9 +35863,11 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.instanceTemplate The name of the instance template.
+     * @param {string} params.instanceTemplate The name of the instance
+     *     template.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -33845,9 +35993,20 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().InstanceTemplate} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -33981,12 +36140,44 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -34262,12 +36453,44 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -34379,8 +36602,8 @@ export namespace compute_v1 {
      *     auth: authClient,
      *   };
      *
-     *   compute.interconnectAttachments.delete(request, function(err, response)
-     * { if (err) { console.error(err); return;
+     *   compute.interconnectAttachments.delete(request, function(err,
+     * response) { if (err) { console.error(err); return;
      *     }
      *
      *     // TODO: Change code below to process the `response` object:
@@ -34406,11 +36629,23 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.interconnectAttachment Name of the interconnect attachment to delete.
+     * @param {string} params.interconnectAttachment Name of the interconnect
+     *     attachment to delete.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -34538,10 +36773,12 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.interconnectAttachment Name of the interconnect attachment to return.
+     * @param {string} params.interconnectAttachment Name of the interconnect
+     *     attachment to return.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -34638,8 +36875,8 @@ export namespace compute_v1 {
      *     auth: authClient,
      *   };
      *
-     *   compute.interconnectAttachments.insert(request, function(err, response)
-     * { if (err) { console.error(err); return;
+     *   compute.interconnectAttachments.insert(request, function(err,
+     * response) { if (err) { console.error(err); return;
      *     }
      *
      *     // TODO: Change code below to process the `response` object:
@@ -34667,9 +36904,20 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().InterconnectAttachment} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -34807,13 +37055,45 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -34889,12 +37169,24 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.interconnectAttachment Name of the interconnect attachment to patch.
+     * @param {string} params.interconnectAttachment Name of the interconnect
+     *     attachment to patch.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region scoping this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().InterconnectAttachment} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -35267,9 +37559,11 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.interconnectLocation Name of the interconnect location to return.
+     * @param {string} params.interconnectLocation Name of the interconnect
+     *     location to return.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -35401,12 +37695,44 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -35616,8 +37942,19 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.interconnect Name of the interconnect to delete.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -35744,7 +38081,8 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.interconnect Name of the interconnect to return.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -35867,9 +38205,20 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().Interconnect} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -36003,12 +38352,44 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -36140,9 +38521,20 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.interconnect Name of the interconnect to update.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().Interconnect} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -36384,9 +38776,11 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.licenseCode Number corresponding to the License code resource to return.
+     * @param {string} params.licenseCode Number corresponding to the License
+     *     code resource to return.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -36452,7 +38846,8 @@ export namespace compute_v1 {
      * @param {string} params.project Project ID for this request.
      * @param {string} params.resource_ Name of the resource for this request.
      * @param {().TestPermissionsRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -36573,8 +38968,19 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.license Name of the license resource to delete.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -36697,7 +39103,8 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.license Name of the License resource to return.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -36759,9 +39166,20 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().License} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -36830,12 +39248,44 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -36903,7 +39353,8 @@ export namespace compute_v1 {
      * @param {string} params.project Project ID for this request.
      * @param {string} params.resource_ Name of the resource for this request.
      * @param {().TestPermissionsRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -37200,12 +39651,44 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -37339,7 +39822,8 @@ export namespace compute_v1 {
      * @param {string} params.machineType Name of the machine type to return.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.zone The name of the zone for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -37472,13 +39956,45 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.zone The name of the zone for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -37749,11 +40265,23 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.network Name of the network resource to add peering to.
+     * @param {string} params.network Name of the network resource to add
+     *     peering to.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().NetworksAddPeeringRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -37879,8 +40407,19 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.network Name of the network to delete.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -38004,7 +40543,8 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.network Name of the network to return.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -38124,9 +40664,20 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().Network} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -38256,12 +40807,44 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -38391,9 +40974,20 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.network Name of the network to update.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().Network} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -38518,11 +41112,24 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.network Name of the network resource to remove peering from.
+     * @param {string} params.network Name of the network resource to remove
+     *     peering from.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {().NetworksRemovePeeringRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {().NetworksRemovePeeringRequest} params.resource Request body
+     *     data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -38649,8 +41256,19 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.network Name of the network to be updated.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -38985,12 +41603,24 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.nodeGroup Name of the NodeGroup resource to delete.
+     * @param {string} params.nodeGroup Name of the NodeGroup resource to
+     *     delete.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {string} params.zone The name of the zone for this request.
      * @param {().NodeGroupsAddNodesRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -39059,12 +41689,44 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -39133,11 +41795,23 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.nodeGroup Name of the NodeGroup resource to delete.
+     * @param {string} params.nodeGroup Name of the NodeGroup resource to
+     *     delete.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {string} params.zone The name of the zone for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -39204,12 +41878,25 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.nodeGroup Name of the NodeGroup resource to delete.
+     * @param {string} params.nodeGroup Name of the NodeGroup resource to
+     *     delete.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {string} params.zone The name of the zone for this request.
-     * @param {().NodeGroupsDeleteNodesRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {().NodeGroupsDeleteNodesRequest} params.resource Request body
+     *     data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -39282,7 +41969,8 @@ export namespace compute_v1 {
      * @param {string} params.nodeGroup Name of the node group to return.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.zone The name of the zone for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -39346,12 +42034,24 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {integer} params.initialNodeCount Initial count of nodes in the node group.
+     * @param {integer} params.initialNodeCount Initial count of nodes in the
+     *     node group.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {string} params.zone The name of the zone for this request.
      * @param {().NodeGroup} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -39418,13 +42118,45 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.zone The name of the zone for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -39489,14 +42221,47 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string} params.nodeGroup Name of the NodeGroup resource whose nodes you want to list.
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string} params.nodeGroup Name of the NodeGroup resource whose
+     *     nodes you want to list.
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.zone The name of the zone for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -39564,12 +42329,25 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.nodeGroup Name of the NodeGroup resource to delete.
+     * @param {string} params.nodeGroup Name of the NodeGroup resource to
+     *     delete.
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {string} params.zone The name of the zone for this request.
-     * @param {().NodeGroupsSetNodeTemplateRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {().NodeGroupsSetNodeTemplateRequest} params.resource Request body
+     *     data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -40024,12 +42802,44 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -40103,11 +42913,23 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.nodeTemplate Name of the NodeTemplate resource to delete.
+     * @param {string} params.nodeTemplate Name of the NodeTemplate resource to
+     *     delete.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region The name of the region for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -40179,7 +43001,8 @@ export namespace compute_v1 {
      * @param {string} params.nodeTemplate Name of the node template to return.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region The name of the region for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -40246,9 +43069,20 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region The name of the region for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().NodeTemplate} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -40317,13 +43151,45 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region The name of the region for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -40600,12 +43466,44 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -40678,7 +43576,8 @@ export namespace compute_v1 {
      * @param {string} params.nodeType Name of the node type to return.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.zone The name of the zone for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -40740,13 +43639,45 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.zone The name of the zone for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -41010,8 +43941,19 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -41136,9 +44078,21 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {().ProjectsDisableXpnResourceRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {().ProjectsDisableXpnResourceRequest} params.resource Request
+     *     body data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -41259,8 +44213,19 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -41386,9 +44351,21 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {().ProjectsEnableXpnResourceRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {().ProjectsEnableXpnResourceRequest} params.resource Request body
+     *     data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -41509,7 +44486,8 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -41624,7 +44602,8 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -41756,12 +44735,44 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.order_by Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.order_by Sorts list results by a certain order.
+     *     By default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -41900,13 +44911,45 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.order_by Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.order_by Sorts list results by a certain order.
+     *     By default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
      * @param {().ProjectsListXpnHostsRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -42030,9 +45073,20 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().DiskMoveRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -42157,9 +45211,20 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().InstanceMoveRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -42282,9 +45347,20 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().Metadata} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -42355,9 +45431,21 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {().ProjectsSetDefaultNetworkTierRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {().ProjectsSetDefaultNetworkTierRequest} params.resource Request
+     *     body data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -42455,8 +45543,8 @@ export namespace compute_v1 {
      *     auth: authClient,
      *   };
      *
-     *   compute.projects.setUsageExportBucket(request, function(err, response)
-     * { if (err) { console.error(err); return;
+     *   compute.projects.setUsageExportBucket(request, function(err,
+     * response) { if (err) { console.error(err); return;
      *     }
      *
      *     // TODO: Change code below to process the `response` object:
@@ -42483,9 +45571,20 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().UsageExportLocation} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -43015,8 +46114,19 @@ export namespace compute_v1 {
      * @param {string} params.autoscaler Name of the autoscaler to delete.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region scoping this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -43146,7 +46256,8 @@ export namespace compute_v1 {
      * @param {string} params.autoscaler Name of the autoscaler to return.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region scoping this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -43273,9 +46384,20 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region scoping this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().Autoscaler} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -43413,13 +46535,45 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region scoping this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -43555,9 +46709,20 @@ export namespace compute_v1 {
      * @param {string=} params.autoscaler Name of the autoscaler to patch.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region scoping this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().Autoscaler} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -43691,9 +46856,20 @@ export namespace compute_v1 {
      * @param {string=} params.autoscaler Name of the autoscaler to update.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region scoping this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().Autoscaler} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -44051,11 +47227,23 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.backendService Name of the BackendService resource to delete.
+     * @param {string} params.backendService Name of the BackendService resource
+     *     to delete.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region scoping this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -44183,10 +47371,12 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.backendService Name of the BackendService resource to return.
+     * @param {string} params.backendService Name of the BackendService resource
+     *     to return.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region scoping this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -44312,11 +47502,13 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.backendService Name of the BackendService resource for which to get health.
+     * @param {string} params.backendService Name of the BackendService resource
+     *     for which to get health.
      * @param {string} params.project
      * @param {string} params.region Name of the region scoping this request.
      * @param {().ResourceGroupReference} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -44453,9 +47645,20 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region scoping this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().BackendService} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -44593,13 +47796,45 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region scoping this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -44738,12 +47973,24 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.backendService Name of the BackendService resource to patch.
+     * @param {string} params.backendService Name of the BackendService resource
+     *     to patch.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region scoping this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().BackendService} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -44880,12 +48127,24 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.backendService Name of the BackendService resource to update.
+     * @param {string} params.backendService Name of the BackendService resource
+     *     to update.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region scoping this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().BackendService} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -45274,12 +48533,44 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -45411,7 +48702,8 @@ export namespace compute_v1 {
      * @param {string} params.commitment Name of the commitment to return.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -45538,9 +48830,20 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().Commitment} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -45678,13 +48981,45 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -45930,12 +49265,24 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.disk Name of the regional persistent disk to snapshot.
+     * @param {string} params.disk Name of the regional persistent disk to
+     *     snapshot.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().Snapshot} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -46006,11 +49353,23 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.disk Name of the regional persistent disk to delete.
+     * @param {string} params.disk Name of the regional persistent disk to
+     *     delete.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -46078,10 +49437,12 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.disk Name of the regional persistent disk to return.
+     * @param {string} params.disk Name of the regional persistent disk to
+     *     return.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -46146,10 +49507,22 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {string=} params.sourceImage Optional. Source image to restore onto a disk.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.sourceImage Optional. Source image to restore
+     *     onto a disk.
      * @param {().Disk} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -46217,13 +49590,45 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -46290,9 +49695,20 @@ export namespace compute_v1 {
      * @param {string} params.disk Name of the regional persistent disk.
      * @param {string} params.project The project ID for this request.
      * @param {string} params.region Name of the region for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().RegionDisksResizeRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -46362,10 +49778,21 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region The region for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {string} params.resource_ Name of the resource for this request.
      * @param {().RegionSetLabelsRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -46437,7 +49864,8 @@ export namespace compute_v1 {
      * @param {string} params.region The name of the region for this request.
      * @param {string} params.resource_ Name of the resource for this request.
      * @param {().TestPermissionsRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -46806,7 +50234,8 @@ export namespace compute_v1 {
      * @param {string} params.diskType Name of the disk type to return.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region The name of the region for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -46870,13 +50299,45 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region The name of the region for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -47108,12 +50569,25 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.instanceGroupManager Name of the managed instance group.
+     * @param {string} params.instanceGroupManager Name of the managed instance
+     *     group.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region scoping this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {().RegionInstanceGroupManagersAbandonInstancesRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {().RegionInstanceGroupManagersAbandonInstancesRequest}
+     *     params.resource Request body data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -47242,11 +50716,23 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.instanceGroupManager Name of the managed instance group to delete.
+     * @param {string} params.instanceGroupManager Name of the managed instance
+     *     group to delete.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region scoping this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -47386,12 +50872,25 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.instanceGroupManager Name of the managed instance group.
+     * @param {string} params.instanceGroupManager Name of the managed instance
+     *     group.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region scoping this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {().RegionInstanceGroupManagersDeleteInstancesRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {().RegionInstanceGroupManagersDeleteInstancesRequest}
+     *     params.resource Request body data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -47520,10 +51019,12 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.instanceGroupManager Name of the managed instance group to return.
+     * @param {string} params.instanceGroupManager Name of the managed instance
+     *     group to return.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region scoping this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -47655,9 +51156,20 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region scoping this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().InstanceGroupManager} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -47795,13 +51307,45 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region scoping this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -47936,14 +51480,47 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {string} params.instanceGroupManager The name of the managed instance group.
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.order_by Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {string} params.instanceGroupManager The name of the managed
+     *     instance group.
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.order_by Sorts list results by a certain order.
+     *     By default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region scoping this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -48099,12 +51676,25 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.instanceGroupManager Name of the managed instance group.
+     * @param {string} params.instanceGroupManager Name of the managed instance
+     *     group.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region scoping this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {().RegionInstanceGroupManagersRecreateRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {().RegionInstanceGroupManagersRecreateRequest} params.resource
+     *     Request body data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -48245,12 +51835,25 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.instanceGroupManager Name of the managed instance group.
+     * @param {string} params.instanceGroupManager Name of the managed instance
+     *     group.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region scoping this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {integer} params.size Number of instances that should exist in this instance group manager.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {integer} params.size Number of instances that should exist in
+     *     this instance group manager.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -48381,12 +51984,25 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.instanceGroupManager The name of the managed instance group.
+     * @param {string} params.instanceGroupManager The name of the managed
+     *     instance group.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region scoping this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {().RegionInstanceGroupManagersSetTemplateRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {().RegionInstanceGroupManagersSetTemplateRequest} params.resource
+     *     Request body data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -48520,12 +52136,25 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.instanceGroupManager Name of the managed instance group.
+     * @param {string} params.instanceGroupManager Name of the managed instance
+     *     group.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region scoping this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {().RegionInstanceGroupManagersSetTargetPoolsRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {().RegionInstanceGroupManagersSetTargetPoolsRequest}
+     *     params.resource Request body data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -49094,10 +52723,12 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.instanceGroup Name of the instance group resource to return.
+     * @param {string} params.instanceGroup Name of the instance group resource
+     *     to return.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region scoping this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -49231,13 +52862,45 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region scoping this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -49386,15 +53049,49 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {string} params.instanceGroup Name of the regional instance group for which we want to list the instances.
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {string} params.instanceGroup Name of the regional instance group
+     *     for which we want to list the instances.
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region scoping this request.
-     * @param {().RegionInstanceGroupsListInstancesRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {().RegionInstanceGroupsListInstancesRequest} params.resource
+     *     Request body data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -49536,12 +53233,25 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.instanceGroup The name of the regional instance group where the named ports are updated.
+     * @param {string} params.instanceGroup The name of the regional instance
+     *     group where the named ports are updated.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region scoping this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {().RegionInstanceGroupsSetNamedPortsRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {().RegionInstanceGroupsSetNamedPortsRequest} params.resource
+     *     Request body data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -49862,10 +53572,12 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.operation Name of the Operations resource to delete.
+     * @param {string} params.operation Name of the Operations resource to
+     *     delete.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -49990,10 +53702,12 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.operation Name of the Operations resource to return.
+     * @param {string} params.operation Name of the Operations resource to
+     *     return.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -50127,13 +53841,45 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -50370,7 +54116,8 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region resource to return.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -50497,12 +54244,44 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -50716,12 +54495,44 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -50851,9 +54662,20 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {string} params.router Name of the Router resource to delete.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -50982,7 +54804,8 @@ export namespace compute_v1 {
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region for this request.
      * @param {string} params.router Name of the Router resource to return.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -51106,7 +54929,8 @@ export namespace compute_v1 {
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region for this request.
      * @param {string} params.router Name of the Router resource to query.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -51239,9 +55063,20 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().Router} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -51376,13 +55211,45 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -51516,10 +55383,21 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {string} params.router Name of the Router resource to patch.
      * @param {().Router} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -51653,7 +55531,8 @@ export namespace compute_v1 {
      * @param {string} params.region Name of the region for this request.
      * @param {string} params.router Name of the Router resource to query.
      * @param {().Router} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -51789,10 +55668,21 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {string} params.router Name of the Router resource to update.
      * @param {().Router} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -52242,9 +56132,20 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {string} params.route Name of the Route resource to delete.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -52368,7 +56269,8 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
      * @param {string} params.route Name of the Route resource to return.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -52488,9 +56390,20 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().Route} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -52621,12 +56534,44 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -52891,9 +56836,20 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {string} params.snapshot Name of the Snapshot resource to delete.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -53018,7 +56974,8 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
      * @param {string} params.snapshot Name of the Snapshot resource to return.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -53147,12 +57104,44 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -53280,7 +57269,8 @@ export namespace compute_v1 {
      * @param {string} params.project Project ID for this request.
      * @param {string} params.resource_ Name of the resource for this request.
      * @param {().GlobalSetLabelsRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -53537,9 +57527,21 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {string} params.sslCertificate Name of the SslCertificate resource to delete.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {string} params.sslCertificate Name of the SslCertificate resource
+     *     to delete.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -53666,8 +57668,10 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string} params.sslCertificate Name of the SslCertificate resource to return.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.sslCertificate Name of the SslCertificate resource
+     *     to return.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -53790,9 +57794,20 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().SslCertificate} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -53926,12 +57941,44 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -54141,9 +58188,21 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {string} params.sslPolicy Name of the SSL policy to delete. The name must be 1-63 characters long, and comply with RFC1035.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {string} params.sslPolicy Name of the SSL policy to delete. The
+     *     name must be 1-63 characters long, and comply with RFC1035.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -54213,8 +58272,10 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string} params.sslPolicy Name of the SSL policy to update. The name must be 1-63 characters long, and comply with RFC1035.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.sslPolicy Name of the SSL policy to update. The
+     *     name must be 1-63 characters long, and comply with RFC1035.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -54279,9 +58340,20 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().SslPolicy} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -54349,12 +58421,44 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -54420,12 +58524,44 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -54504,10 +58640,22 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {string} params.sslPolicy Name of the SSL policy to update. The name must be 1-63 characters long, and comply with RFC1035.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {string} params.sslPolicy Name of the SSL policy to update. The
+     *     name must be 1-63 characters long, and comply with RFC1035.
      * @param {().SslPolicy} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -54871,12 +59019,44 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -55006,9 +59186,21 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region scoping this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {string} params.subnetwork Name of the Subnetwork resource to delete.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {string} params.subnetwork Name of the Subnetwork resource to
+     *     delete.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -55110,8 +59302,8 @@ export namespace compute_v1 {
      *     auth: authClient,
      *   };
      *
-     *   compute.subnetworks.expandIpCidrRange(request, function(err, response)
-     * { if (err) { console.error(err); return;
+     *   compute.subnetworks.expandIpCidrRange(request, function(err,
+     * response) { if (err) { console.error(err); return;
      *     }
      *
      *     // TODO: Change code below to process the `response` object:
@@ -55139,10 +59331,23 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region scoping this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {string} params.subnetwork Name of the Subnetwork resource to update.
-     * @param {().SubnetworksExpandIpCidrRangeRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {string} params.subnetwork Name of the Subnetwork resource to
+     *     update.
+     * @param {().SubnetworksExpandIpCidrRangeRequest} params.resource Request
+     *     body data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -55272,8 +59477,10 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region scoping this request.
-     * @param {string} params.subnetwork Name of the Subnetwork resource to return.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.subnetwork Name of the Subnetwork resource to
+     *     return.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -55399,9 +59606,20 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region scoping this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().Subnetwork} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -55538,13 +59756,45 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region scoping this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -55610,12 +59860,44 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -55698,10 +59980,22 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region scoping this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {string} params.subnetwork Name of the Subnetwork resource to patch.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {string} params.subnetwork Name of the Subnetwork resource to
+     *     patch.
      * @param {().Subnetwork} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -55832,10 +60126,22 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region scoping this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {string} params.subnetwork Name of the Subnetwork resource.
-     * @param {().SubnetworksSetPrivateIpGoogleAccessRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {().SubnetworksSetPrivateIpGoogleAccessRequest} params.resource
+     *     Request body data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -56337,9 +60643,21 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {string} params.targetHttpProxy Name of the TargetHttpProxy resource to delete.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {string} params.targetHttpProxy Name of the TargetHttpProxy
+     *     resource to delete.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -56466,8 +60784,10 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string} params.targetHttpProxy Name of the TargetHttpProxy resource to return.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.targetHttpProxy Name of the TargetHttpProxy
+     *     resource to return.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -56590,9 +60910,20 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().TargetHttpProxy} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -56726,12 +61057,44 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -56860,10 +61223,22 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {string} params.targetHttpProxy Name of the TargetHttpProxy to set a URL map for.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {string} params.targetHttpProxy Name of the TargetHttpProxy to set
+     *     a URL map for.
      * @param {().UrlMapReference} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -57162,9 +61537,21 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {string} params.targetHttpsProxy Name of the TargetHttpsProxy resource to delete.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {string} params.targetHttpsProxy Name of the TargetHttpsProxy
+     *     resource to delete.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -57291,8 +61678,10 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string} params.targetHttpsProxy Name of the TargetHttpsProxy resource to return.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.targetHttpsProxy Name of the TargetHttpsProxy
+     *     resource to return.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -57415,9 +61804,20 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().TargetHttpsProxy} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -57551,12 +61951,44 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -57625,10 +62057,24 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {string} params.targetHttpsProxy Name of the TargetHttpsProxy resource to set the QUIC override policy for. The name should conform to RFC1035.
-     * @param {().TargetHttpsProxiesSetQuicOverrideRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {string} params.targetHttpsProxy Name of the TargetHttpsProxy
+     *     resource to set the QUIC override policy for. The name should conform
+     *     to RFC1035.
+     * @param {().TargetHttpsProxiesSetQuicOverrideRequest} params.resource
+     *     Request body data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -57756,10 +62202,23 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {string} params.targetHttpsProxy Name of the TargetHttpsProxy resource to set an SslCertificates resource for.
-     * @param {().TargetHttpsProxiesSetSslCertificatesRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {string} params.targetHttpsProxy Name of the TargetHttpsProxy
+     *     resource to set an SslCertificates resource for.
+     * @param {().TargetHttpsProxiesSetSslCertificatesRequest} params.resource
+     *     Request body data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -57832,10 +62291,23 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {string} params.targetHttpsProxy Name of the TargetHttpsProxy resource whose SSL policy is to be set. The name must be 1-63 characters long, and comply with RFC1035.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {string} params.targetHttpsProxy Name of the TargetHttpsProxy
+     *     resource whose SSL policy is to be set. The name must be 1-63
+     *     characters long, and comply with RFC1035.
      * @param {().SslPolicyReference} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -57965,10 +62437,22 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {string} params.targetHttpsProxy Name of the TargetHttpsProxy resource whose URL map is to be set.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {string} params.targetHttpsProxy Name of the TargetHttpsProxy
+     *     resource whose URL map is to be set.
      * @param {().UrlMapReference} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -58378,12 +62862,44 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -58519,10 +63035,22 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {string} params.targetInstance Name of the TargetInstance resource to delete.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {string} params.targetInstance Name of the TargetInstance resource
+     *     to delete.
      * @param {string} params.zone Name of the zone scoping this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -58652,9 +63180,11 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string} params.targetInstance Name of the TargetInstance resource to return.
+     * @param {string} params.targetInstance Name of the TargetInstance resource
+     *     to return.
      * @param {string} params.zone Name of the zone scoping this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -58780,10 +63310,21 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {string} params.zone Name of the zone scoping this request.
      * @param {().TargetInstance} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -58921,13 +63462,45 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.zone Name of the zone scoping this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -59270,10 +63843,23 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region scoping this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {string} params.targetPool Name of the target pool to add a health check to.
-     * @param {().TargetPoolsAddHealthCheckRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {string} params.targetPool Name of the target pool to add a health
+     *     check to.
+     * @param {().TargetPoolsAddHealthCheckRequest} params.resource Request body
+     *     data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -59406,10 +63992,23 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region scoping this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {string} params.targetPool Name of the TargetPool resource to add instances to.
-     * @param {().TargetPoolsAddInstanceRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {string} params.targetPool Name of the TargetPool resource to add
+     *     instances to.
+     * @param {().TargetPoolsAddInstanceRequest} params.resource Request body
+     *     data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -59544,12 +64143,44 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -59679,9 +64310,21 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region scoping this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {string} params.targetPool Name of the TargetPool resource to delete.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {string} params.targetPool Name of the TargetPool resource to
+     *     delete.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -59811,8 +64454,10 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region scoping this request.
-     * @param {string} params.targetPool Name of the TargetPool resource to return.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.targetPool Name of the TargetPool resource to
+     *     return.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -59942,9 +64587,11 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region scoping this request.
-     * @param {string} params.targetPool Name of the TargetPool resource to which the queried instance belongs.
+     * @param {string} params.targetPool Name of the TargetPool resource to
+     *     which the queried instance belongs.
      * @param {().InstanceReference} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -60077,9 +64724,20 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region scoping this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().TargetPool} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -60217,13 +64875,45 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region scoping this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -60323,8 +65013,8 @@ export namespace compute_v1 {
      *     auth: authClient,
      *   };
      *
-     *   compute.targetPools.removeHealthCheck(request, function(err, response)
-     * { if (err) { console.error(err); return;
+     *   compute.targetPools.removeHealthCheck(request, function(err,
+     * response) { if (err) { console.error(err); return;
      *     }
      *
      *     // TODO: Change code below to process the `response` object:
@@ -60352,10 +65042,23 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {string} params.targetPool Name of the target pool to remove health checks from.
-     * @param {().TargetPoolsRemoveHealthCheckRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {string} params.targetPool Name of the target pool to remove
+     *     health checks from.
+     * @param {().TargetPoolsRemoveHealthCheckRequest} params.resource Request
+     *     body data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -60488,10 +65191,23 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region scoping this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {string} params.targetPool Name of the TargetPool resource to remove instances from.
-     * @param {().TargetPoolsRemoveInstanceRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {string} params.targetPool Name of the TargetPool resource to
+     *     remove instances from.
+     * @param {().TargetPoolsRemoveInstanceRequest} params.resource Request body
+     *     data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -60622,13 +65338,26 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {number=} params.failoverRatio New failoverRatio value for the target pool.
+     * @param {number=} params.failoverRatio New failoverRatio value for the
+     *     target pool.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region scoping this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {string} params.targetPool Name of the TargetPool resource to set a backup pool for.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {string} params.targetPool Name of the TargetPool resource to set
+     *     a backup pool for.
      * @param {().TargetReference} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -61177,9 +65906,21 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {string} params.targetSslProxy Name of the TargetSslProxy resource to delete.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {string} params.targetSslProxy Name of the TargetSslProxy resource
+     *     to delete.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -61306,8 +66047,10 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string} params.targetSslProxy Name of the TargetSslProxy resource to return.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.targetSslProxy Name of the TargetSslProxy resource
+     *     to return.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -61430,9 +66173,20 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().TargetSslProxy} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -61566,12 +66320,44 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -61698,10 +66484,23 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {string} params.targetSslProxy Name of the TargetSslProxy resource whose BackendService resource is to be set.
-     * @param {().TargetSslProxiesSetBackendServiceRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {string} params.targetSslProxy Name of the TargetSslProxy resource
+     *     whose BackendService resource is to be set.
+     * @param {().TargetSslProxiesSetBackendServiceRequest} params.resource
+     *     Request body data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -61829,10 +66628,23 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {string} params.targetSslProxy Name of the TargetSslProxy resource whose ProxyHeader is to be set.
-     * @param {().TargetSslProxiesSetProxyHeaderRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {string} params.targetSslProxy Name of the TargetSslProxy resource
+     *     whose ProxyHeader is to be set.
+     * @param {().TargetSslProxiesSetProxyHeaderRequest} params.resource Request
+     *     body data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -61960,10 +66772,23 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {string} params.targetSslProxy Name of the TargetSslProxy resource whose SslCertificate resource is to be set.
-     * @param {().TargetSslProxiesSetSslCertificatesRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {string} params.targetSslProxy Name of the TargetSslProxy resource
+     *     whose SslCertificate resource is to be set.
+     * @param {().TargetSslProxiesSetSslCertificatesRequest} params.resource
+     *     Request body data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -62035,10 +66860,23 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {string} params.targetSslProxy Name of the TargetSslProxy resource whose SSL policy is to be set. The name must be 1-63 characters long, and comply with RFC1035.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {string} params.targetSslProxy Name of the TargetSslProxy resource
+     *     whose SSL policy is to be set. The name must be 1-63 characters long,
+     *     and comply with RFC1035.
      * @param {().SslPolicyReference} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -62439,9 +67277,21 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {string} params.targetTcpProxy Name of the TargetTcpProxy resource to delete.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {string} params.targetTcpProxy Name of the TargetTcpProxy resource
+     *     to delete.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -62568,8 +67418,10 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string} params.targetTcpProxy Name of the TargetTcpProxy resource to return.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.targetTcpProxy Name of the TargetTcpProxy resource
+     *     to return.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -62692,9 +67544,20 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().TargetTcpProxy} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -62828,12 +67691,44 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -62960,10 +67855,23 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {string} params.targetTcpProxy Name of the TargetTcpProxy resource whose BackendService resource is to be set.
-     * @param {().TargetTcpProxiesSetBackendServiceRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {string} params.targetTcpProxy Name of the TargetTcpProxy resource
+     *     whose BackendService resource is to be set.
+     * @param {().TargetTcpProxiesSetBackendServiceRequest} params.resource
+     *     Request body data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -63091,10 +67999,23 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {string} params.targetTcpProxy Name of the TargetTcpProxy resource whose ProxyHeader is to be set.
-     * @param {().TargetTcpProxiesSetProxyHeaderRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {string} params.targetTcpProxy Name of the TargetTcpProxy resource
+     *     whose ProxyHeader is to be set.
+     * @param {().TargetTcpProxiesSetProxyHeaderRequest} params.resource Request
+     *     body data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -63436,12 +68357,44 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -63579,9 +68532,21 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {string} params.targetVpnGateway Name of the target VPN gateway to delete.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {string} params.targetVpnGateway Name of the target VPN gateway to
+     *     delete.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -63712,8 +68677,10 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region for this request.
-     * @param {string} params.targetVpnGateway Name of the target VPN gateway to return.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.targetVpnGateway Name of the target VPN gateway to
+     *     return.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -63840,9 +68807,20 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().TargetVpnGateway} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -63980,13 +68958,45 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -64322,9 +69332,20 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {string} params.urlMap Name of the UrlMap resource to delete.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -64448,7 +69469,8 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
      * @param {string} params.urlMap Name of the UrlMap resource to return.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -64568,9 +69590,20 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().UrlMap} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -64696,10 +69729,21 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {string} params.urlMap Name of the UrlMap scoping this request.
      * @param {().CacheInvalidationRule} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -64834,12 +69878,44 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -64968,10 +70044,21 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {string} params.urlMap Name of the UrlMap resource to patch.
      * @param {().UrlMap} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -65100,10 +70187,21 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {string} params.urlMap Name of the UrlMap resource to update.
      * @param {().UrlMap} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -65231,9 +70329,11 @@ export namespace compute_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
-     * @param {string} params.urlMap Name of the UrlMap resource to be validated as.
+     * @param {string} params.urlMap Name of the UrlMap resource to be validated
+     *     as.
      * @param {().UrlMapsValidateRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -65628,12 +70728,44 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -65763,9 +70895,21 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @param {string} params.vpnTunnel Name of the VpnTunnel resource to delete.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
+     * @param {string} params.vpnTunnel Name of the VpnTunnel resource to
+     *     delete.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -65894,8 +71038,10 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region for this request.
-     * @param {string} params.vpnTunnel Name of the VpnTunnel resource to return.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.vpnTunnel Name of the VpnTunnel resource to
+     *     return.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -66021,9 +71167,20 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region for this request.
-     * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+     * @param {string=} params.requestId An optional request ID to identify
+     *     requests. Specify a unique request ID so that if you must retry your
+     *     request, the server will know to ignore the request if it has already
+     *     been completed.  For example, consider a situation where you make an
+     *     initial request and the request times out. If you make the request
+     *     again with the same request ID, the server can check if original
+     *     operation with the same request ID was received, and if so, will
+     *     ignore the second request. This prevents clients from accidentally
+     *     creating duplicate commitments.  The request ID must be a valid UUID
+     *     with the exception that zero UUID is not supported
+     *     (00000000-0000-0000-0000-000000000000).
      * @param {().VpnTunnel} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -66160,13 +71317,45 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.region Name of the region for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -66498,10 +71687,12 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.operation Name of the Operations resource to delete.
+     * @param {string} params.operation Name of the Operations resource to
+     *     delete.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.zone Name of the zone for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -66626,10 +71817,12 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.operation Name of the Operations resource to return.
+     * @param {string} params.operation Name of the Operations resource to
+     *     return.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.zone Name of the zone for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -66763,13 +71956,45 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
      * @param {string} params.zone Name of the zone for request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -67004,7 +72229,8 @@ export namespace compute_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.project Project ID for this request.
      * @param {string} params.zone Name of the zone resource to return.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -67131,12 +72357,44 @@ export namespace compute_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-     * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-     * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-     * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
+     * @param {string=} params.filter A filter expression that filters resources
+     *     listed in the response. The expression must specify the field name, a
+     *     comparison operator, and the value that you want to use for
+     *     filtering. The value must be a string, a number, or a boolean. The
+     *     comparison operator must be either =, !=, >, or <.  For example, if
+     *     you are filtering Compute Engine instances, you can exclude instances
+     *     named example-instance by specifying name != example-instance.  You
+     *     can also filter nested fields. For example, you could specify
+     *     scheduling.automaticRestart = false to include instances only if they
+     *     are not scheduled for automatic restarts. You can use filtering on
+     *     nested fields to filter based on resource labels.  To filter on
+     *     multiple expressions, provide each separate expression within
+     *     parentheses. For example, (scheduling.automaticRestart = true)
+     *     (cpuPlatform = "Intel Skylake"). By default, each expression is an
+     *     AND expression. However, you can include AND and OR expressions
+     *     explicitly. For example, (cpuPlatform = "Intel Skylake") OR
+     *     (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart =
+     *     true).
+     * @param {integer=} params.maxResults The maximum number of results per
+     *     page that should be returned. If the number of available results is
+     *     larger than maxResults, Compute Engine returns a nextPageToken that
+     *     can be used to get the next page of results in subsequent list
+     *     requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
+     * @param {string=} params.orderBy Sorts list results by a certain order. By
+     *     default, results are returned in alphanumerical order based on the
+     *     resource name.  You can also sort results in descending order based
+     *     on the creation timestamp using orderBy="creationTimestamp desc".
+     *     This sorts results based on the creationTimestamp field in reverse
+     *     chronological order (newest result first). Use this to sort resources
+     *     like operations so that the newest operation is returned first.
+     *     Currently, only sorting by name or creationTimestamp desc is
+     *     supported.
+     * @param {string=} params.pageToken Specifies a page token to use. Set
+     *     pageToken to the nextPageToken returned by a previous list request to
+     *     get the next page of results.
      * @param {string} params.project Project ID for this request.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */

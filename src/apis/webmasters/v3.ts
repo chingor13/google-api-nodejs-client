@@ -373,9 +373,11 @@ export namespace webmasters_v3 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.siteUrl The site's URL, including protocol. For example: http://www.example.com/
+     * @param {string} params.siteUrl The site's URL, including protocol. For
+     *     example: http://www.example.com/
      * @param {().SearchAnalyticsQueryRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -479,9 +481,12 @@ export namespace webmasters_v3 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.feedpath The URL of the actual sitemap. For example: http://www.example.com/sitemap.xml
-     * @param {string} params.siteUrl The site's URL, including protocol. For example: http://www.example.com/
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.feedpath The URL of the actual sitemap. For
+     *     example: http://www.example.com/sitemap.xml
+     * @param {string} params.siteUrl The site's URL, including protocol. For
+     *     example: http://www.example.com/
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -544,9 +549,12 @@ export namespace webmasters_v3 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.feedpath The URL of the actual sitemap. For example: http://www.example.com/sitemap.xml
-     * @param {string} params.siteUrl The site's URL, including protocol. For example: http://www.example.com/
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.feedpath The URL of the actual sitemap. For
+     *     example: http://www.example.com/sitemap.xml
+     * @param {string} params.siteUrl The site's URL, including protocol. For
+     *     example: http://www.example.com/
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -609,9 +617,12 @@ export namespace webmasters_v3 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.sitemapIndex A URL of a site's sitemap index. For example: http://www.example.com/sitemapindex.xml
-     * @param {string} params.siteUrl The site's URL, including protocol. For example: http://www.example.com/
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.sitemapIndex A URL of a site's sitemap index. For
+     *     example: http://www.example.com/sitemapindex.xml
+     * @param {string} params.siteUrl The site's URL, including protocol. For
+     *     example: http://www.example.com/
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -676,9 +687,12 @@ export namespace webmasters_v3 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.feedpath The URL of the sitemap to add. For example: http://www.example.com/sitemap.xml
-     * @param {string} params.siteUrl The site's URL, including protocol. For example: http://www.example.com/
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.feedpath The URL of the sitemap to add. For
+     *     example: http://www.example.com/sitemap.xml
+     * @param {string} params.siteUrl The site's URL, including protocol. For
+     *     example: http://www.example.com/
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -820,7 +834,8 @@ export namespace webmasters_v3 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.siteUrl The URL of the site to add.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -878,8 +893,12 @@ export namespace webmasters_v3 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.siteUrl The URI of the property as defined in Search Console. Examples: http://www.example.com/ or android-app://com.example/ Note: for property-sets, use the URI that starts with sc-set: which is used in Search Console URLs.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.siteUrl The URI of the property as defined in
+     *     Search Console. Examples: http://www.example.com/ or
+     *     android-app://com.example/ Note: for property-sets, use the URI that
+     *     starts with sc-set: which is used in Search Console URLs.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -941,8 +960,12 @@ export namespace webmasters_v3 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.siteUrl The URI of the property as defined in Search Console. Examples: http://www.example.com/ or android-app://com.example/ Note: for property-sets, use the URI that starts with sc-set: which is used in Search Console URLs.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.siteUrl The URI of the property as defined in
+     *     Search Console. Examples: http://www.example.com/ or
+     *     android-app://com.example/ Note: for property-sets, use the URI that
+     *     starts with sc-set: which is used in Search Console URLs.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -1002,7 +1025,8 @@ export namespace webmasters_v3 {
      * @memberOf! ()
      *
      * @param {object=} params Parameters for request
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -1126,11 +1150,17 @@ export namespace webmasters_v3 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.category The crawl error category. For example: serverError. If not specified, returns results for all categories.
-     * @param {boolean=} params.latestCountsOnly If true, returns only the latest crawl error counts.
-     * @param {string=} params.platform The user agent type (platform) that made the request. For example: web. If not specified, returns results for all platforms.
-     * @param {string} params.siteUrl The site's URL, including protocol. For example: http://www.example.com/
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.category The crawl error category. For example:
+     *     serverError. If not specified, returns results for all categories.
+     * @param {boolean=} params.latestCountsOnly If true, returns only the
+     *     latest crawl error counts.
+     * @param {string=} params.platform The user agent type (platform) that made
+     *     the request. For example: web. If not specified, returns results for
+     *     all platforms.
+     * @param {string} params.siteUrl The site's URL, including protocol. For
+     *     example: http://www.example.com/
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -1247,11 +1277,18 @@ export namespace webmasters_v3 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.category The crawl error category. For example: authPermissions
-     * @param {string} params.platform The user agent type (platform) that made the request. For example: web
-     * @param {string} params.siteUrl The site's URL, including protocol. For example: http://www.example.com/
-     * @param {string} params.url The relative path (without the site) of the sample URL. It must be one of the URLs returned by list(). For example, for the URL https://www.example.com/pagename on the site https://www.example.com/, the url value is pagename
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.category The crawl error category. For example:
+     *     authPermissions
+     * @param {string} params.platform The user agent type (platform) that made
+     *     the request. For example: web
+     * @param {string} params.siteUrl The site's URL, including protocol. For
+     *     example: http://www.example.com/
+     * @param {string} params.url The relative path (without the site) of the
+     *     sample URL. It must be one of the URLs returned by list(). For
+     *     example, for the URL https://www.example.com/pagename on the site
+     *     https://www.example.com/, the url value is pagename
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -1317,10 +1354,14 @@ export namespace webmasters_v3 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.category The crawl error category. For example: authPermissions
-     * @param {string} params.platform The user agent type (platform) that made the request. For example: web
-     * @param {string} params.siteUrl The site's URL, including protocol. For example: http://www.example.com/
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.category The crawl error category. For example:
+     *     authPermissions
+     * @param {string} params.platform The user agent type (platform) that made
+     *     the request. For example: web
+     * @param {string} params.siteUrl The site's URL, including protocol. For
+     *     example: http://www.example.com/
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -1399,11 +1440,18 @@ export namespace webmasters_v3 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.category The crawl error category. For example: authPermissions
-     * @param {string} params.platform The user agent type (platform) that made the request. For example: web
-     * @param {string} params.siteUrl The site's URL, including protocol. For example: http://www.example.com/
-     * @param {string} params.url The relative path (without the site) of the sample URL. It must be one of the URLs returned by list(). For example, for the URL https://www.example.com/pagename on the site https://www.example.com/, the url value is pagename
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.category The crawl error category. For example:
+     *     authPermissions
+     * @param {string} params.platform The user agent type (platform) that made
+     *     the request. For example: web
+     * @param {string} params.siteUrl The site's URL, including protocol. For
+     *     example: http://www.example.com/
+     * @param {string} params.url The relative path (without the site) of the
+     *     sample URL. It must be one of the URLs returned by list(). For
+     *     example, for the URL https://www.example.com/pagename on the site
+     *     https://www.example.com/, the url value is pagename
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */

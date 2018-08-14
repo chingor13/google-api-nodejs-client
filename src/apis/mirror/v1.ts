@@ -737,11 +737,14 @@ export namespace mirror_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.accountName The name of the account to be passed to the Android Account Manager.
-     * @param {string} params.accountType Account type to be passed to Android Account Manager.
+     * @param {string} params.accountName The name of the account to be passed
+     *     to the Android Account Manager.
+     * @param {string} params.accountType Account type to be passed to Android
+     *     Account Manager.
      * @param {string} params.userToken The ID for the user.
      * @param {().Account} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -845,7 +848,8 @@ export namespace mirror_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.id The ID of the contact.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -908,7 +912,8 @@ export namespace mirror_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.id The ID of the contact.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -969,7 +974,8 @@ export namespace mirror_v1 {
      *
      * @param {object} params Parameters for request
      * @param {().Contact} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -1032,7 +1038,8 @@ export namespace mirror_v1 {
      * @memberOf! ()
      *
      * @param {object=} params Parameters for request
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -1099,7 +1106,8 @@ export namespace mirror_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.id The ID of the contact.
      * @param {().Contact} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -1164,7 +1172,8 @@ export namespace mirror_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.id The ID of the contact.
      * @param {().Contact} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -1313,8 +1322,10 @@ export namespace mirror_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.id The ID of the location or latest for the last known location.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.id The ID of the location or latest for the last
+     *     known location.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -1374,7 +1385,8 @@ export namespace mirror_v1 {
      * @memberOf! ()
      *
      * @param {object=} params Parameters for request
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -1470,8 +1482,13 @@ export namespace mirror_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.id The ID of the setting. The following IDs are valid:  - locale - The key to the user’s language/locale (BCP 47 identifier) that Glassware should use to render localized content.  - timezone - The key to the user’s current time zone region as defined in the tz database. Example: America/Los_Angeles.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.id The ID of the setting. The following IDs are
+     *     valid:  - locale - The key to the user’s language/locale (BCP 47
+     *     identifier) that Glassware should use to render localized content.  -
+     *     timezone - The key to the user’s current time zone region as defined
+     *     in the tz database. Example: America/Los_Angeles.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -1561,7 +1578,8 @@ export namespace mirror_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.id The ID of the subscription.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -1626,7 +1644,8 @@ export namespace mirror_v1 {
      *
      * @param {object} params Parameters for request
      * @param {().Subscription} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -1693,7 +1712,8 @@ export namespace mirror_v1 {
      * @memberOf! ()
      *
      * @param {object=} params Parameters for request
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -1763,7 +1783,8 @@ export namespace mirror_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.id The ID of the subscription.
      * @param {().Subscription} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -1891,7 +1912,8 @@ export namespace mirror_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.id The ID of the timeline item.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -1954,7 +1976,8 @@ export namespace mirror_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.id The ID of the timeline item.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -2019,7 +2042,8 @@ export namespace mirror_v1 {
      * @param {object} params.media Media object
      * @param {string} params.media.mimeType Media mime-type
      * @param {string|object} params.media.body Media body contents
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -2085,14 +2109,22 @@ export namespace mirror_v1 {
      * @memberOf! ()
      *
      * @param {object=} params Parameters for request
-     * @param {string=} params.bundleId If provided, only items with the given bundleId will be returned.
-     * @param {boolean=} params.includeDeleted If true, tombstone records for deleted items will be returned.
-     * @param {integer=} params.maxResults The maximum number of items to include in the response, used for paging.
-     * @param {string=} params.orderBy Controls the order in which timeline items are returned.
-     * @param {string=} params.pageToken Token for the page of results to return.
-     * @param {boolean=} params.pinnedOnly If true, only pinned items will be returned.
-     * @param {string=} params.sourceItemId If provided, only items with the given sourceItemId will be returned.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.bundleId If provided, only items with the given
+     *     bundleId will be returned.
+     * @param {boolean=} params.includeDeleted If true, tombstone records for
+     *     deleted items will be returned.
+     * @param {integer=} params.maxResults The maximum number of items to
+     *     include in the response, used for paging.
+     * @param {string=} params.orderBy Controls the order in which timeline
+     *     items are returned.
+     * @param {string=} params.pageToken Token for the page of results to
+     *     return.
+     * @param {boolean=} params.pinnedOnly If true, only pinned items will be
+     *     returned.
+     * @param {string=} params.sourceItemId If provided, only items with the
+     *     given sourceItemId will be returned.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -2160,7 +2192,8 @@ export namespace mirror_v1 {
      * @param {object} params Parameters for request
      * @param {string} params.id The ID of the timeline item.
      * @param {().TimelineItem} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -2229,7 +2262,8 @@ export namespace mirror_v1 {
      * @param {object} params.media Media object
      * @param {string} params.media.mimeType Media mime-type
      * @param {string|object} params.media.body Media body contents
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -2440,8 +2474,10 @@ export namespace mirror_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.attachmentId The ID of the attachment.
-     * @param {string} params.itemId The ID of the timeline item the attachment belongs to.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.itemId The ID of the timeline item the attachment
+     *     belongs to.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -2508,8 +2544,10 @@ export namespace mirror_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.attachmentId The ID of the attachment.
-     * @param {string} params.itemId The ID of the timeline item the attachment belongs to.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.itemId The ID of the timeline item the attachment
+     *     belongs to.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -2572,11 +2610,13 @@ export namespace mirror_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.itemId The ID of the timeline item the attachment belongs to.
+     * @param {string} params.itemId The ID of the timeline item the attachment
+     *     belongs to.
      * @param {object} params.media Media object
      * @param {string} params.media.mimeType Media mime-type
      * @param {string|object} params.media.body Media body contents
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -2644,8 +2684,10 @@ export namespace mirror_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.itemId The ID of the timeline item whose attachments should be listed.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.itemId The ID of the timeline item whose
+     *     attachments should be listed.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */

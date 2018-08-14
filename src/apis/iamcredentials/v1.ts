@@ -84,10 +84,9 @@ export namespace iamcredentials_v1 {
      */
     lifetime?: string;
     /**
-     * Code to identify ApiScope (OAuth scope to be precise) to be included in
-     * the OAuth token. See
-     * https://developers.google.com/identity/protocols/googlescopes for more
-     * information. At least one value required.
+     * Code to identify the scopes to be included in the OAuth 2.0 access token.
+     * See https://developers.google.com/identity/protocols/googlescopes for
+     * more information. At least one value required.
      */
     scope?: string[];
   }
@@ -97,7 +96,7 @@ export namespace iamcredentials_v1 {
      */
     accessToken?: string;
     /**
-     * Token expiration time.
+     * Token expiration time. The expiration time is always set.
      */
     expireTime?: string;
   }
@@ -217,9 +216,14 @@ export namespace iamcredentials_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.name The resource name of the service account for which the credentials are requested, in the following format: `projects/-/serviceAccounts/{ACCOUNT_EMAIL_OR_UNIQUEID}`. Using `-` as a wildcard for the project will infer the project from the account.
+     * @param {string} params.name The resource name of the service account for
+     *     which the credentials are requested, in the following format:
+     *     `projects/-/serviceAccounts/{ACCOUNT_EMAIL_OR_UNIQUEID}`. Using `-`
+     *     as a wildcard for the project will infer the project from the
+     *     account.
      * @param {().GenerateAccessTokenRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -295,9 +299,14 @@ export namespace iamcredentials_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.name The resource name of the service account for which the credentials are requested, in the following format: `projects/-/serviceAccounts/{ACCOUNT_EMAIL_OR_UNIQUEID}`. Using `-` as a wildcard for the project will infer the project from the account.
+     * @param {string} params.name The resource name of the service account for
+     *     which the credentials are requested, in the following format:
+     *     `projects/-/serviceAccounts/{ACCOUNT_EMAIL_OR_UNIQUEID}`. Using `-`
+     *     as a wildcard for the project will infer the project from the
+     *     account.
      * @param {().GenerateIdTokenRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -367,9 +376,14 @@ export namespace iamcredentials_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.name The resource name of the service account for which the credentials are requested, in the following format: `projects/-/serviceAccounts/{ACCOUNT_EMAIL_OR_UNIQUEID}`. Using `-` as a wildcard for the project will infer the project from the account.
+     * @param {string} params.name The resource name of the service account for
+     *     which the credentials are requested, in the following format:
+     *     `projects/-/serviceAccounts/{ACCOUNT_EMAIL_OR_UNIQUEID}`. Using `-`
+     *     as a wildcard for the project will infer the project from the
+     *     account.
      * @param {().SignBlobRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -436,9 +450,14 @@ export namespace iamcredentials_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.name The resource name of the service account for which the credentials are requested, in the following format: `projects/-/serviceAccounts/{ACCOUNT_EMAIL_OR_UNIQUEID}`. Using `-` as a wildcard for the project will infer the project from the account.
+     * @param {string} params.name The resource name of the service account for
+     *     which the credentials are requested, in the following format:
+     *     `projects/-/serviceAccounts/{ACCOUNT_EMAIL_OR_UNIQUEID}`. Using `-`
+     *     as a wildcard for the project will infer the project from the
+     *     account.
      * @param {().SignJwtRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */

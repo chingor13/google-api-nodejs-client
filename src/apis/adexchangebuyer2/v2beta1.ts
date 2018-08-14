@@ -1345,9 +1345,12 @@ export namespace adexchangebuyer2_v2beta1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.accountId Unique numerical account ID for the buyer of which the client buyer is a customer; the sponsor buyer to create a client for. (required)
+     * @param {string} params.accountId Unique numerical account ID for the
+     *     buyer of which the client buyer is a customer; the sponsor buyer to
+     *     create a client for. (required)
      * @param {().Client} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -1413,9 +1416,12 @@ export namespace adexchangebuyer2_v2beta1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.accountId Numerical account ID of the client's sponsor buyer. (required)
-     * @param {string} params.clientAccountId Numerical account ID of the client buyer to retrieve. (required)
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.accountId Numerical account ID of the client's
+     *     sponsor buyer. (required)
+     * @param {string} params.clientAccountId Numerical account ID of the client
+     *     buyer to retrieve. (required)
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -1478,11 +1484,21 @@ export namespace adexchangebuyer2_v2beta1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.accountId Unique numerical account ID of the sponsor buyer to list the clients for.
-     * @param {integer=} params.pageSize Requested page size. The server may return fewer clients than requested. If unspecified, the server will pick an appropriate default.
-     * @param {string=} params.pageToken A token identifying a page of results the server should return. Typically, this is the value of ListClientsResponse.nextPageToken returned from the previous call to the accounts.clients.list method.
-     * @param {string=} params.partnerClientId Optional unique identifier (from the standpoint of an Ad Exchange sponsor buyer partner) of the client to return. If specified, at most one client will be returned in the response.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.accountId Unique numerical account ID of the
+     *     sponsor buyer to list the clients for.
+     * @param {integer=} params.pageSize Requested page size. The server may
+     *     return fewer clients than requested. If unspecified, the server will
+     *     pick an appropriate default.
+     * @param {string=} params.pageToken A token identifying a page of results
+     *     the server should return. Typically, this is the value of
+     *     ListClientsResponse.nextPageToken returned from the previous call to
+     *     the accounts.clients.list method.
+     * @param {string=} params.partnerClientId Optional unique identifier (from
+     *     the standpoint of an Ad Exchange sponsor buyer partner) of the client
+     *     to return. If specified, at most one client will be returned in the
+     *     response.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -1549,10 +1565,14 @@ export namespace adexchangebuyer2_v2beta1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.accountId Unique numerical account ID for the buyer of which the client buyer is a customer; the sponsor buyer to update a client for. (required)
-     * @param {string} params.clientAccountId Unique numerical account ID of the client to update. (required)
+     * @param {string} params.accountId Unique numerical account ID for the
+     *     buyer of which the client buyer is a customer; the sponsor buyer to
+     *     update a client for. (required)
+     * @param {string} params.clientAccountId Unique numerical account ID of the
+     *     client to update. (required)
      * @param {().Client} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -1714,10 +1734,13 @@ export namespace adexchangebuyer2_v2beta1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.accountId Numerical account ID of the client's sponsor buyer. (required)
-     * @param {string} params.clientAccountId Numerical account ID of the client buyer that the user should be associated with. (required)
+     * @param {string} params.accountId Numerical account ID of the client's
+     *     sponsor buyer. (required)
+     * @param {string} params.clientAccountId Numerical account ID of the client
+     *     buyer that the user should be associated with. (required)
      * @param {().ClientUserInvitation} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -1787,10 +1810,15 @@ export namespace adexchangebuyer2_v2beta1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.accountId Numerical account ID of the client's sponsor buyer. (required)
-     * @param {string} params.clientAccountId Numerical account ID of the client buyer that the user invitation to be retrieved is associated with. (required)
-     * @param {string} params.invitationId Numerical identifier of the user invitation to retrieve. (required)
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.accountId Numerical account ID of the client's
+     *     sponsor buyer. (required)
+     * @param {string} params.clientAccountId Numerical account ID of the client
+     *     buyer that the user invitation to be retrieved is associated with.
+     *     (required)
+     * @param {string} params.invitationId Numerical identifier of the user
+     *     invitation to retrieve. (required)
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -1857,11 +1885,22 @@ export namespace adexchangebuyer2_v2beta1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.accountId Numerical account ID of the client's sponsor buyer. (required)
-     * @param {string} params.clientAccountId Numerical account ID of the client buyer to list invitations for. (required) You must either specify a string representation of a numerical account identifier or the `-` character to list all the invitations for all the clients of a given sponsor buyer.
-     * @param {integer=} params.pageSize Requested page size. Server may return fewer clients than requested. If unspecified, server will pick an appropriate default.
-     * @param {string=} params.pageToken A token identifying a page of results the server should return. Typically, this is the value of ListClientUserInvitationsResponse.nextPageToken returned from the previous call to the clients.invitations.list method.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.accountId Numerical account ID of the client's
+     *     sponsor buyer. (required)
+     * @param {string} params.clientAccountId Numerical account ID of the client
+     *     buyer to list invitations for. (required) You must either specify a
+     *     string representation of a numerical account identifier or the `-`
+     *     character to list all the invitations for all the clients of a given
+     *     sponsor buyer.
+     * @param {integer=} params.pageSize Requested page size. Server may return
+     *     fewer clients than requested. If unspecified, server will pick an
+     *     appropriate default.
+     * @param {string=} params.pageToken A token identifying a page of results
+     *     the server should return. Typically, this is the value of
+     *     ListClientUserInvitationsResponse.nextPageToken returned from the
+     *     previous call to the clients.invitations.list method.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -2026,10 +2065,14 @@ export namespace adexchangebuyer2_v2beta1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.accountId Numerical account ID of the client's sponsor buyer. (required)
-     * @param {string} params.clientAccountId Numerical account ID of the client buyer that the user to be retrieved is associated with. (required)
-     * @param {string} params.userId Numerical identifier of the user to retrieve. (required)
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.accountId Numerical account ID of the client's
+     *     sponsor buyer. (required)
+     * @param {string} params.clientAccountId Numerical account ID of the client
+     *     buyer that the user to be retrieved is associated with. (required)
+     * @param {string} params.userId Numerical identifier of the user to
+     *     retrieve. (required)
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -2095,11 +2138,22 @@ export namespace adexchangebuyer2_v2beta1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.accountId Numerical account ID of the sponsor buyer of the client to list users for. (required)
-     * @param {string} params.clientAccountId The account ID of the client buyer to list users for. (required) You must specify either a string representation of a numerical account identifier or the `-` character to list all the client users for all the clients of a given sponsor buyer.
-     * @param {integer=} params.pageSize Requested page size. The server may return fewer clients than requested. If unspecified, the server will pick an appropriate default.
-     * @param {string=} params.pageToken A token identifying a page of results the server should return. Typically, this is the value of ListClientUsersResponse.nextPageToken returned from the previous call to the accounts.clients.users.list method.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.accountId Numerical account ID of the sponsor
+     *     buyer of the client to list users for. (required)
+     * @param {string} params.clientAccountId The account ID of the client buyer
+     *     to list users for. (required) You must specify either a string
+     *     representation of a numerical account identifier or the `-` character
+     *     to list all the client users for all the clients of a given sponsor
+     *     buyer.
+     * @param {integer=} params.pageSize Requested page size. The server may
+     *     return fewer clients than requested. If unspecified, the server will
+     *     pick an appropriate default.
+     * @param {string=} params.pageToken A token identifying a page of results
+     *     the server should return. Typically, this is the value of
+     *     ListClientUsersResponse.nextPageToken returned from the previous call
+     *     to the accounts.clients.users.list method.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -2170,11 +2224,15 @@ export namespace adexchangebuyer2_v2beta1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.accountId Numerical account ID of the client's sponsor buyer. (required)
-     * @param {string} params.clientAccountId Numerical account ID of the client buyer that the user to be retrieved is associated with. (required)
-     * @param {string} params.userId Numerical identifier of the user to retrieve. (required)
+     * @param {string} params.accountId Numerical account ID of the client's
+     *     sponsor buyer. (required)
+     * @param {string} params.clientAccountId Numerical account ID of the client
+     *     buyer that the user to be retrieved is associated with. (required)
+     * @param {string} params.userId Numerical identifier of the user to
+     *     retrieve. (required)
      * @param {().ClientUser} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -2337,10 +2395,14 @@ export namespace adexchangebuyer2_v2beta1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.accountId The account that this creative belongs to. Can be used to filter the response of the creatives.list method.
-     * @param {string=} params.duplicateIdMode Indicates if multiple creatives can share an ID or not. Default is NO_DUPLICATES (one ID per creative).
+     * @param {string} params.accountId The account that this creative belongs
+     *     to. Can be used to filter the response of the creatives.list method.
+     * @param {string=} params.duplicateIdMode Indicates if multiple creatives
+     *     can share an ID or not. Default is NO_DUPLICATES (one ID per
+     *     creative).
      * @param {().Creative} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -2408,7 +2470,8 @@ export namespace adexchangebuyer2_v2beta1 {
      * @param {object} params Parameters for request
      * @param {string} params.accountId The account the creative belongs to.
      * @param {string} params.creativeId The ID of the creative to retrieve.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -2471,11 +2534,31 @@ export namespace adexchangebuyer2_v2beta1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.accountId The account to list the creatives from. Specify "-" to list all creatives the current user has access to.
-     * @param {integer=} params.pageSize Requested page size. The server may return fewer creatives than requested (due to timeout constraint) even if more are available via another call. If unspecified, server will pick an appropriate default. Acceptable values are 1 to 1000, inclusive.
-     * @param {string=} params.pageToken A token identifying a page of results the server should return. Typically, this is the value of ListCreativesResponse.next_page_token returned from the previous call to 'ListCreatives' method.
-     * @param {string=} params.query An optional query string to filter creatives. If no filter is specified, all active creatives will be returned. <p>Supported queries are: <ul> <li>accountId=<i>account_id_string</i> <li>creativeId=<i>creative_id_string</i> <li>dealsStatus: {approved, conditionally_approved, disapproved,                    not_checked} <li>openAuctionStatus: {approved, conditionally_approved, disapproved,                           not_checked} <li>attribute: {a numeric attribute from the list of attributes} <li>disapprovalReason: {a reason from DisapprovalReason} </ul> Example: 'accountId=12345 AND (dealsStatus:disapproved AND disapprovalReason:unacceptable_content) OR attribute:47'
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.accountId The account to list the creatives from.
+     *     Specify "-" to list all creatives the current user has access to.
+     * @param {integer=} params.pageSize Requested page size. The server may
+     *     return fewer creatives than requested (due to timeout constraint)
+     *     even if more are available via another call. If unspecified, server
+     *     will pick an appropriate default. Acceptable values are 1 to 1000,
+     *     inclusive.
+     * @param {string=} params.pageToken A token identifying a page of results
+     *     the server should return. Typically, this is the value of
+     *     ListCreativesResponse.next_page_token returned from the previous call
+     *     to 'ListCreatives' method.
+     * @param {string=} params.query An optional query string to filter
+     *     creatives. If no filter is specified, all active creatives will be
+     *     returned. <p>Supported queries are: <ul>
+     *     <li>accountId=<i>account_id_string</i>
+     *     <li>creativeId=<i>creative_id_string</i> <li>dealsStatus: {approved,
+     *     conditionally_approved, disapproved,                    not_checked}
+     *     <li>openAuctionStatus: {approved, conditionally_approved,
+     *     disapproved,                           not_checked} <li>attribute: {a
+     *     numeric attribute from the list of attributes}
+     *     <li>disapprovalReason: {a reason from DisapprovalReason} </ul>
+     *     Example: 'accountId=12345 AND (dealsStatus:disapproved AND
+     *     disapprovalReason:unacceptable_content) OR attribute:47'
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -2544,10 +2627,14 @@ export namespace adexchangebuyer2_v2beta1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.accountId The account of the creative to stop notifications for.
-     * @param {string} params.creativeId The creative ID of the creative to stop notifications for. Specify "-" to specify stopping account level notifications.
+     * @param {string} params.accountId The account of the creative to stop
+     *     notifications for.
+     * @param {string} params.creativeId The creative ID of the creative to stop
+     *     notifications for. Specify "-" to specify stopping account level
+     *     notifications.
      * @param {().StopWatchingCreativeRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -2615,10 +2702,14 @@ export namespace adexchangebuyer2_v2beta1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.accountId The account that this creative belongs to. Can be used to filter the response of the creatives.list method.
-     * @param {string} params.creativeId The buyer-defined creative ID of this creative. Can be used to filter the response of the creatives.list method.
+     * @param {string} params.accountId The account that this creative belongs
+     *     to. Can be used to filter the response of the creatives.list method.
+     * @param {string} params.creativeId The buyer-defined creative ID of this
+     *     creative. Can be used to filter the response of the creatives.list
+     *     method.
      * @param {().Creative} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -2687,9 +2778,14 @@ export namespace adexchangebuyer2_v2beta1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.accountId The account of the creative to watch.
-     * @param {string} params.creativeId The creative ID to watch for status changes. Specify "-" to watch all creatives under the above account. If both creative-level and account-level notifications are sent, only a single notification will be sent to the creative-level notification topic.
+     * @param {string} params.creativeId The creative ID to watch for status
+     *     changes. Specify "-" to watch all creatives under the above account.
+     *     If both creative-level and account-level notifications are sent, only
+     *     a single notification will be sent to the creative-level notification
+     *     topic.
      * @param {().WatchCreativeRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -2912,9 +3008,11 @@ export namespace adexchangebuyer2_v2beta1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.accountId The account the creative belongs to.
-     * @param {string} params.creativeId The ID of the creative associated with the deal.
+     * @param {string} params.creativeId The ID of the creative associated with
+     *     the deal.
      * @param {().AddDealAssociationRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -2979,12 +3077,31 @@ export namespace adexchangebuyer2_v2beta1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.accountId The account to list the associations from. Specify "-" to list all creatives the current user has access to.
-     * @param {string} params.creativeId The creative ID to list the associations from. Specify "-" to list all creatives under the above account.
-     * @param {integer=} params.pageSize Requested page size. Server may return fewer associations than requested. If unspecified, server will pick an appropriate default.
-     * @param {string=} params.pageToken A token identifying a page of results the server should return. Typically, this is the value of ListDealAssociationsResponse.next_page_token returned from the previous call to 'ListDealAssociations' method.
-     * @param {string=} params.query An optional query string to filter deal associations. If no filter is specified, all associations will be returned. Supported queries are: <ul> <li>accountId=<i>account_id_string</i> <li>creativeId=<i>creative_id_string</i> <li>dealsId=<i>deals_id_string</i> <li>dealsStatus:{approved, conditionally_approved, disapproved,                   not_checked} <li>openAuctionStatus:{approved, conditionally_approved, disapproved,                          not_checked} </ul> Example: 'dealsId=12345 AND dealsStatus:disapproved'
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.accountId The account to list the associations
+     *     from. Specify "-" to list all creatives the current user has access
+     *     to.
+     * @param {string} params.creativeId The creative ID to list the
+     *     associations from. Specify "-" to list all creatives under the above
+     *     account.
+     * @param {integer=} params.pageSize Requested page size. Server may return
+     *     fewer associations than requested. If unspecified, server will pick
+     *     an appropriate default.
+     * @param {string=} params.pageToken A token identifying a page of results
+     *     the server should return. Typically, this is the value of
+     *     ListDealAssociationsResponse.next_page_token returned from the
+     *     previous call to 'ListDealAssociations' method.
+     * @param {string=} params.query An optional query string to filter deal
+     *     associations. If no filter is specified, all associations will be
+     *     returned. Supported queries are: <ul>
+     *     <li>accountId=<i>account_id_string</i>
+     *     <li>creativeId=<i>creative_id_string</i>
+     *     <li>dealsId=<i>deals_id_string</i> <li>dealsStatus:{approved,
+     *     conditionally_approved, disapproved,                   not_checked}
+     *     <li>openAuctionStatus:{approved, conditionally_approved, disapproved,
+     *     not_checked} </ul> Example: 'dealsId=12345 AND
+     *     dealsStatus:disapproved'
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -3062,9 +3179,12 @@ export namespace adexchangebuyer2_v2beta1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.accountId The account the creative belongs to.
-     * @param {string} params.creativeId The ID of the creative associated with the deal.
-     * @param {().RemoveDealAssociationRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.creativeId The ID of the creative associated with
+     *     the deal.
+     * @param {().RemoveDealAssociationRequest} params.resource Request body
+     *     data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -3290,10 +3410,20 @@ export namespace adexchangebuyer2_v2beta1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {boolean=} params.isTransient Whether the filter set is transient, or should be persisted indefinitely. By default, filter sets are not transient. If transient, it will be available for at least 1 hour after creation.
-     * @param {string} params.ownerName Name of the owner (bidder or account) of the filter set to be created. For example:  - For a bidder-level filter set for bidder 123: `bidders/123`  - For an account-level filter set for the buyer account representing bidder   123: `bidders/123/accounts/123`  - For an account-level filter set for the child seat buyer account 456   whose bidder is 123: `bidders/123/accounts/456`
+     * @param {boolean=} params.isTransient Whether the filter set is transient,
+     *     or should be persisted indefinitely. By default, filter sets are not
+     *     transient. If transient, it will be available for at least 1 hour
+     *     after creation.
+     * @param {string} params.ownerName Name of the owner (bidder or account) of
+     *     the filter set to be created. For example:  - For a bidder-level
+     *     filter set for bidder 123: `bidders/123`  - For an account-level
+     *     filter set for the buyer account representing bidder   123:
+     *     `bidders/123/accounts/123`  - For an account-level filter set for the
+     *     child seat buyer account 456   whose bidder is 123:
+     *     `bidders/123/accounts/456`
      * @param {().FilterSet} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -3361,8 +3491,15 @@ export namespace adexchangebuyer2_v2beta1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.name Full name of the resource to delete. For example:  - For a bidder-level filter set for bidder 123:   `bidders/123/filterSets/abc`  - For an account-level filter set for the buyer account representing bidder   123: `bidders/123/accounts/123/filterSets/abc`  - For an account-level filter set for the child seat buyer account 456   whose bidder is 123: `bidders/123/accounts/456/filterSets/abc`
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.name Full name of the resource to delete. For
+     *     example:  - For a bidder-level filter set for bidder 123:
+     *     `bidders/123/filterSets/abc`  - For an account-level filter set for
+     *     the buyer account representing bidder   123:
+     *     `bidders/123/accounts/123/filterSets/abc`  - For an account-level
+     *     filter set for the child seat buyer account 456   whose bidder is
+     *     123: `bidders/123/accounts/456/filterSets/abc`
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -3428,8 +3565,15 @@ export namespace adexchangebuyer2_v2beta1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.name Full name of the resource being requested. For example:  - For a bidder-level filter set for bidder 123:   `bidders/123/filterSets/abc`  - For an account-level filter set for the buyer account representing bidder   123: `bidders/123/accounts/123/filterSets/abc`  - For an account-level filter set for the child seat buyer account 456   whose bidder is 123: `bidders/123/accounts/456/filterSets/abc`
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.name Full name of the resource being requested.
+     *     For example:  - For a bidder-level filter set for bidder 123:
+     *     `bidders/123/filterSets/abc`  - For an account-level filter set for
+     *     the buyer account representing bidder   123:
+     *     `bidders/123/accounts/123/filterSets/abc`  - For an account-level
+     *     filter set for the child seat buyer account 456   whose bidder is
+     *     123: `bidders/123/accounts/456/filterSets/abc`
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -3491,10 +3635,22 @@ export namespace adexchangebuyer2_v2beta1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.ownerName Name of the owner (bidder or account) of the filter sets to be listed. For example:  - For a bidder-level filter set for bidder 123: `bidders/123`  - For an account-level filter set for the buyer account representing bidder   123: `bidders/123/accounts/123`  - For an account-level filter set for the child seat buyer account 456   whose bidder is 123: `bidders/123/accounts/456`
-     * @param {integer=} params.pageSize Requested page size. The server may return fewer results than requested. If unspecified, the server will pick an appropriate default.
-     * @param {string=} params.pageToken A token identifying a page of results the server should return. Typically, this is the value of ListFilterSetsResponse.nextPageToken returned from the previous call to the accounts.filterSets.list method.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.ownerName Name of the owner (bidder or account) of
+     *     the filter sets to be listed. For example:  - For a bidder-level
+     *     filter set for bidder 123: `bidders/123`  - For an account-level
+     *     filter set for the buyer account representing bidder   123:
+     *     `bidders/123/accounts/123`  - For an account-level filter set for the
+     *     child seat buyer account 456   whose bidder is 123:
+     *     `bidders/123/accounts/456`
+     * @param {integer=} params.pageSize Requested page size. The server may
+     *     return fewer results than requested. If unspecified, the server will
+     *     pick an appropriate default.
+     * @param {string=} params.pageToken A token identifying a page of results
+     *     the server should return. Typically, this is the value of
+     *     ListFilterSetsResponse.nextPageToken returned from the previous call
+     *     to the accounts.filterSets.list method.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -3661,10 +3817,22 @@ export namespace adexchangebuyer2_v2beta1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.filterSetName Name of the filter set that should be applied to the requested metrics. For example:  - For a bidder-level filter set for bidder 123:   `bidders/123/filterSets/abc`  - For an account-level filter set for the buyer account representing bidder   123: `bidders/123/accounts/123/filterSets/abc`  - For an account-level filter set for the child seat buyer account 456   whose bidder is 123: `bidders/123/accounts/456/filterSets/abc`
-     * @param {integer=} params.pageSize Requested page size. The server may return fewer results than requested. If unspecified, the server will pick an appropriate default.
-     * @param {string=} params.pageToken A token identifying a page of results the server should return. Typically, this is the value of ListBidMetricsResponse.nextPageToken returned from the previous call to the bidMetrics.list method.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.filterSetName Name of the filter set that should
+     *     be applied to the requested metrics. For example:  - For a
+     *     bidder-level filter set for bidder 123: `bidders/123/filterSets/abc`
+     *     - For an account-level filter set for the buyer account representing
+     *     bidder   123: `bidders/123/accounts/123/filterSets/abc`  - For an
+     *     account-level filter set for the child seat buyer account 456   whose
+     *     bidder is 123: `bidders/123/accounts/456/filterSets/abc`
+     * @param {integer=} params.pageSize Requested page size. The server may
+     *     return fewer results than requested. If unspecified, the server will
+     *     pick an appropriate default.
+     * @param {string=} params.pageToken A token identifying a page of results
+     *     the server should return. Typically, this is the value of
+     *     ListBidMetricsResponse.nextPageToken returned from the previous call
+     *     to the bidMetrics.list method.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -3778,10 +3946,22 @@ export namespace adexchangebuyer2_v2beta1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.filterSetName Name of the filter set that should be applied to the requested metrics. For example:  - For a bidder-level filter set for bidder 123:   `bidders/123/filterSets/abc`  - For an account-level filter set for the buyer account representing bidder   123: `bidders/123/accounts/123/filterSets/abc`  - For an account-level filter set for the child seat buyer account 456   whose bidder is 123: `bidders/123/accounts/456/filterSets/abc`
-     * @param {integer=} params.pageSize Requested page size. The server may return fewer results than requested. If unspecified, the server will pick an appropriate default.
-     * @param {string=} params.pageToken A token identifying a page of results the server should return. Typically, this is the value of ListBidResponseErrorsResponse.nextPageToken returned from the previous call to the bidResponseErrors.list method.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.filterSetName Name of the filter set that should
+     *     be applied to the requested metrics. For example:  - For a
+     *     bidder-level filter set for bidder 123: `bidders/123/filterSets/abc`
+     *     - For an account-level filter set for the buyer account representing
+     *     bidder   123: `bidders/123/accounts/123/filterSets/abc`  - For an
+     *     account-level filter set for the child seat buyer account 456   whose
+     *     bidder is 123: `bidders/123/accounts/456/filterSets/abc`
+     * @param {integer=} params.pageSize Requested page size. The server may
+     *     return fewer results than requested. If unspecified, the server will
+     *     pick an appropriate default.
+     * @param {string=} params.pageToken A token identifying a page of results
+     *     the server should return. Typically, this is the value of
+     *     ListBidResponseErrorsResponse.nextPageToken returned from the
+     *     previous call to the bidResponseErrors.list method.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -3906,10 +4086,22 @@ export namespace adexchangebuyer2_v2beta1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.filterSetName Name of the filter set that should be applied to the requested metrics. For example:  - For a bidder-level filter set for bidder 123:   `bidders/123/filterSets/abc`  - For an account-level filter set for the buyer account representing bidder   123: `bidders/123/accounts/123/filterSets/abc`  - For an account-level filter set for the child seat buyer account 456   whose bidder is 123: `bidders/123/accounts/456/filterSets/abc`
-     * @param {integer=} params.pageSize Requested page size. The server may return fewer results than requested. If unspecified, the server will pick an appropriate default.
-     * @param {string=} params.pageToken A token identifying a page of results the server should return. Typically, this is the value of ListBidResponsesWithoutBidsResponse.nextPageToken returned from the previous call to the bidResponsesWithoutBids.list method.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.filterSetName Name of the filter set that should
+     *     be applied to the requested metrics. For example:  - For a
+     *     bidder-level filter set for bidder 123: `bidders/123/filterSets/abc`
+     *     - For an account-level filter set for the buyer account representing
+     *     bidder   123: `bidders/123/accounts/123/filterSets/abc`  - For an
+     *     account-level filter set for the child seat buyer account 456   whose
+     *     bidder is 123: `bidders/123/accounts/456/filterSets/abc`
+     * @param {integer=} params.pageSize Requested page size. The server may
+     *     return fewer results than requested. If unspecified, the server will
+     *     pick an appropriate default.
+     * @param {string=} params.pageToken A token identifying a page of results
+     *     the server should return. Typically, this is the value of
+     *     ListBidResponsesWithoutBidsResponse.nextPageToken returned from the
+     *     previous call to the bidResponsesWithoutBids.list method.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -4038,10 +4230,22 @@ export namespace adexchangebuyer2_v2beta1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.filterSetName Name of the filter set that should be applied to the requested metrics. For example:  - For a bidder-level filter set for bidder 123:   `bidders/123/filterSets/abc`  - For an account-level filter set for the buyer account representing bidder   123: `bidders/123/accounts/123/filterSets/abc`  - For an account-level filter set for the child seat buyer account 456   whose bidder is 123: `bidders/123/accounts/456/filterSets/abc`
-     * @param {integer=} params.pageSize Requested page size. The server may return fewer results than requested. If unspecified, the server will pick an appropriate default.
-     * @param {string=} params.pageToken A token identifying a page of results the server should return. Typically, this is the value of ListFilteredBidRequestsResponse.nextPageToken returned from the previous call to the filteredBidRequests.list method.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.filterSetName Name of the filter set that should
+     *     be applied to the requested metrics. For example:  - For a
+     *     bidder-level filter set for bidder 123: `bidders/123/filterSets/abc`
+     *     - For an account-level filter set for the buyer account representing
+     *     bidder   123: `bidders/123/accounts/123/filterSets/abc`  - For an
+     *     account-level filter set for the child seat buyer account 456   whose
+     *     bidder is 123: `bidders/123/accounts/456/filterSets/abc`
+     * @param {integer=} params.pageSize Requested page size. The server may
+     *     return fewer results than requested. If unspecified, the server will
+     *     pick an appropriate default.
+     * @param {string=} params.pageToken A token identifying a page of results
+     *     the server should return. Typically, this is the value of
+     *     ListFilteredBidRequestsResponse.nextPageToken returned from the
+     *     previous call to the filteredBidRequests.list method.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -4172,10 +4376,22 @@ export namespace adexchangebuyer2_v2beta1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.filterSetName Name of the filter set that should be applied to the requested metrics. For example:  - For a bidder-level filter set for bidder 123:   `bidders/123/filterSets/abc`  - For an account-level filter set for the buyer account representing bidder   123: `bidders/123/accounts/123/filterSets/abc`  - For an account-level filter set for the child seat buyer account 456   whose bidder is 123: `bidders/123/accounts/456/filterSets/abc`
-     * @param {integer=} params.pageSize Requested page size. The server may return fewer results than requested. If unspecified, the server will pick an appropriate default.
-     * @param {string=} params.pageToken A token identifying a page of results the server should return. Typically, this is the value of ListFilteredBidsResponse.nextPageToken returned from the previous call to the filteredBids.list method.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.filterSetName Name of the filter set that should
+     *     be applied to the requested metrics. For example:  - For a
+     *     bidder-level filter set for bidder 123: `bidders/123/filterSets/abc`
+     *     - For an account-level filter set for the buyer account representing
+     *     bidder   123: `bidders/123/accounts/123/filterSets/abc`  - For an
+     *     account-level filter set for the child seat buyer account 456   whose
+     *     bidder is 123: `bidders/123/accounts/456/filterSets/abc`
+     * @param {integer=} params.pageSize Requested page size. The server may
+     *     return fewer results than requested. If unspecified, the server will
+     *     pick an appropriate default.
+     * @param {string=} params.pageToken A token identifying a page of results
+     *     the server should return. Typically, this is the value of
+     *     ListFilteredBidsResponse.nextPageToken returned from the previous
+     *     call to the filteredBids.list method.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -4288,11 +4504,25 @@ export namespace adexchangebuyer2_v2beta1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {integer} params.creativeStatusId The ID of the creative status for which to retrieve a breakdown by creative. See [creative-status-codes](https://developers.google.com/ad-exchange/rtb/downloads/creative-status-codes).
-     * @param {string} params.filterSetName Name of the filter set that should be applied to the requested metrics. For example:  - For a bidder-level filter set for bidder 123:   `bidders/123/filterSets/abc`  - For an account-level filter set for the buyer account representing bidder   123: `bidders/123/accounts/123/filterSets/abc`  - For an account-level filter set for the child seat buyer account 456   whose bidder is 123: `bidders/123/accounts/456/filterSets/abc`
-     * @param {integer=} params.pageSize Requested page size. The server may return fewer results than requested. If unspecified, the server will pick an appropriate default.
-     * @param {string=} params.pageToken A token identifying a page of results the server should return. Typically, this is the value of ListCreativeStatusBreakdownByCreativeResponse.nextPageToken returned from the previous call to the filteredBids.creatives.list method.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {integer} params.creativeStatusId The ID of the creative status
+     *     for which to retrieve a breakdown by creative. See
+     *     [creative-status-codes](https://developers.google.com/ad-exchange/rtb/downloads/creative-status-codes).
+     * @param {string} params.filterSetName Name of the filter set that should
+     *     be applied to the requested metrics. For example:  - For a
+     *     bidder-level filter set for bidder 123: `bidders/123/filterSets/abc`
+     *     - For an account-level filter set for the buyer account representing
+     *     bidder   123: `bidders/123/accounts/123/filterSets/abc`  - For an
+     *     account-level filter set for the child seat buyer account 456   whose
+     *     bidder is 123: `bidders/123/accounts/456/filterSets/abc`
+     * @param {integer=} params.pageSize Requested page size. The server may
+     *     return fewer results than requested. If unspecified, the server will
+     *     pick an appropriate default.
+     * @param {string=} params.pageToken A token identifying a page of results
+     *     the server should return. Typically, this is the value of
+     *     ListCreativeStatusBreakdownByCreativeResponse.nextPageToken returned
+     *     from the previous call to the filteredBids.creatives.list method.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -4426,11 +4656,27 @@ export namespace adexchangebuyer2_v2beta1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {integer} params.creativeStatusId The ID of the creative status for which to retrieve a breakdown by detail. See [creative-status-codes](https://developers.google.com/ad-exchange/rtb/downloads/creative-status-codes). Details are only available for statuses 10, 14, 15, 17, 18, 19, 86, and 87.
-     * @param {string} params.filterSetName Name of the filter set that should be applied to the requested metrics. For example:  - For a bidder-level filter set for bidder 123:   `bidders/123/filterSets/abc`  - For an account-level filter set for the buyer account representing bidder   123: `bidders/123/accounts/123/filterSets/abc`  - For an account-level filter set for the child seat buyer account 456   whose bidder is 123: `bidders/123/accounts/456/filterSets/abc`
-     * @param {integer=} params.pageSize Requested page size. The server may return fewer results than requested. If unspecified, the server will pick an appropriate default.
-     * @param {string=} params.pageToken A token identifying a page of results the server should return. Typically, this is the value of ListCreativeStatusBreakdownByDetailResponse.nextPageToken returned from the previous call to the filteredBids.details.list method.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {integer} params.creativeStatusId The ID of the creative status
+     *     for which to retrieve a breakdown by detail. See
+     *     [creative-status-codes](https://developers.google.com/ad-exchange/rtb/downloads/creative-status-codes).
+     *     Details are only available for statuses 10, 14, 15, 17, 18, 19, 86,
+     *     and 87.
+     * @param {string} params.filterSetName Name of the filter set that should
+     *     be applied to the requested metrics. For example:  - For a
+     *     bidder-level filter set for bidder 123: `bidders/123/filterSets/abc`
+     *     - For an account-level filter set for the buyer account representing
+     *     bidder   123: `bidders/123/accounts/123/filterSets/abc`  - For an
+     *     account-level filter set for the child seat buyer account 456   whose
+     *     bidder is 123: `bidders/123/accounts/456/filterSets/abc`
+     * @param {integer=} params.pageSize Requested page size. The server may
+     *     return fewer results than requested. If unspecified, the server will
+     *     pick an appropriate default.
+     * @param {string=} params.pageToken A token identifying a page of results
+     *     the server should return. Typically, this is the value of
+     *     ListCreativeStatusBreakdownByDetailResponse.nextPageToken returned
+     *     from the previous call to the filteredBids.details.list method.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -4567,10 +4813,22 @@ export namespace adexchangebuyer2_v2beta1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.filterSetName Name of the filter set that should be applied to the requested metrics. For example:  - For a bidder-level filter set for bidder 123:   `bidders/123/filterSets/abc`  - For an account-level filter set for the buyer account representing bidder   123: `bidders/123/accounts/123/filterSets/abc`  - For an account-level filter set for the child seat buyer account 456   whose bidder is 123: `bidders/123/accounts/456/filterSets/abc`
-     * @param {integer=} params.pageSize Requested page size. The server may return fewer results than requested. If unspecified, the server will pick an appropriate default.
-     * @param {string=} params.pageToken A token identifying a page of results the server should return. Typically, this is the value of ListImpressionMetricsResponse.nextPageToken returned from the previous call to the impressionMetrics.list method.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.filterSetName Name of the filter set that should
+     *     be applied to the requested metrics. For example:  - For a
+     *     bidder-level filter set for bidder 123: `bidders/123/filterSets/abc`
+     *     - For an account-level filter set for the buyer account representing
+     *     bidder   123: `bidders/123/accounts/123/filterSets/abc`  - For an
+     *     account-level filter set for the child seat buyer account 456   whose
+     *     bidder is 123: `bidders/123/accounts/456/filterSets/abc`
+     * @param {integer=} params.pageSize Requested page size. The server may
+     *     return fewer results than requested. If unspecified, the server will
+     *     pick an appropriate default.
+     * @param {string=} params.pageToken A token identifying a page of results
+     *     the server should return. Typically, this is the value of
+     *     ListImpressionMetricsResponse.nextPageToken returned from the
+     *     previous call to the impressionMetrics.list method.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -4693,10 +4951,22 @@ export namespace adexchangebuyer2_v2beta1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.filterSetName Name of the filter set that should be applied to the requested metrics. For example:  - For a bidder-level filter set for bidder 123:   `bidders/123/filterSets/abc`  - For an account-level filter set for the buyer account representing bidder   123: `bidders/123/accounts/123/filterSets/abc`  - For an account-level filter set for the child seat buyer account 456   whose bidder is 123: `bidders/123/accounts/456/filterSets/abc`
-     * @param {integer=} params.pageSize Requested page size. The server may return fewer results than requested. If unspecified, the server will pick an appropriate default.
-     * @param {string=} params.pageToken A token identifying a page of results the server should return. Typically, this is the value of ListLosingBidsResponse.nextPageToken returned from the previous call to the losingBids.list method.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.filterSetName Name of the filter set that should
+     *     be applied to the requested metrics. For example:  - For a
+     *     bidder-level filter set for bidder 123: `bidders/123/filterSets/abc`
+     *     - For an account-level filter set for the buyer account representing
+     *     bidder   123: `bidders/123/accounts/123/filterSets/abc`  - For an
+     *     account-level filter set for the child seat buyer account 456   whose
+     *     bidder is 123: `bidders/123/accounts/456/filterSets/abc`
+     * @param {integer=} params.pageSize Requested page size. The server may
+     *     return fewer results than requested. If unspecified, the server will
+     *     pick an appropriate default.
+     * @param {string=} params.pageToken A token identifying a page of results
+     *     the server should return. Typically, this is the value of
+     *     ListLosingBidsResponse.nextPageToken returned from the previous call
+     *     to the losingBids.list method.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -4810,10 +5080,22 @@ export namespace adexchangebuyer2_v2beta1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.filterSetName Name of the filter set that should be applied to the requested metrics. For example:  - For a bidder-level filter set for bidder 123:   `bidders/123/filterSets/abc`  - For an account-level filter set for the buyer account representing bidder   123: `bidders/123/accounts/123/filterSets/abc`  - For an account-level filter set for the child seat buyer account 456   whose bidder is 123: `bidders/123/accounts/456/filterSets/abc`
-     * @param {integer=} params.pageSize Requested page size. The server may return fewer results than requested. If unspecified, the server will pick an appropriate default.
-     * @param {string=} params.pageToken A token identifying a page of results the server should return. Typically, this is the value of ListNonBillableWinningBidsResponse.nextPageToken returned from the previous call to the nonBillableWinningBids.list method.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.filterSetName Name of the filter set that should
+     *     be applied to the requested metrics. For example:  - For a
+     *     bidder-level filter set for bidder 123: `bidders/123/filterSets/abc`
+     *     - For an account-level filter set for the buyer account representing
+     *     bidder   123: `bidders/123/accounts/123/filterSets/abc`  - For an
+     *     account-level filter set for the child seat buyer account 456   whose
+     *     bidder is 123: `bidders/123/accounts/456/filterSets/abc`
+     * @param {integer=} params.pageSize Requested page size. The server may
+     *     return fewer results than requested. If unspecified, the server will
+     *     pick an appropriate default.
+     * @param {string=} params.pageToken A token identifying a page of results
+     *     the server should return. Typically, this is the value of
+     *     ListNonBillableWinningBidsResponse.nextPageToken returned from the
+     *     previous call to the nonBillableWinningBids.list method.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -4964,10 +5246,20 @@ export namespace adexchangebuyer2_v2beta1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {boolean=} params.isTransient Whether the filter set is transient, or should be persisted indefinitely. By default, filter sets are not transient. If transient, it will be available for at least 1 hour after creation.
-     * @param {string} params.ownerName Name of the owner (bidder or account) of the filter set to be created. For example:  - For a bidder-level filter set for bidder 123: `bidders/123`  - For an account-level filter set for the buyer account representing bidder   123: `bidders/123/accounts/123`  - For an account-level filter set for the child seat buyer account 456   whose bidder is 123: `bidders/123/accounts/456`
+     * @param {boolean=} params.isTransient Whether the filter set is transient,
+     *     or should be persisted indefinitely. By default, filter sets are not
+     *     transient. If transient, it will be available for at least 1 hour
+     *     after creation.
+     * @param {string} params.ownerName Name of the owner (bidder or account) of
+     *     the filter set to be created. For example:  - For a bidder-level
+     *     filter set for bidder 123: `bidders/123`  - For an account-level
+     *     filter set for the buyer account representing bidder   123:
+     *     `bidders/123/accounts/123`  - For an account-level filter set for the
+     *     child seat buyer account 456   whose bidder is 123:
+     *     `bidders/123/accounts/456`
      * @param {().FilterSet} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -5035,8 +5327,15 @@ export namespace adexchangebuyer2_v2beta1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.name Full name of the resource to delete. For example:  - For a bidder-level filter set for bidder 123:   `bidders/123/filterSets/abc`  - For an account-level filter set for the buyer account representing bidder   123: `bidders/123/accounts/123/filterSets/abc`  - For an account-level filter set for the child seat buyer account 456   whose bidder is 123: `bidders/123/accounts/456/filterSets/abc`
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.name Full name of the resource to delete. For
+     *     example:  - For a bidder-level filter set for bidder 123:
+     *     `bidders/123/filterSets/abc`  - For an account-level filter set for
+     *     the buyer account representing bidder   123:
+     *     `bidders/123/accounts/123/filterSets/abc`  - For an account-level
+     *     filter set for the child seat buyer account 456   whose bidder is
+     *     123: `bidders/123/accounts/456/filterSets/abc`
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -5102,8 +5401,15 @@ export namespace adexchangebuyer2_v2beta1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.name Full name of the resource being requested. For example:  - For a bidder-level filter set for bidder 123:   `bidders/123/filterSets/abc`  - For an account-level filter set for the buyer account representing bidder   123: `bidders/123/accounts/123/filterSets/abc`  - For an account-level filter set for the child seat buyer account 456   whose bidder is 123: `bidders/123/accounts/456/filterSets/abc`
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.name Full name of the resource being requested.
+     *     For example:  - For a bidder-level filter set for bidder 123:
+     *     `bidders/123/filterSets/abc`  - For an account-level filter set for
+     *     the buyer account representing bidder   123:
+     *     `bidders/123/accounts/123/filterSets/abc`  - For an account-level
+     *     filter set for the child seat buyer account 456   whose bidder is
+     *     123: `bidders/123/accounts/456/filterSets/abc`
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -5165,10 +5471,22 @@ export namespace adexchangebuyer2_v2beta1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.ownerName Name of the owner (bidder or account) of the filter sets to be listed. For example:  - For a bidder-level filter set for bidder 123: `bidders/123`  - For an account-level filter set for the buyer account representing bidder   123: `bidders/123/accounts/123`  - For an account-level filter set for the child seat buyer account 456   whose bidder is 123: `bidders/123/accounts/456`
-     * @param {integer=} params.pageSize Requested page size. The server may return fewer results than requested. If unspecified, the server will pick an appropriate default.
-     * @param {string=} params.pageToken A token identifying a page of results the server should return. Typically, this is the value of ListFilterSetsResponse.nextPageToken returned from the previous call to the accounts.filterSets.list method.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.ownerName Name of the owner (bidder or account) of
+     *     the filter sets to be listed. For example:  - For a bidder-level
+     *     filter set for bidder 123: `bidders/123`  - For an account-level
+     *     filter set for the buyer account representing bidder   123:
+     *     `bidders/123/accounts/123`  - For an account-level filter set for the
+     *     child seat buyer account 456   whose bidder is 123:
+     *     `bidders/123/accounts/456`
+     * @param {integer=} params.pageSize Requested page size. The server may
+     *     return fewer results than requested. If unspecified, the server will
+     *     pick an appropriate default.
+     * @param {string=} params.pageToken A token identifying a page of results
+     *     the server should return. Typically, this is the value of
+     *     ListFilterSetsResponse.nextPageToken returned from the previous call
+     *     to the accounts.filterSets.list method.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -5335,10 +5653,22 @@ export namespace adexchangebuyer2_v2beta1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.filterSetName Name of the filter set that should be applied to the requested metrics. For example:  - For a bidder-level filter set for bidder 123:   `bidders/123/filterSets/abc`  - For an account-level filter set for the buyer account representing bidder   123: `bidders/123/accounts/123/filterSets/abc`  - For an account-level filter set for the child seat buyer account 456   whose bidder is 123: `bidders/123/accounts/456/filterSets/abc`
-     * @param {integer=} params.pageSize Requested page size. The server may return fewer results than requested. If unspecified, the server will pick an appropriate default.
-     * @param {string=} params.pageToken A token identifying a page of results the server should return. Typically, this is the value of ListBidMetricsResponse.nextPageToken returned from the previous call to the bidMetrics.list method.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.filterSetName Name of the filter set that should
+     *     be applied to the requested metrics. For example:  - For a
+     *     bidder-level filter set for bidder 123: `bidders/123/filterSets/abc`
+     *     - For an account-level filter set for the buyer account representing
+     *     bidder   123: `bidders/123/accounts/123/filterSets/abc`  - For an
+     *     account-level filter set for the child seat buyer account 456   whose
+     *     bidder is 123: `bidders/123/accounts/456/filterSets/abc`
+     * @param {integer=} params.pageSize Requested page size. The server may
+     *     return fewer results than requested. If unspecified, the server will
+     *     pick an appropriate default.
+     * @param {string=} params.pageToken A token identifying a page of results
+     *     the server should return. Typically, this is the value of
+     *     ListBidMetricsResponse.nextPageToken returned from the previous call
+     *     to the bidMetrics.list method.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -5449,10 +5779,22 @@ export namespace adexchangebuyer2_v2beta1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.filterSetName Name of the filter set that should be applied to the requested metrics. For example:  - For a bidder-level filter set for bidder 123:   `bidders/123/filterSets/abc`  - For an account-level filter set for the buyer account representing bidder   123: `bidders/123/accounts/123/filterSets/abc`  - For an account-level filter set for the child seat buyer account 456   whose bidder is 123: `bidders/123/accounts/456/filterSets/abc`
-     * @param {integer=} params.pageSize Requested page size. The server may return fewer results than requested. If unspecified, the server will pick an appropriate default.
-     * @param {string=} params.pageToken A token identifying a page of results the server should return. Typically, this is the value of ListBidResponseErrorsResponse.nextPageToken returned from the previous call to the bidResponseErrors.list method.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.filterSetName Name of the filter set that should
+     *     be applied to the requested metrics. For example:  - For a
+     *     bidder-level filter set for bidder 123: `bidders/123/filterSets/abc`
+     *     - For an account-level filter set for the buyer account representing
+     *     bidder   123: `bidders/123/accounts/123/filterSets/abc`  - For an
+     *     account-level filter set for the child seat buyer account 456   whose
+     *     bidder is 123: `bidders/123/accounts/456/filterSets/abc`
+     * @param {integer=} params.pageSize Requested page size. The server may
+     *     return fewer results than requested. If unspecified, the server will
+     *     pick an appropriate default.
+     * @param {string=} params.pageToken A token identifying a page of results
+     *     the server should return. Typically, this is the value of
+     *     ListBidResponseErrorsResponse.nextPageToken returned from the
+     *     previous call to the bidResponseErrors.list method.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -5573,10 +5915,22 @@ export namespace adexchangebuyer2_v2beta1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.filterSetName Name of the filter set that should be applied to the requested metrics. For example:  - For a bidder-level filter set for bidder 123:   `bidders/123/filterSets/abc`  - For an account-level filter set for the buyer account representing bidder   123: `bidders/123/accounts/123/filterSets/abc`  - For an account-level filter set for the child seat buyer account 456   whose bidder is 123: `bidders/123/accounts/456/filterSets/abc`
-     * @param {integer=} params.pageSize Requested page size. The server may return fewer results than requested. If unspecified, the server will pick an appropriate default.
-     * @param {string=} params.pageToken A token identifying a page of results the server should return. Typically, this is the value of ListBidResponsesWithoutBidsResponse.nextPageToken returned from the previous call to the bidResponsesWithoutBids.list method.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.filterSetName Name of the filter set that should
+     *     be applied to the requested metrics. For example:  - For a
+     *     bidder-level filter set for bidder 123: `bidders/123/filterSets/abc`
+     *     - For an account-level filter set for the buyer account representing
+     *     bidder   123: `bidders/123/accounts/123/filterSets/abc`  - For an
+     *     account-level filter set for the child seat buyer account 456   whose
+     *     bidder is 123: `bidders/123/accounts/456/filterSets/abc`
+     * @param {integer=} params.pageSize Requested page size. The server may
+     *     return fewer results than requested. If unspecified, the server will
+     *     pick an appropriate default.
+     * @param {string=} params.pageToken A token identifying a page of results
+     *     the server should return. Typically, this is the value of
+     *     ListBidResponsesWithoutBidsResponse.nextPageToken returned from the
+     *     previous call to the bidResponsesWithoutBids.list method.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -5702,10 +6056,22 @@ export namespace adexchangebuyer2_v2beta1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.filterSetName Name of the filter set that should be applied to the requested metrics. For example:  - For a bidder-level filter set for bidder 123:   `bidders/123/filterSets/abc`  - For an account-level filter set for the buyer account representing bidder   123: `bidders/123/accounts/123/filterSets/abc`  - For an account-level filter set for the child seat buyer account 456   whose bidder is 123: `bidders/123/accounts/456/filterSets/abc`
-     * @param {integer=} params.pageSize Requested page size. The server may return fewer results than requested. If unspecified, the server will pick an appropriate default.
-     * @param {string=} params.pageToken A token identifying a page of results the server should return. Typically, this is the value of ListFilteredBidRequestsResponse.nextPageToken returned from the previous call to the filteredBidRequests.list method.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.filterSetName Name of the filter set that should
+     *     be applied to the requested metrics. For example:  - For a
+     *     bidder-level filter set for bidder 123: `bidders/123/filterSets/abc`
+     *     - For an account-level filter set for the buyer account representing
+     *     bidder   123: `bidders/123/accounts/123/filterSets/abc`  - For an
+     *     account-level filter set for the child seat buyer account 456   whose
+     *     bidder is 123: `bidders/123/accounts/456/filterSets/abc`
+     * @param {integer=} params.pageSize Requested page size. The server may
+     *     return fewer results than requested. If unspecified, the server will
+     *     pick an appropriate default.
+     * @param {string=} params.pageToken A token identifying a page of results
+     *     the server should return. Typically, this is the value of
+     *     ListFilteredBidRequestsResponse.nextPageToken returned from the
+     *     previous call to the filteredBidRequests.list method.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -5832,10 +6198,22 @@ export namespace adexchangebuyer2_v2beta1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.filterSetName Name of the filter set that should be applied to the requested metrics. For example:  - For a bidder-level filter set for bidder 123:   `bidders/123/filterSets/abc`  - For an account-level filter set for the buyer account representing bidder   123: `bidders/123/accounts/123/filterSets/abc`  - For an account-level filter set for the child seat buyer account 456   whose bidder is 123: `bidders/123/accounts/456/filterSets/abc`
-     * @param {integer=} params.pageSize Requested page size. The server may return fewer results than requested. If unspecified, the server will pick an appropriate default.
-     * @param {string=} params.pageToken A token identifying a page of results the server should return. Typically, this is the value of ListFilteredBidsResponse.nextPageToken returned from the previous call to the filteredBids.list method.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.filterSetName Name of the filter set that should
+     *     be applied to the requested metrics. For example:  - For a
+     *     bidder-level filter set for bidder 123: `bidders/123/filterSets/abc`
+     *     - For an account-level filter set for the buyer account representing
+     *     bidder   123: `bidders/123/accounts/123/filterSets/abc`  - For an
+     *     account-level filter set for the child seat buyer account 456   whose
+     *     bidder is 123: `bidders/123/accounts/456/filterSets/abc`
+     * @param {integer=} params.pageSize Requested page size. The server may
+     *     return fewer results than requested. If unspecified, the server will
+     *     pick an appropriate default.
+     * @param {string=} params.pageToken A token identifying a page of results
+     *     the server should return. Typically, this is the value of
+     *     ListFilteredBidsResponse.nextPageToken returned from the previous
+     *     call to the filteredBids.list method.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -5945,11 +6323,25 @@ export namespace adexchangebuyer2_v2beta1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {integer} params.creativeStatusId The ID of the creative status for which to retrieve a breakdown by creative. See [creative-status-codes](https://developers.google.com/ad-exchange/rtb/downloads/creative-status-codes).
-     * @param {string} params.filterSetName Name of the filter set that should be applied to the requested metrics. For example:  - For a bidder-level filter set for bidder 123:   `bidders/123/filterSets/abc`  - For an account-level filter set for the buyer account representing bidder   123: `bidders/123/accounts/123/filterSets/abc`  - For an account-level filter set for the child seat buyer account 456   whose bidder is 123: `bidders/123/accounts/456/filterSets/abc`
-     * @param {integer=} params.pageSize Requested page size. The server may return fewer results than requested. If unspecified, the server will pick an appropriate default.
-     * @param {string=} params.pageToken A token identifying a page of results the server should return. Typically, this is the value of ListCreativeStatusBreakdownByCreativeResponse.nextPageToken returned from the previous call to the filteredBids.creatives.list method.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {integer} params.creativeStatusId The ID of the creative status
+     *     for which to retrieve a breakdown by creative. See
+     *     [creative-status-codes](https://developers.google.com/ad-exchange/rtb/downloads/creative-status-codes).
+     * @param {string} params.filterSetName Name of the filter set that should
+     *     be applied to the requested metrics. For example:  - For a
+     *     bidder-level filter set for bidder 123: `bidders/123/filterSets/abc`
+     *     - For an account-level filter set for the buyer account representing
+     *     bidder   123: `bidders/123/accounts/123/filterSets/abc`  - For an
+     *     account-level filter set for the child seat buyer account 456   whose
+     *     bidder is 123: `bidders/123/accounts/456/filterSets/abc`
+     * @param {integer=} params.pageSize Requested page size. The server may
+     *     return fewer results than requested. If unspecified, the server will
+     *     pick an appropriate default.
+     * @param {string=} params.pageToken A token identifying a page of results
+     *     the server should return. Typically, this is the value of
+     *     ListCreativeStatusBreakdownByCreativeResponse.nextPageToken returned
+     *     from the previous call to the filteredBids.creatives.list method.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -6079,11 +6471,27 @@ export namespace adexchangebuyer2_v2beta1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {integer} params.creativeStatusId The ID of the creative status for which to retrieve a breakdown by detail. See [creative-status-codes](https://developers.google.com/ad-exchange/rtb/downloads/creative-status-codes). Details are only available for statuses 10, 14, 15, 17, 18, 19, 86, and 87.
-     * @param {string} params.filterSetName Name of the filter set that should be applied to the requested metrics. For example:  - For a bidder-level filter set for bidder 123:   `bidders/123/filterSets/abc`  - For an account-level filter set for the buyer account representing bidder   123: `bidders/123/accounts/123/filterSets/abc`  - For an account-level filter set for the child seat buyer account 456   whose bidder is 123: `bidders/123/accounts/456/filterSets/abc`
-     * @param {integer=} params.pageSize Requested page size. The server may return fewer results than requested. If unspecified, the server will pick an appropriate default.
-     * @param {string=} params.pageToken A token identifying a page of results the server should return. Typically, this is the value of ListCreativeStatusBreakdownByDetailResponse.nextPageToken returned from the previous call to the filteredBids.details.list method.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {integer} params.creativeStatusId The ID of the creative status
+     *     for which to retrieve a breakdown by detail. See
+     *     [creative-status-codes](https://developers.google.com/ad-exchange/rtb/downloads/creative-status-codes).
+     *     Details are only available for statuses 10, 14, 15, 17, 18, 19, 86,
+     *     and 87.
+     * @param {string} params.filterSetName Name of the filter set that should
+     *     be applied to the requested metrics. For example:  - For a
+     *     bidder-level filter set for bidder 123: `bidders/123/filterSets/abc`
+     *     - For an account-level filter set for the buyer account representing
+     *     bidder   123: `bidders/123/accounts/123/filterSets/abc`  - For an
+     *     account-level filter set for the child seat buyer account 456   whose
+     *     bidder is 123: `bidders/123/accounts/456/filterSets/abc`
+     * @param {integer=} params.pageSize Requested page size. The server may
+     *     return fewer results than requested. If unspecified, the server will
+     *     pick an appropriate default.
+     * @param {string=} params.pageToken A token identifying a page of results
+     *     the server should return. Typically, this is the value of
+     *     ListCreativeStatusBreakdownByDetailResponse.nextPageToken returned
+     *     from the previous call to the filteredBids.details.list method.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -6216,10 +6624,22 @@ export namespace adexchangebuyer2_v2beta1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.filterSetName Name of the filter set that should be applied to the requested metrics. For example:  - For a bidder-level filter set for bidder 123:   `bidders/123/filterSets/abc`  - For an account-level filter set for the buyer account representing bidder   123: `bidders/123/accounts/123/filterSets/abc`  - For an account-level filter set for the child seat buyer account 456   whose bidder is 123: `bidders/123/accounts/456/filterSets/abc`
-     * @param {integer=} params.pageSize Requested page size. The server may return fewer results than requested. If unspecified, the server will pick an appropriate default.
-     * @param {string=} params.pageToken A token identifying a page of results the server should return. Typically, this is the value of ListImpressionMetricsResponse.nextPageToken returned from the previous call to the impressionMetrics.list method.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.filterSetName Name of the filter set that should
+     *     be applied to the requested metrics. For example:  - For a
+     *     bidder-level filter set for bidder 123: `bidders/123/filterSets/abc`
+     *     - For an account-level filter set for the buyer account representing
+     *     bidder   123: `bidders/123/accounts/123/filterSets/abc`  - For an
+     *     account-level filter set for the child seat buyer account 456   whose
+     *     bidder is 123: `bidders/123/accounts/456/filterSets/abc`
+     * @param {integer=} params.pageSize Requested page size. The server may
+     *     return fewer results than requested. If unspecified, the server will
+     *     pick an appropriate default.
+     * @param {string=} params.pageToken A token identifying a page of results
+     *     the server should return. Typically, this is the value of
+     *     ListImpressionMetricsResponse.nextPageToken returned from the
+     *     previous call to the impressionMetrics.list method.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -6339,10 +6759,22 @@ export namespace adexchangebuyer2_v2beta1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.filterSetName Name of the filter set that should be applied to the requested metrics. For example:  - For a bidder-level filter set for bidder 123:   `bidders/123/filterSets/abc`  - For an account-level filter set for the buyer account representing bidder   123: `bidders/123/accounts/123/filterSets/abc`  - For an account-level filter set for the child seat buyer account 456   whose bidder is 123: `bidders/123/accounts/456/filterSets/abc`
-     * @param {integer=} params.pageSize Requested page size. The server may return fewer results than requested. If unspecified, the server will pick an appropriate default.
-     * @param {string=} params.pageToken A token identifying a page of results the server should return. Typically, this is the value of ListLosingBidsResponse.nextPageToken returned from the previous call to the losingBids.list method.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.filterSetName Name of the filter set that should
+     *     be applied to the requested metrics. For example:  - For a
+     *     bidder-level filter set for bidder 123: `bidders/123/filterSets/abc`
+     *     - For an account-level filter set for the buyer account representing
+     *     bidder   123: `bidders/123/accounts/123/filterSets/abc`  - For an
+     *     account-level filter set for the child seat buyer account 456   whose
+     *     bidder is 123: `bidders/123/accounts/456/filterSets/abc`
+     * @param {integer=} params.pageSize Requested page size. The server may
+     *     return fewer results than requested. If unspecified, the server will
+     *     pick an appropriate default.
+     * @param {string=} params.pageToken A token identifying a page of results
+     *     the server should return. Typically, this is the value of
+     *     ListLosingBidsResponse.nextPageToken returned from the previous call
+     *     to the losingBids.list method.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -6453,10 +6885,22 @@ export namespace adexchangebuyer2_v2beta1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.filterSetName Name of the filter set that should be applied to the requested metrics. For example:  - For a bidder-level filter set for bidder 123:   `bidders/123/filterSets/abc`  - For an account-level filter set for the buyer account representing bidder   123: `bidders/123/accounts/123/filterSets/abc`  - For an account-level filter set for the child seat buyer account 456   whose bidder is 123: `bidders/123/accounts/456/filterSets/abc`
-     * @param {integer=} params.pageSize Requested page size. The server may return fewer results than requested. If unspecified, the server will pick an appropriate default.
-     * @param {string=} params.pageToken A token identifying a page of results the server should return. Typically, this is the value of ListNonBillableWinningBidsResponse.nextPageToken returned from the previous call to the nonBillableWinningBids.list method.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.filterSetName Name of the filter set that should
+     *     be applied to the requested metrics. For example:  - For a
+     *     bidder-level filter set for bidder 123: `bidders/123/filterSets/abc`
+     *     - For an account-level filter set for the buyer account representing
+     *     bidder   123: `bidders/123/accounts/123/filterSets/abc`  - For an
+     *     account-level filter set for the child seat buyer account 456   whose
+     *     bidder is 123: `bidders/123/accounts/456/filterSets/abc`
+     * @param {integer=} params.pageSize Requested page size. The server may
+     *     return fewer results than requested. If unspecified, the server will
+     *     pick an appropriate default.
+     * @param {string=} params.pageToken A token identifying a page of results
+     *     the server should return. Typically, this is the value of
+     *     ListNonBillableWinningBidsResponse.nextPageToken returned from the
+     *     previous call to the nonBillableWinningBids.list method.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */

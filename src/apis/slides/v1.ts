@@ -3176,9 +3176,12 @@ export namespace slides_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.presentationId The presentation to apply the updates to.
-     * @param {().BatchUpdatePresentationRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.presentationId The presentation to apply the
+     *     updates to.
+     * @param {().BatchUpdatePresentationRequest} params.resource Request body
+     *     data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -3257,7 +3260,8 @@ export namespace slides_v1 {
      *
      * @param {object} params Parameters for request
      * @param {().Presentation} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -3323,8 +3327,10 @@ export namespace slides_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.presentationId The ID of the presentation to retrieve.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.presentationId The ID of the presentation to
+     *     retrieve.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -3438,9 +3444,12 @@ export namespace slides_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.pageObjectId The object ID of the page to retrieve.
-     * @param {string} params.presentationId The ID of the presentation to retrieve.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.pageObjectId The object ID of the page to
+     *     retrieve.
+     * @param {string} params.presentationId The ID of the presentation to
+     *     retrieve.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -3505,11 +3514,18 @@ export namespace slides_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.pageObjectId The object ID of the page whose thumbnail to retrieve.
-     * @param {string} params.presentationId The ID of the presentation to retrieve.
-     * @param {string=} params.thumbnailProperties.mimeType The optional mime type of the thumbnail image.  If you don't specify the mime type, the default mime type will be PNG.
-     * @param {string=} params.thumbnailProperties.thumbnailSize The optional thumbnail image size.  If you don't specify the size, the server chooses a default size of the image.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.pageObjectId The object ID of the page whose
+     *     thumbnail to retrieve.
+     * @param {string} params.presentationId The ID of the presentation to
+     *     retrieve.
+     * @param {string=} params.thumbnailProperties.mimeType The optional mime
+     *     type of the thumbnail image.  If you don't specify the mime type, the
+     *     default mime type will be PNG.
+     * @param {string=} params.thumbnailProperties.thumbnailSize The optional
+     *     thumbnail image size.  If you don't specify the size, the server
+     *     chooses a default size of the image.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */

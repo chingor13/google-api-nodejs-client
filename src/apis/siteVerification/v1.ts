@@ -136,7 +136,8 @@ export namespace siteVerification_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.id The id of a verified site or domain.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -201,7 +202,8 @@ export namespace siteVerification_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.id The id of a verified site or domain.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -272,8 +274,10 @@ export namespace siteVerification_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {().SiteVerificationWebResourceGettokenRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {().SiteVerificationWebResourceGettokenRequest} params.resource
+     *     Request body data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -347,9 +351,12 @@ export namespace siteVerification_v1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.verificationMethod The method to use for verifying a site or domain.
-     * @param {().SiteVerificationWebResourceResource} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.verificationMethod The method to use for verifying
+     *     a site or domain.
+     * @param {().SiteVerificationWebResourceResource} params.resource Request
+     *     body data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -426,7 +433,8 @@ export namespace siteVerification_v1 {
      * @memberOf! ()
      *
      * @param {object=} params Parameters for request
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -499,8 +507,10 @@ export namespace siteVerification_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.id The id of a verified site or domain.
-     * @param {().SiteVerificationWebResourceResource} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {().SiteVerificationWebResourceResource} params.resource Request
+     *     body data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -576,8 +586,10 @@ export namespace siteVerification_v1 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.id The id of a verified site or domain.
-     * @param {().SiteVerificationWebResourceResource} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {().SiteVerificationWebResourceResource} params.resource Request
+     *     body data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */

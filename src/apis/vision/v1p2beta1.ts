@@ -238,7 +238,7 @@ export namespace vision_v1p2beta1 {
    * Color* toProto(UIColor* color) {          CGFloat red, green, blue, alpha;
    * if (![color getRed:&amp;red green:&amp;green blue:&amp;blue
    * alpha:&amp;alpha]) {            return nil;          }          Color*
-   * result = [Color alloc] init];          [result setRed:red]; [result
+   * result = [[Color alloc] init];          [result setRed:red]; [result
    * setGreen:green];          [result setBlue:blue];          if (alpha &lt;=
    * 0.9999) {            [result setAlpha:floatWrapperWithValue(alpha)]; }
    * [result autorelease];          return result;     }     // ...   Example
@@ -2259,8 +2259,10 @@ export namespace vision_v1p2beta1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {().GoogleCloudVisionV1p2beta1AsyncBatchAnnotateFilesRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {().GoogleCloudVisionV1p2beta1AsyncBatchAnnotateFilesRequest}
+     *     params.resource Request body data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -2353,8 +2355,10 @@ export namespace vision_v1p2beta1 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {().GoogleCloudVisionV1p2beta1BatchAnnotateImagesRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {().GoogleCloudVisionV1p2beta1BatchAnnotateImagesRequest}
+     *     params.resource Request body data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */

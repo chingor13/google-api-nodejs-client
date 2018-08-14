@@ -669,8 +669,8 @@ export namespace adexchangebuyer_v1_4 {
   }
   /**
    * This message carries publisher provided breakdown. E.g. {dimension_type:
-   * &#39;COUNTRY&#39;, [{dimension_value: {id: 1, name: &#39;US&#39;}},
-   * {dimension_value: {id: 2, name: &#39;UK&#39;}}]}
+   * &#39;COUNTRY&#39;, [{dimension_value: {id: 1, name:
+   * &#39;US&#39;}}, {dimension_value: {id: 2, name: &#39;UK&#39;}}]}
    */
   export interface Schema$Dimension {
     dimensionType?: string;
@@ -1770,7 +1770,8 @@ export namespace adexchangebuyer_v1_4 {
      *
      * @param {object} params Parameters for request
      * @param {integer} params.id The account id
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -1830,7 +1831,8 @@ export namespace adexchangebuyer_v1_4 {
      * @memberOf! ()
      *
      * @param {object=} params Parameters for request
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -1894,10 +1896,12 @@ export namespace adexchangebuyer_v1_4 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {boolean=} params.confirmUnsafeAccountChange Confirmation for erasing bidder and cookie matching urls.
+     * @param {boolean=} params.confirmUnsafeAccountChange Confirmation for
+     *     erasing bidder and cookie matching urls.
      * @param {integer} params.id The account id
      * @param {().Account} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -1960,10 +1964,12 @@ export namespace adexchangebuyer_v1_4 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {boolean=} params.confirmUnsafeAccountChange Confirmation for erasing bidder and cookie matching urls.
+     * @param {boolean=} params.confirmUnsafeAccountChange Confirmation for
+     *     erasing bidder and cookie matching urls.
      * @param {integer} params.id The account id
      * @param {().Account} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -2099,7 +2105,8 @@ export namespace adexchangebuyer_v1_4 {
      *
      * @param {object} params Parameters for request
      * @param {integer} params.accountId The account id.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -2161,7 +2168,8 @@ export namespace adexchangebuyer_v1_4 {
      * @memberOf! ()
      *
      * @param {object=} params Parameters for request
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -2257,9 +2265,12 @@ export namespace adexchangebuyer_v1_4 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.accountId The account id to get the budget information for.
-     * @param {string} params.billingId The billing id to get the budget information for.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.accountId The account id to get the budget
+     *     information for.
+     * @param {string} params.billingId The billing id to get the budget
+     *     information for.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -2322,10 +2333,13 @@ export namespace adexchangebuyer_v1_4 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.accountId The account id associated with the budget being updated.
-     * @param {string} params.billingId The billing id associated with the budget being updated.
+     * @param {string} params.accountId The account id associated with the
+     *     budget being updated.
+     * @param {string} params.billingId The billing id associated with the
+     *     budget being updated.
      * @param {().Budget} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -2390,10 +2404,13 @@ export namespace adexchangebuyer_v1_4 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.accountId The account id associated with the budget being updated.
-     * @param {string} params.billingId The billing id associated with the budget being updated.
+     * @param {string} params.accountId The account id associated with the
+     *     budget being updated.
+     * @param {string} params.billingId The billing id associated with the
+     *     budget being updated.
      * @param {().Budget} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -2526,10 +2543,14 @@ export namespace adexchangebuyer_v1_4 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {integer} params.accountId The id for the account that will serve this creative.
-     * @param {string} params.buyerCreativeId The buyer-specific id for this creative.
-     * @param {string} params.dealId The id of the deal id to associate with this creative.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {integer} params.accountId The id for the account that will serve
+     *     this creative.
+     * @param {string} params.buyerCreativeId The buyer-specific id for this
+     *     creative.
+     * @param {string} params.dealId The id of the deal id to associate with
+     *     this creative.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -2596,9 +2617,12 @@ export namespace adexchangebuyer_v1_4 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {integer} params.accountId The id for the account that will serve this creative.
-     * @param {string} params.buyerCreativeId The buyer-specific id for this creative.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {integer} params.accountId The id for the account that will serve
+     *     this creative.
+     * @param {string} params.buyerCreativeId The buyer-specific id for this
+     *     creative.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -2661,7 +2685,8 @@ export namespace adexchangebuyer_v1_4 {
      *
      * @param {object} params Parameters for request
      * @param {().Creative} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -2725,13 +2750,21 @@ export namespace adexchangebuyer_v1_4 {
      * @memberOf! ()
      *
      * @param {object=} params Parameters for request
-     * @param {integer=} params.accountId When specified, only creatives for the given account ids are returned.
-     * @param {string=} params.buyerCreativeId When specified, only creatives for the given buyer creative ids are returned.
-     * @param {string=} params.dealsStatusFilter When specified, only creatives having the given deals status are returned.
-     * @param {integer=} params.maxResults Maximum number of entries returned on one result page. If not set, the default is 100. Optional.
-     * @param {string=} params.openAuctionStatusFilter When specified, only creatives having the given open auction status are returned.
-     * @param {string=} params.pageToken A continuation token, used to page through ad clients. To retrieve the next page, set this parameter to the value of "nextPageToken" from the previous response. Optional.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {integer=} params.accountId When specified, only creatives for the
+     *     given account ids are returned.
+     * @param {string=} params.buyerCreativeId When specified, only creatives
+     *     for the given buyer creative ids are returned.
+     * @param {string=} params.dealsStatusFilter When specified, only creatives
+     *     having the given deals status are returned.
+     * @param {integer=} params.maxResults Maximum number of entries returned on
+     *     one result page. If not set, the default is 100. Optional.
+     * @param {string=} params.openAuctionStatusFilter When specified, only
+     *     creatives having the given open auction status are returned.
+     * @param {string=} params.pageToken A continuation token, used to page
+     *     through ad clients. To retrieve the next page, set this parameter to
+     *     the value of "nextPageToken" from the previous response. Optional.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -2795,9 +2828,12 @@ export namespace adexchangebuyer_v1_4 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {integer} params.accountId The id for the account that will serve this creative.
-     * @param {string} params.buyerCreativeId The buyer-specific id for this creative.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {integer} params.accountId The id for the account that will serve
+     *     this creative.
+     * @param {string} params.buyerCreativeId The buyer-specific id for this
+     *     creative.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -2865,10 +2901,14 @@ export namespace adexchangebuyer_v1_4 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {integer} params.accountId The id for the account that will serve this creative.
-     * @param {string} params.buyerCreativeId The buyer-specific id for this creative.
-     * @param {string} params.dealId The id of the deal id to disassociate with this creative.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {integer} params.accountId The id for the account that will serve
+     *     this creative.
+     * @param {string} params.buyerCreativeId The buyer-specific id for this
+     *     creative.
+     * @param {string} params.dealId The id of the deal id to disassociate with
+     *     this creative.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -3067,7 +3107,8 @@ export namespace adexchangebuyer_v1_4 {
      * @param {object} params Parameters for request
      * @param {string} params.proposalId The proposalId to delete deals from.
      * @param {().DeleteOrderDealsRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -3136,9 +3177,11 @@ export namespace adexchangebuyer_v1_4 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.proposalId proposalId for which deals need to be added.
+     * @param {string} params.proposalId proposalId for which deals need to be
+     *     added.
      * @param {().AddOrderDealsRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -3207,8 +3250,11 @@ export namespace adexchangebuyer_v1_4 {
      *
      * @param {object} params Parameters for request
      * @param {string=} params.pqlQuery Query string to retrieve specific deals.
-     * @param {string} params.proposalId The proposalId to get deals for. To search across all proposals specify order_id = '-' as part of the URL.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.proposalId The proposalId to get deals for. To
+     *     search across all proposals specify order_id = '-' as part of the
+     *     URL.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -3278,7 +3324,8 @@ export namespace adexchangebuyer_v1_4 {
      * @param {object} params Parameters for request
      * @param {string} params.proposalId The proposalId to edit deals on.
      * @param {().EditAllOrderDealsRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -3429,7 +3476,8 @@ export namespace adexchangebuyer_v1_4 {
      * @param {object} params Parameters for request
      * @param {string} params.proposalId The proposalId to add notes for.
      * @param {().AddOrderNotesRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -3497,9 +3545,14 @@ export namespace adexchangebuyer_v1_4 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string=} params.pqlQuery Query string to retrieve specific notes. To search the text contents of notes, please use syntax like "WHERE note.note = "foo" or "WHERE note.note LIKE "%bar%"
-     * @param {string} params.proposalId The proposalId to get notes for. To search across all proposals specify order_id = '-' as part of the URL.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.pqlQuery Query string to retrieve specific notes.
+     *     To search the text contents of notes, please use syntax like "WHERE
+     *     note.note = "foo" or "WHERE note.note LIKE "%bar%"
+     * @param {string} params.proposalId The proposalId to get notes for. To
+     *     search across all proposals specify order_id = '-' as part of the
+     *     URL.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -3615,9 +3668,12 @@ export namespace adexchangebuyer_v1_4 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.privateAuctionId The private auction id to be updated.
-     * @param {().UpdatePrivateAuctionProposalRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.privateAuctionId The private auction id to be
+     *     updated.
+     * @param {().UpdatePrivateAuctionProposalRequest} params.resource Request
+     *     body data
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -3715,11 +3771,18 @@ export namespace adexchangebuyer_v1_4 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.accountId The account id to get the reports.
-     * @param {string} params.endDateTime The end time of the report in ISO 8601 timestamp format using UTC.
-     * @param {integer=} params.maxResults Maximum number of entries returned on one result page. If not set, the default is 100. Optional.
-     * @param {string=} params.pageToken A continuation token, used to page through performance reports. To retrieve the next page, set this parameter to the value of "nextPageToken" from the previous response. Optional.
-     * @param {string} params.startDateTime The start time of the report in ISO 8601 timestamp format using UTC.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.endDateTime The end time of the report in ISO 8601
+     *     timestamp format using UTC.
+     * @param {integer=} params.maxResults Maximum number of entries returned on
+     *     one result page. If not set, the default is 100. Optional.
+     * @param {string=} params.pageToken A continuation token, used to page
+     *     through performance reports. To retrieve the next page, set this
+     *     parameter to the value of "nextPageToken" from the previous response.
+     *     Optional.
+     * @param {string} params.startDateTime The start time of the report in ISO
+     *     8601 timestamp format using UTC.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -3830,9 +3893,12 @@ export namespace adexchangebuyer_v1_4 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.accountId The account id to delete the pretargeting config for.
-     * @param {string} params.configId The specific id of the configuration to delete.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.accountId The account id to delete the
+     *     pretargeting config for.
+     * @param {string} params.configId The specific id of the configuration to
+     *     delete.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -3898,9 +3964,12 @@ export namespace adexchangebuyer_v1_4 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.accountId The account id to get the pretargeting config for.
-     * @param {string} params.configId The specific id of the configuration to retrieve.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.accountId The account id to get the pretargeting
+     *     config for.
+     * @param {string} params.configId The specific id of the configuration to
+     *     retrieve.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -3964,9 +4033,11 @@ export namespace adexchangebuyer_v1_4 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.accountId The account id to insert the pretargeting config for.
+     * @param {string} params.accountId The account id to insert the
+     *     pretargeting config for.
      * @param {().PretargetingConfig} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -4034,8 +4105,10 @@ export namespace adexchangebuyer_v1_4 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.accountId The account id to get the pretargeting configs for.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.accountId The account id to get the pretargeting
+     *     configs for.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -4104,10 +4177,13 @@ export namespace adexchangebuyer_v1_4 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.accountId The account id to update the pretargeting config for.
-     * @param {string} params.configId The specific id of the configuration to update.
+     * @param {string} params.accountId The account id to update the
+     *     pretargeting config for.
+     * @param {string} params.configId The specific id of the configuration to
+     *     update.
      * @param {().PretargetingConfig} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -4175,10 +4251,13 @@ export namespace adexchangebuyer_v1_4 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.accountId The account id to update the pretargeting config for.
-     * @param {string} params.configId The specific id of the configuration to update.
+     * @param {string} params.accountId The account id to update the
+     *     pretargeting config for.
+     * @param {string} params.configId The specific id of the configuration to
+     *     update.
      * @param {().PretargetingConfig} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -4357,8 +4436,10 @@ export namespace adexchangebuyer_v1_4 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.productId The id for the product to get the head revision for.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.productId The id for the product to get the head
+     *     revision for.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -4418,8 +4499,10 @@ export namespace adexchangebuyer_v1_4 {
      * @memberOf! ()
      *
      * @param {object=} params Parameters for request
-     * @param {string=} params.pqlQuery The pql query used to query for products.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.pqlQuery The pql query used to query for
+     *     products.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -4520,7 +4603,8 @@ export namespace adexchangebuyer_v1_4 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.proposalId Id of the proposal to retrieve.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -4581,7 +4665,8 @@ export namespace adexchangebuyer_v1_4 {
      *
      * @param {object} params Parameters for request
      * @param {().CreateOrdersRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -4647,10 +4732,17 @@ export namespace adexchangebuyer_v1_4 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.proposalId The proposal id to update.
-     * @param {string} params.revisionNumber The last known revision number to update. If the head revision in the marketplace database has since changed, an error will be thrown. The caller should then fetch the latest proposal at head revision and retry the update at that revision.
-     * @param {string} params.updateAction The proposed action to take on the proposal. This field is required and it must be set when updating a proposal.
+     * @param {string} params.revisionNumber The last known revision number to
+     *     update. If the head revision in the marketplace database has since
+     *     changed, an error will be thrown. The caller should then fetch the
+     *     latest proposal at head revision and retry the update at that
+     *     revision.
+     * @param {string} params.updateAction The proposed action to take on the
+     *     proposal. This field is required and it must be set when updating a
+     *     proposal.
      * @param {().Proposal} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -4715,8 +4807,10 @@ export namespace adexchangebuyer_v1_4 {
      * @memberOf! ()
      *
      * @param {object=} params Parameters for request
-     * @param {string=} params.pqlQuery Query string to retrieve specific proposals.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.pqlQuery Query string to retrieve specific
+     *     proposals.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -4781,8 +4875,10 @@ export namespace adexchangebuyer_v1_4 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.proposalId The proposal id for which the setup is complete
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.proposalId The proposal id for which the setup is
+     *     complete
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -4849,10 +4945,17 @@ export namespace adexchangebuyer_v1_4 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.proposalId The proposal id to update.
-     * @param {string} params.revisionNumber The last known revision number to update. If the head revision in the marketplace database has since changed, an error will be thrown. The caller should then fetch the latest proposal at head revision and retry the update at that revision.
-     * @param {string} params.updateAction The proposed action to take on the proposal. This field is required and it must be set when updating a proposal.
+     * @param {string} params.revisionNumber The last known revision number to
+     *     update. If the head revision in the marketplace database has since
+     *     changed, an error will be thrown. The caller should then fetch the
+     *     latest proposal at head revision and retry the update at that
+     *     revision.
+     * @param {string} params.updateAction The proposed action to take on the
+     *     proposal. This field is required and it must be set when updating a
+     *     proposal.
      * @param {().Proposal} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -5032,8 +5135,10 @@ export namespace adexchangebuyer_v1_4 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {integer} params.accountId The accountId of the publisher to get profiles for.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {integer} params.accountId The accountId of the publisher to get
+     *     profiles for.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */

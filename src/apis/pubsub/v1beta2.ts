@@ -81,6 +81,13 @@ export namespace pubsub_v1beta2 {
    */
   export interface Schema$Binding {
     /**
+     * Unimplemented. The condition that is associated with this binding. NOTE:
+     * an unsatisfied condition will not allow user access via current binding.
+     * Different bindings, including their conditions, are examined
+     * independently.
+     */
+    condition?: Schema$Expr;
+    /**
      * Specifies the identities requesting access for a Cloud Platform resource.
      * `members` can have the following values:  * `allUsers`: A special
      * identifier that represents anyone who is    on the internet; with or
@@ -110,6 +117,35 @@ export namespace pubsub_v1beta2 {
    * representation for `Empty` is empty JSON object `{}`.
    */
   export interface Schema$Empty {}
+  /**
+   * Represents an expression text. Example:      title: &quot;User account
+   * presence&quot;     description: &quot;Determines whether the request has a
+   * user account&quot;     expression: &quot;size(request.user) &gt; 0&quot;
+   */
+  export interface Schema$Expr {
+    /**
+     * An optional description of the expression. This is a longer text which
+     * describes the expression, e.g. when hovered over it in a UI.
+     */
+    description?: string;
+    /**
+     * Textual representation of an expression in Common Expression Language
+     * syntax.  The application context of the containing message determines
+     * which well-known feature set of CEL is supported.
+     */
+    expression?: string;
+    /**
+     * An optional string indicating the location of the expression for error
+     * reporting, e.g. a file name and a position in the file.
+     */
+    location?: string;
+    /**
+     * An optional title for the expression, i.e. a short string describing its
+     * purpose. This can be used e.g. in UIs which allow to enter the
+     * expression.
+     */
+    title?: string;
+  }
   /**
    * Response for the `ListSubscriptions` method.
    */
@@ -484,9 +520,11 @@ export namespace pubsub_v1beta2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.subscription The subscription whose message is being acknowledged.
+     * @param {string} params.subscription The subscription whose message is
+     *     being acknowledged.
      * @param {().AcknowledgeRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -556,9 +594,16 @@ export namespace pubsub_v1beta2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.name The name of the subscription. It must have the format `"projects/{project}/subscriptions/{subscription}"`. `{subscription}` must start with a letter, and contain only letters (`[A-Za-z]`), numbers (`[0-9]`), dashes (`-`), underscores (`_`), periods (`.`), tildes (`~`), plus (`+`) or percent signs (`%`). It must be between 3 and 255 characters in length, and it must not start with `"goog"`.
+     * @param {string} params.name The name of the subscription. It must have
+     *     the format `"projects/{project}/subscriptions/{subscription}"`.
+     *     `{subscription}` must start with a letter, and contain only letters
+     *     (`[A-Za-z]`), numbers (`[0-9]`), dashes (`-`), underscores (`_`),
+     *     periods (`.`), tildes (`~`), plus (`+`) or percent signs (`%`). It
+     *     must be between 3 and 255 characters in length, and it must not start
+     *     with `"goog"`.
      * @param {().Subscription} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -628,7 +673,8 @@ export namespace pubsub_v1beta2 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.subscription The subscription to delete.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -694,7 +740,8 @@ export namespace pubsub_v1beta2 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.subscription The name of the subscription to get.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -757,8 +804,11 @@ export namespace pubsub_v1beta2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.resource_ REQUIRED: The resource for which the policy is being requested. See the operation documentation for the appropriate value for this field.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.resource_ REQUIRED: The resource for which the
+     *     policy is being requested. See the operation documentation for the
+     *     appropriate value for this field.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -823,10 +873,16 @@ export namespace pubsub_v1beta2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {integer=} params.pageSize Maximum number of subscriptions to return.
-     * @param {string=} params.pageToken The value returned by the last `ListSubscriptionsResponse`; indicates that this is a continuation of a prior `ListSubscriptions` call, and that the system should return the next page of data.
-     * @param {string} params.project The name of the cloud project that subscriptions belong to.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {integer=} params.pageSize Maximum number of subscriptions to
+     *     return.
+     * @param {string=} params.pageToken The value returned by the last
+     *     `ListSubscriptionsResponse`; indicates that this is a continuation of
+     *     a prior `ListSubscriptions` call, and that the system should return
+     *     the next page of data.
+     * @param {string} params.project The name of the cloud project that
+     *     subscriptions belong to.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -902,7 +958,8 @@ export namespace pubsub_v1beta2 {
      * @param {object} params Parameters for request
      * @param {string} params.subscription The name of the subscription.
      * @param {().ModifyAckDeadlineRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -974,7 +1031,8 @@ export namespace pubsub_v1beta2 {
      * @param {object} params Parameters for request
      * @param {string} params.subscription The name of the subscription.
      * @param {().ModifyPushConfigRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -1043,9 +1101,11 @@ export namespace pubsub_v1beta2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.subscription The subscription from which messages should be pulled.
+     * @param {string} params.subscription The subscription from which messages
+     *     should be pulled.
      * @param {().PullRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -1112,9 +1172,12 @@ export namespace pubsub_v1beta2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.resource_ REQUIRED: The resource for which the policy is being specified. See the operation documentation for the appropriate value for this field.
+     * @param {string} params.resource_ REQUIRED: The resource for which the
+     *     policy is being specified. See the operation documentation for the
+     *     appropriate value for this field.
      * @param {().SetIamPolicyRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -1183,9 +1246,12 @@ export namespace pubsub_v1beta2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.resource_ REQUIRED: The resource for which the policy detail is being requested. See the operation documentation for the appropriate value for this field.
+     * @param {string} params.resource_ REQUIRED: The resource for which the
+     *     policy detail is being requested. See the operation documentation for
+     *     the appropriate value for this field.
      * @param {().TestIamPermissionsRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -1450,9 +1516,15 @@ export namespace pubsub_v1beta2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.name The name of the topic. It must have the format `"projects/{project}/topics/{topic}"`. `{topic}` must start with a letter, and contain only letters (`[A-Za-z]`), numbers (`[0-9]`), dashes (`-`), underscores (`_`), periods (`.`), tildes (`~`), plus (`+`) or percent signs (`%`). It must be between 3 and 255 characters in length, and it must not start with `"goog"`.
+     * @param {string} params.name The name of the topic. It must have the
+     *     format `"projects/{project}/topics/{topic}"`. `{topic}` must start
+     *     with a letter, and contain only letters (`[A-Za-z]`), numbers
+     *     (`[0-9]`), dashes (`-`), underscores (`_`), periods (`.`), tildes
+     *     (`~`), plus (`+`) or percent signs (`%`). It must be between 3 and
+     *     255 characters in length, and it must not start with `"goog"`.
      * @param {().Topic} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -1522,7 +1594,8 @@ export namespace pubsub_v1beta2 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.topic Name of the topic to delete.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -1588,7 +1661,8 @@ export namespace pubsub_v1beta2 {
      *
      * @param {object} params Parameters for request
      * @param {string} params.topic The name of the topic to get.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -1650,8 +1724,11 @@ export namespace pubsub_v1beta2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.resource_ REQUIRED: The resource for which the policy is being requested. See the operation documentation for the appropriate value for this field.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string} params.resource_ REQUIRED: The resource for which the
+     *     policy is being requested. See the operation documentation for the
+     *     appropriate value for this field.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -1717,9 +1794,14 @@ export namespace pubsub_v1beta2 {
      *
      * @param {object} params Parameters for request
      * @param {integer=} params.pageSize Maximum number of topics to return.
-     * @param {string=} params.pageToken The value returned by the last `ListTopicsResponse`; indicates that this is a continuation of a prior `ListTopics` call, and that the system should return the next page of data.
-     * @param {string} params.project The name of the cloud project that topics belong to.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {string=} params.pageToken The value returned by the last
+     *     `ListTopicsResponse`; indicates that this is a continuation of a
+     *     prior `ListTopics` call, and that the system should return the next
+     *     page of data.
+     * @param {string} params.project The name of the cloud project that topics
+     *     belong to.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -1787,9 +1869,11 @@ export namespace pubsub_v1beta2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.topic The messages in the request will be published on this topic.
+     * @param {string} params.topic The messages in the request will be
+     *     published on this topic.
      * @param {().PublishRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -1856,9 +1940,12 @@ export namespace pubsub_v1beta2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.resource_ REQUIRED: The resource for which the policy is being specified. See the operation documentation for the appropriate value for this field.
+     * @param {string} params.resource_ REQUIRED: The resource for which the
+     *     policy is being specified. See the operation documentation for the
+     *     appropriate value for this field.
      * @param {().SetIamPolicyRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -1927,9 +2014,12 @@ export namespace pubsub_v1beta2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {string} params.resource_ REQUIRED: The resource for which the policy detail is being requested. See the operation documentation for the appropriate value for this field.
+     * @param {string} params.resource_ REQUIRED: The resource for which the
+     *     policy detail is being requested. See the operation documentation for
+     *     the appropriate value for this field.
      * @param {().TestIamPermissionsRequest} params.resource Request body data
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
@@ -2141,10 +2231,16 @@ export namespace pubsub_v1beta2 {
      * @memberOf! ()
      *
      * @param {object} params Parameters for request
-     * @param {integer=} params.pageSize Maximum number of subscription names to return.
-     * @param {string=} params.pageToken The value returned by the last `ListTopicSubscriptionsResponse`; indicates that this is a continuation of a prior `ListTopicSubscriptions` call, and that the system should return the next page of data.
-     * @param {string} params.topic The name of the topic that subscriptions are attached to.
-     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param {integer=} params.pageSize Maximum number of subscription names to
+     *     return.
+     * @param {string=} params.pageToken The value returned by the last
+     *     `ListTopicSubscriptionsResponse`; indicates that this is a
+     *     continuation of a prior `ListTopicSubscriptions` call, and that the
+     *     system should return the next page of data.
+     * @param {string} params.topic The name of the topic that subscriptions are
+     *     attached to.
+     * @param {object} [options] Optionally override request options, such as
+     *     `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
      * @return {object} Request object
      */
